@@ -118,17 +118,17 @@ Limitação visual explicitada: a tela autenticada de logs detalhados do GitHub 
 
 ## Pacote de entrega — verificação de fechamento
 
-- [ ] ZIP final extraído e executado com npm ci, npm test e npm run build.
-- [ ] PDF final copiado para o pacote de entrega.
-- [ ] Links-Entrega.txt consolidado com HEAD documental final.
-- [ ] Evidências e renderizações organizadas na pasta externa.
+- [x] Código do ZIP extraído e aprovado em npm ci, npm test e npm run build; integridade e equivalência do código conferidas no ZIP final.
+- [x] PDF final copiado para o pacote de entrega.
+- [x] Links-Entrega.txt consolidado com HEAD documental final, no pacote externo.
+- [x] Evidências e renderizações organizadas na pasta externa.
 - [x] Roteiro de apresentação de 11 minutos preparado.
 - [x] Material de revisão técnica e perguntas preparado.
-- [ ] Ausência de credenciais e dependências desnecessárias no ZIP verificada.
+- [x] Ausência de credenciais e dependências desnecessárias no ZIP verificada.
 - [x] Main em estado funcional e tag coerente com a publicação.
-- [ ] Working tree limpa e sincronizada após o commit documental.
+- [x] Working tree limpa e sincronizada após o commit documental; resultado final registrado fora do repositório.
 
-Os itens de fechamento serão confirmados após os comandos finais, com resultados guardados também em `entrega-operacao-deploy/evidencias/`. Nenhuma submissão no Moodle foi realizada.
+Os resultados de fechamento estão guardados em `entrega-operacao-deploy/evidencias/`. A instalação extraída aprovou 19/19 testes e gerou `dist/`; o build identifica `local-sem-git` porque o ZIP não contém `.git`. A atualização final da auditoria não altera arquivos funcionais, cuja igualdade é verificada entre a extração testada e o ZIP final. Nenhuma submissão no Moodle foi realizada.
 
 ## Responsabilidades do acadêmico ainda não confirmadas
 
