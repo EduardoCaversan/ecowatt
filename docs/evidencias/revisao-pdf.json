@@ -1,204 +1,213 @@
 {
   "file": "relatorio-tecnico.pdf",
-  "pages": 22,
+  "pages": 23,
   "details": [
     {
       "page": 1,
-      "characters": 471,
+      "characters": 518,
       "images": 0,
       "links": 0,
       "outsidePage": [],
-      "start": "UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ\nENGENHARIA DE SOFTWARE\nEduardo Caversan\nEcoWatt\nMonitoramento de Consumo Energético Residencial\nRelatório técnico da atividade ",
-      "end": "duarda Maganha de Almeida\nModalidade: trabalho individual\nEntrega prevista: 25 de novembro de 2026\nVersão técnica do documento: 24/11/2026\nEcoWatt · Operação Deploy · UTFPR\n1 / 22\n"
+      "start": "UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ\nENGENHARIA DE SOFTWARE\nEduardo Caversan da Silva Rocha\nR.A. 2475391 · Turma ES46B-ES61\nEcoWatt\nMonitoramento de Consumo Energét",
+      "end": "duarda Maganha de Almeida\nModalidade: trabalho individual\nEntrega prevista: 25 de novembro de 2026\nVersão técnica do documento: 24/11/2026\nEcoWatt · Operação Deploy · UTFPR\n1 / 23\n"
     },
     {
       "page": 2,
-      "characters": 951,
+      "characters": 964,
       "images": 0,
       "links": 13,
       "outsidePage": [],
       "start": "Sumário\n1. Identificação do projeto e da equipe\n2. Introdução e contextualização\n3. Escopo e funcionalidades da aplicação\n4. Tecnologias e ambiente de desenvolvimento\n5. ",
-      "end": "o foram informados. A\naprovação prévia do tema próprio pela professora não foi confirmada. Esses itens não são\npresumidos como concluídos.\nEcoWatt · Operação Deploy · UTFPR\n2 / 22\n"
+      "end": "a ES46B-\nES61 foram informados pelo acadêmico, que também confirmou a aprovação do tema pela\nprofessora. O campus ainda não foi informado.\nEcoWatt · Operação Deploy · UTFPR\n2 / 23\n"
     },
     {
       "page": 3,
-      "characters": 2262,
+      "characters": 1864,
       "images": 0,
       "links": 0,
       "outsidePage": [],
       "start": "1. Identificação do projeto e da equipe\nCampo\nIdentificação\nInstituição\nUniversidade Tecnológica Federal do Paraná — UTFPR\nCurso\nEngenharia de Software\nDisciplina\nGerênci",
-      "end": "arelho. Uma estimativa simples pode ajudar o consumidor a\ncompreender quais grupos de equipamentos têm maior impacto sobre o total mensal.\nEcoWatt · Operação Deploy · UTFPR\n3 / 22\n"
+      "end": "ação (10), documentação (10) e apresentação (15). Esses\npesos orientaram as verificações; nenhuma nota acadêmica foi atribuída ao projeto.\nEcoWatt · Operação Deploy · UTFPR\n3 / 23\n"
     },
     {
       "page": 4,
-      "characters": 3040,
+      "characters": 3241,
       "images": 0,
       "links": 0,
       "outsidePage": [],
-      "start": "O EcoWatt permite informar potência, tempo médio diário e quantidade de aparelhos. A aplicação\napresenta consumo em quilowatt-hora, custo em reais e distribuição proporci",
-      "end": "o\nCusto a R$ 0,90/kWh\nA — Aquecedor\n1.500 W\n4\n1\n180 kWh\nR$ 162,00\nB — Lâmpadas\n100 W\n5\n3\n45 kWh\nR$ 40,50\nC — Total\n—\n—\n4\n225 kWh\nR$ 202,50\nEcoWatt · Operação Deploy · UTFPR\n4 / 22\n"
+      "start": "2. Introdução e contextualização\nO consumo energético residencial resulta da utilização de equipamentos com potências e tempos de\nfuncionamento diferentes. Embora a fatur",
+      "end": "ados usados nas imagens\nforam cadastrados em contextos de teste do navegador; não compõem dados permanentes ou pré-\ncarregados do produto.\nEcoWatt · Operação Deploy · UTFPR\n4 / 23\n"
     },
     {
       "page": 5,
-      "characters": 1513,
+      "characters": 1176,
       "images": 2,
       "links": 0,
       "outsidePage": [],
-      "start": "const consumption = (powerWatts / 1000) * dailyHours * quantity * 30;\nconst cost = consumption * tariff;\nOs resultados intermediários não são arredondados. A apresentação",
-      "end": "firmar o descarte. Falhas de acesso ou quota permitem utilização temporária, com\nmensagem explícita de que a alteração não foi persistida.\nEcoWatt · Operação Deploy · UTFPR\n5 / 22\n"
+      "start": "Cenário executado\nPotência\nHoras/dia\nQuantidade\nConsumo\nCusto a R$ 0,90/kWh\nA — Aquecedor\n1.500 W\n4\n1\n180 kWh\nR$ 162,00\nB — Lâmpadas\n100 W\n5\n3\n45 kWh\nR$ 40,50\nC — Total\n—",
+      "end": "inteiro positivo seguro. A aplicação rejeita resultados não finitos,\nunderflow para zero e totais incompatíveis com o intervalo suportado.\nEcoWatt · Operação Deploy · UTFPR\n5 / 23\n"
     },
     {
       "page": 6,
-      "characters": 1271,
+      "characters": 1606,
       "images": 1,
       "links": 0,
       "outsidePage": [],
-      "start": "Entradas textuais são renderizadas com textContent, sem interpretar HTML fornecido pelo usuário.\nLabels, foco visível, regiões de status e erro e tabela com cabeçalhos dã",
-      "end": "linha 22\nNPM local\n10.9.0\nDependências e scripts\nVite\n8.3.8\nDesenvolvimento e build estático\nVitest\n5.1.1\nTestes de regras e armazenamento\nEcoWatt · Operação Deploy · UTFPR\n6 / 22\n"
+      "start": "A chave ecowatt:v1 armazena um documento JSON com schemaVersion, equipment e tariff. Na\nrecuperação, além do parse, são verificadas a estrutura, a versão do esquema, os i",
+      "end": "Script\nPadrões web; ES Modules\nEstrutura, apresentação e comportamento\nNode.js local\n22.12.0\nExecução das ferramentas; linha LTS suportada\nEcoWatt · Operação Deploy · UTFPR\n6 / 23\n"
     },
     {
       "page": 7,
-      "characters": 2408,
+      "characters": 2035,
       "images": 0,
       "links": 1,
       "outsidePage": [],
-      "start": "Tecnologia\nVersão observada\nFinalidade\nPlaywright Test\n1.65.1\nTestes em Chromium, evidências e impressão do PDF\nGit\n2.48.1.windows.1\nHistórico e integração de código\nGitH",
-      "end": "cias\nindex.html, public/          # entrada HTML e favicon\npackage.json, package-lock.json\nvite.config.js, playwright.config.js, README.md\nEcoWatt · Operação Deploy · UTFPR\n7 / 22\n"
+      "start": "Tecnologia\nVersão observada\nFinalidade\nNode.js no CI\n22.23.5\nAmbiente configurado pela action, linha 22\nNPM local\n10.9.0\nDependências e scripts\nVite\n8.3.8\nDesenvolvimento",
+      "end": "o foi feita pelo próprio responsável, sem simular revisões independentes. As descrições dos\nPRs informam mudanças e validações realizadas.\nEcoWatt · Operação Deploy · UTFPR\n7 / 23\n"
     },
     {
       "page": 8,
-      "characters": 1044,
-      "images": 1,
+      "characters": 1443,
+      "images": 0,
       "links": 7,
       "outsidePage": [],
-      "start": "Branch / PR\nAlterações reais\nIntegração\nfeature/energy-calculator — PR\n#1\nRegras de consumo/custo e 14 testes\niniciais\nMerge commit\nfeature/equipment-management —\nPR #2\nP",
-      "end": "ntos, com dois commits de implementação e integração na main. A página mostra\nausência de revisores, coerente com a modalidade individual.\nEcoWatt · Operação Deploy · UTFPR\n8 / 22\n"
+      "start": ".github/workflows/ci-cd.yml   # quatro jobs de CI/CD\nsrc/energy.js                # regras e validações puras\nsrc/storage.js               # persistência e proteção de da",
+      "end": "s commits vazios, alteração de datas,\nforce push ou reescrita para esconder a regressão. As referências das branches permanecem no\nremoto.\nEcoWatt · Operação Deploy · UTFPR\n8 / 23\n"
     },
     {
       "page": 9,
-      "characters": 545,
+      "characters": 526,
       "images": 1,
       "links": 0,
       "outsidePage": [],
-      "start": "5.1 Histórico e linha de base entregue\nExemplos representativos: e31c495 inicializa o escopo; 1f46df1 implementa regras e testes; 54c6a68\nprotege a persistência; 7e82b5f ",
-      "end": "cias técnicas: evolução, regressão e correção permanecem rastreáveis.\nCommits documentais posteriores são consultáveis no mesmo histórico.\nEcoWatt · Operação Deploy · UTFPR\n9 / 22\n"
+      "start": "Figura 3 — PR real de equipamentos, com dois commits de implementação e integração na main. A página mostra\nausência de revisores, coerente com a modalidade individual.\n5",
+      "end": "a a interface; 96c5840 configura CI/CD. O histórico completo,\nincluindo merges e demonstração, está em evidencias/git-log.txt e no GitHub.\nEcoWatt · Operação Deploy · UTFPR\n9 / 23\n"
     },
     {
       "page": 10,
+      "characters": 230,
+      "images": 1,
+      "links": 0,
+      "outsidePage": [],
+      "start": "Figura 4 — Histórico real ao consolidar as evidências técnicas: evolução, regressão e correção permanecem rastreáveis.\nCommits documentais posteriores são consultáveis no",
+      "end": "ias técnicas: evolução, regressão e correção permanecem rastreáveis.\nCommits documentais posteriores são consultáveis no mesmo histórico.\nEcoWatt · Operação Deploy · UTFPR\n10 / 23\n"
+    },
+    {
+      "page": 11,
       "characters": 1205,
       "images": 1,
       "links": 0,
       "outsidePage": [],
       "start": "Figura 5 — Branches de desenvolvimento e demonstração preservadas para avaliação. Não representam integrantes ou\nequipes fictícias.\nA tag anotada v1.0.0 aponta para o com",
-      "end": "ignorados. Em PR, o pacote é validado e o deploy é inelegível. Na main, o\ndeploy ocorre automaticamente após os pré-requisitos aprovados.\nEcoWatt · Operação Deploy · UTFPR\n10 / 22\n"
+      "end": "ignorados. Em PR, o pacote é validado e o deploy é inelegível. Na main, o\ndeploy ocorre automaticamente após os pré-requisitos aprovados.\nEcoWatt · Operação Deploy · UTFPR\n11 / 23\n"
     },
     {
-      "page": 11,
+      "page": 12,
       "characters": 1561,
       "images": 0,
       "links": 0,
       "outsidePage": [],
       "start": "on:\n  push:\n    branches: [main]\n    paths-ignore: ['docs/**', 'README.md']\n  pull_request:\n    branches: [main]\n    paths-ignore: ['docs/**', 'README.md']\n  workflow_dis",
-      "end": "on-error nem comandos que transformem testes reprovados em sucesso. if: always() é\nusado apenas para preservar os resultados do job Test.\nEcoWatt · Operação Deploy · UTFPR\n11 / 22\n"
+      "end": "on-error nem comandos que transformem testes reprovados em sucesso. if: always() é\nusado apenas para preservar os resultados do job Test.\nEcoWatt · Operação Deploy · UTFPR\n12 / 23\n"
     },
     {
-      "page": 12,
+      "page": 13,
       "characters": 1147,
       "images": 2,
       "links": 0,
       "outsidePage": [],
       "start": "Figura 6 — Execução inicial na main: quatro jobs aprovados e artefatos registrados. A captura corresponde à execução\n45315409008.\n7. Plano e execução dos testes automatiz",
-      "end": " vazia com totais zero\nResultado esperado;\naprovado\nT07\nNome vazio, espaços, 101 caracteres e null\nRejeição\nExceções observadas;\naprovado\nEcoWatt · Operação Deploy · UTFPR\n12 / 22\n"
+      "end": " vazia com totais zero\nResultado esperado;\naprovado\nT07\nNome vazio, espaços, 101 caracteres e null\nRejeição\nExceções observadas;\naprovado\nEcoWatt · Operação Deploy · UTFPR\n13 / 23\n"
     },
     {
-      "page": 13,
+      "page": 14,
       "characters": 2263,
       "images": 0,
       "links": 0,
       "outsidePage": [],
       "start": "ID\nComportamento e dados\nResultado esperado\nResultado final obtido\nT08\nPotência 0, negativa, NaN, infinita e\nausente\nRejeição\nExceções observadas;\naprovado\nT09\nHoras 0, n",
-      "end": "ão de tarifa, cancelamento e confirmação de\nexclusão, persistência após recarga e correspondência entre rodapé e version.json. A barra do\nEcoWatt · Operação Deploy · UTFPR\n13 / 22\n"
+      "end": "ão de tarifa, cancelamento e confirmação de\nexclusão, persistência após recarga e correspondência entre rodapé e version.json. A barra do\nEcoWatt · Operação Deploy · UTFPR\n14 / 23\n"
     },
     {
-      "page": 14,
+      "page": 15,
       "characters": 3294,
       "images": 0,
       "links": 0,
       "outsidePage": [],
       "start": "aquecedor é verificada em 80% no cenário C.\nOs testes de armazenamento usam uma implementação em memória da API chave/valor para\ncontrolar falhas de forma determinística.",
-      "end": " O projeto é novo, acadêmico e sem base de usuários ou\ndados reais de produção; os dados demonstrativos são locais ao navegador de teste.\nEcoWatt · Operação Deploy · UTFPR\n14 / 22\n"
+      "end": " O projeto é novo, acadêmico e sem base de usuários ou\ndados reais de produção; os dados demonstrativos são locais ao navegador de teste.\nEcoWatt · Operação Deploy · UTFPR\n15 / 23\n"
     },
     {
-      "page": 15,
+      "page": 16,
       "characters": 1710,
       "images": 1,
       "links": 2,
       "outsidePage": [],
       "start": "O endereço público https://eduardocaversan.github.io/ecowatt/ foi acessado após o deploy. A página\ne version.json retornaram HTTP 200. As consultas com parâmetro único e ",
-      "end": "* 30;\n// Regra propositalmente incorreta no commit de demonstração:\nconst consumption = (powerWatts / 1000) * dailyHours * quantity * 31;\nEcoWatt · Operação Deploy · UTFPR\n15 / 22\n"
+      "end": "* 30;\n// Regra propositalmente incorreta no commit de demonstração:\nconst consumption = (powerWatts / 1000) * dailyHours * quantity * 31;\nEcoWatt · Operação Deploy · UTFPR\n16 / 23\n"
     },
     {
-      "page": 16,
+      "page": 17,
       "characters": 1771,
       "images": 2,
       "links": 2,
       "outsidePage": [],
       "start": "O PR #4 registrou a falha nas verificações. O build foi aprovado porque a alteração era sintaticamente\nválida. O teste T01, que utiliza a função de produção, esperava 180",
-      "end": "ub-pages.\nEssa distinção é essencial: a existência de um build não implica que a versão passou no controle de\nqualidade ou foi publicada.\nEcoWatt · Operação Deploy · UTFPR\n16 / 22\n"
+      "end": "ub-pages.\nEssa distinção é essencial: a existência de um build não implica que a versão passou no controle de\nqualidade ou foi publicada.\nEcoWatt · Operação Deploy · UTFPR\n17 / 23\n"
     },
     {
-      "page": 17,
+      "page": 18,
       "characters": 2121,
       "images": 1,
       "links": 2,
       "outsidePage": [],
       "start": "O detalhamento integral das assertions consta em evidencias/runs/falha/logs.txt e no JSON/JUnit\nbaixado. A interface pública do GitHub permite visualizar o resumo, mas ex",
-      "end": "ess\nsuccess\nsuccess\nsuccess\n0a27562\nRegressão\nsuccess\nfailure\nskipped\nskipped\ne4e229b\nRecuperação\nsuccess\nsuccess\nsuccess\nsuccess\n7b9b10a\nEcoWatt · Operação Deploy · UTFPR\n17 / 22\n"
+      "end": "ess\nsuccess\nsuccess\nsuccess\n0a27562\nRegressão\nsuccess\nfailure\nskipped\nskipped\ne4e229b\nRecuperação\nsuccess\nsuccess\nsuccess\nsuccess\n7b9b10a\nEcoWatt · Operação Deploy · UTFPR\n18 / 23\n"
     },
     {
-      "page": 18,
+      "page": 19,
       "characters": 1049,
       "images": 1,
       "links": 3,
       "outsidePage": [],
       "start": "Figura 10 — Commit real de correção: restauração de 31 para 30 dias. Os testes originais foram preservados,\npermitindo verificar o restabelecimento do comportamento.\nO hi",
-      "end": "feituoso integrado na main\ne4e229bc9989aefc83fa4268c441075e5e2f53eb\nCommit de origem da correção\ncfe9f3da1749fb0fc8b89a7e531db16a8b1d401e\nEcoWatt · Operação Deploy · UTFPR\n18 / 22\n"
+      "end": "feituoso integrado na main\ne4e229bc9989aefc83fa4268c441075e5e2f53eb\nCommit de origem da correção\ncfe9f3da1749fb0fc8b89a7e531db16a8b1d401e\nEcoWatt · Operação Deploy · UTFPR\n19 / 23\n"
     },
     {
-      "page": 19,
+      "page": 20,
       "characters": 2380,
       "images": 0,
       "links": 8,
       "outsidePage": [],
       "start": "Elemento\nIdentificação verificável\nCommit corrigido publicado / tag\n7b9b10a7ef2493f01aa6c03ca377c22c80bd0092\nRun inicial\n45315409008\nRun com falha\n45316735655\nRun recuper",
-      "end": ". As execuções autorizadas com criação de\nprocessos e rede concluíram. Esse erro de ambiente não foi usado como regressão acadêmica e não\nEcoWatt · Operação Deploy · UTFPR\n19 / 22\n"
+      "end": ". As execuções autorizadas com criação de\nprocessos e rede concluíram. Esse erro de ambiente não foi usado como regressão acadêmica e não\nEcoWatt · Operação Deploy · UTFPR\n20 / 23\n"
     },
     {
-      "page": 20,
+      "page": 21,
       "characters": 3142,
       "images": 0,
       "links": 0,
       "outsidePage": [],
       "start": "foi contabilizado como teste funcional reprovado do cenário B.\nTransbordamento móvel. O teste UI02 detectou largura de página superior ao viewport. A inspeção\ndo DOM iden",
-      "end": ". A publicação foi verificada no GitHub\nPages, e o arquivo de versão relaciona o produto público ao commit e à execução que o entregaram.\nEcoWatt · Operação Deploy · UTFPR\n20 / 22\n"
+      "end": ". A publicação foi verificada no GitHub\nPages, e o arquivo de versão relaciona o produto público ao commit e à execução que o entregaram.\nEcoWatt · Operação Deploy · UTFPR\n21 / 23\n"
     },
     {
-      "page": 21,
-      "characters": 3027,
+      "page": 22,
+      "characters": 3015,
       "images": 0,
       "links": 17,
       "outsidePage": [],
       "start": "A demonstração alcançou três estados observáveis: publicação inicial aprovada, regressão detectada\ncom bloqueio da entrega e recuperação publicada após correção. Durante ",
-      "end": "cript/Reference/Global_Objects/Intl/NumberFormat.\n12. PLAYWRIGHT. Assertions. Disponível em: https://playwright.dev/docs/test-assertions.\nEcoWatt · Operação Deploy · UTFPR\n21 / 22\n"
+      "end": "cript/Reference/Global_Objects/Intl/NumberFormat.\n12. PLAYWRIGHT. Assertions. Disponível em: https://playwright.dev/docs/test-assertions.\nEcoWatt · Operação Deploy · UTFPR\n22 / 23\n"
     },
     {
-      "page": 22,
+      "page": 23,
       "characters": 1510,
       "images": 0,
       "links": 0,
       "outsidePage": [],
       "start": "13.2 Declaração de uso de inteligência artificial e automação\nForam utilizadas ferramentas de inteligência artificial da OpenAI, no ambiente ChatGPT/Codex, com\nparticipaç",
-      "end": "ransfere a responsabilidade\nacadêmica nem comprova automaticamente autoria intelectual exclusiva, revisão pessoal ou domínio\ndo conteúdo.\nEcoWatt · Operação Deploy · UTFPR\n22 / 22\n"
+      "end": "ransfere a responsabilidade\nacadêmica nem comprova automaticamente autoria intelectual exclusiva, revisão pessoal ou domínio\ndo conteúdo.\nEcoWatt · Operação Deploy · UTFPR\n23 / 23\n"
     }
   ],
   "visualReview": {
@@ -225,10 +234,11 @@
       19,
       20,
       21,
-      22
+      22,
+      23
     ],
     "method": "Renderizacao de todas as paginas e inspecao visual das folhas de contato e paginas ampliadas",
     "observations": "Capa, sumario, 13 secoes, margens, tabelas, figuras, legendas, numeracao e referencias verificados. Sem sobreposicoes ou paginas vazias; recortes reais das interfaces complementam capturas integrais."
   },
-  "pdfSha256": "ba419919c680708fd51490024f3549637ed72cec79a15bc6cba504497b598d43"
+  "pdfSha256": "3947f23d2f4023215680c0389de3892be3cda917075423a21a0fd60112f4c226"
 }

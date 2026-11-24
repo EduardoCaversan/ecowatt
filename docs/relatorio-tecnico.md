@@ -1,6 +1,6 @@
 <div class="cover">
 <div class="institution">Universidade Tecnológica Federal do Paraná<br>Engenharia de Software</div>
-<div class="author">Eduardo Caversan</div>
+<div class="author">Eduardo Caversan da Silva Rocha<br>R.A. 2475391 · Turma ES46B-ES61</div>
 <div class="title">EcoWatt</div>
 <div class="subtitle">Monitoramento de Consumo Energético Residencial</div>
 <div class="description">Relatório técnico da atividade <strong>Operação Deploy — Do código à produção</strong>, da disciplina de Gerência de Configuração e Manutenção de Software.<br><br>Professora: Eduarda Maganha de Almeida<br>Modalidade: trabalho individual</div>
@@ -25,7 +25,7 @@
 <li><a href="#13-referencias-e-declaracao-de-uso-de-ferramentas">Referências e declaração de uso de ferramentas</a></li>
 </ol>
 <p>O sumário contém links internos. A numeração das páginas aparece no rodapé. Capturas, logs e metadados completos acompanham este documento em <code>docs/evidencias/</code>.</p>
-<div class="note">Documento destinado à revisão acadêmica final. RA, turma e campus não foram informados. A aprovação prévia do tema próprio pela professora não foi confirmada. Esses itens não são presumidos como concluídos.</div>
+<div class="note">Documento destinado à revisão acadêmica final. Nome completo, R.A. 2475391 e turma ES46B-ES61 foram informados pelo acadêmico, que também confirmou a aprovação do tema pela professora. O campus ainda não foi informado.</div>
 </div>
 
 # 1. Identificação do projeto e da equipe
@@ -36,19 +36,22 @@
 | Curso | Engenharia de Software |
 | Disciplina | Gerência de Configuração e Manutenção de Software |
 | Professora | Eduarda Maganha de Almeida |
-| Acadêmico | Eduardo Caversan |
-| RA, turma e campus | Não informados; preencher após conferência do acadêmico |
+| Acadêmico | Eduardo Caversan da Silva Rocha |
+| R.A. | 2475391 |
+| Turma | ES46B-ES61 |
+| Campus | Não informado |
+| Aprovação do tema | Confirmada pelo acadêmico |
 | Projeto | EcoWatt — Monitoramento de Consumo Energético Residencial |
 | Identificação da equipe | EcoWatt — Projeto Individual |
 | Atividade | Operação Deploy — Do código à produção |
 | Data limite | 25/11/2026 |
 | Apresentações previstas | 25 e 26/11/2026; duração máxima de 12 minutos |
 
-O trabalho é individual e não possui outros integrantes. As responsabilidades acadêmicas de desenvolvimento, integração, testes, pipeline, qualidade, documentação e apresentação são atribuídas a Eduardo Caversan, com apoio das ferramentas declaradas na seção 13. Os registros do Git utilizam a identidade já configurada no ambiente; não foram criados autores ou revisores fictícios.
+O trabalho é individual e não possui outros integrantes. As responsabilidades acadêmicas de desenvolvimento, integração, testes, pipeline, qualidade, documentação e apresentação são atribuídas a Eduardo Caversan da Silva Rocha, com apoio das ferramentas declaradas na seção 13. Os registros do Git utilizam a identidade já configurada no ambiente; não foram criados autores ou revisores fictícios.
 
 A implementação foi conduzida com automação e ferramentas de inteligência artificial. A revisão final do código, dos resultados, do documento e a compreensão necessária à defesa oral ainda dependem do acadêmico. A conclusão técnica não comprova que essa revisão pessoal já ocorreu.
 
-O tema de sustentabilidade é uma proposta própria. A aprovação prévia pela professora é uma responsabilidade do acadêmico e não foi confirmada no contexto disponível. A entrega no Moodle também permanece sob sua responsabilidade; não foi efetuada pela automação.
+O tema de sustentabilidade é uma proposta própria, cuja aprovação pela professora foi confirmada pelo acadêmico. A entrega no Moodle também permanece sob sua responsabilidade; não foi efetuada pela automação.
 
 O critério de aceitação usado foi a rubrica fornecida para a atividade: aplicação (15), controle de versão (10), CI (20), CD (20), falha e recuperação (10), documentação (10) e apresentação (15). Esses pesos orientaram as verificações; nenhuma nota acadêmica foi atribuída ao projeto.
 
@@ -396,7 +399,7 @@ As limitações de produto permanecem explícitas: os dados se restringem ao nav
 
 Como melhorias futuras, poderiam ser avaliados exportação/importação local dos dados, edição de equipamentos e perfis de utilização. Essas possibilidades não foram implementadas porque não eram necessárias para demonstrar a confiabilidade do ciclo de entrega. Qualquer ampliação deve manter a rastreabilidade e novos testes para as regras introduzidas.
 
-O documento e o pacote foram preparados para revisão e entrega, não para substituir as responsabilidades acadêmicas. Permanecem dependentes de Eduardo Caversan: confirmação do tema, preenchimento de RA/turma/campus, conferência dos dados, revisão pessoal do código e relatório, preparação da apresentação e envio ao Moodle. A apresentação ainda não foi realizada e não recebeu avaliação fictícia neste documento.
+O documento e o pacote foram preparados para revisão e entrega, não para substituir as responsabilidades acadêmicas. Permanecem dependentes de Eduardo Caversan da Silva Rocha: informação do campus, conferência final dos dados, revisão pessoal do código e relatório, preparação da apresentação e envio ao Moodle. A apresentação ainda não foi realizada e não recebeu avaliação fictícia neste documento.
 
 # 13. Referências e declaração de uso de ferramentas
 

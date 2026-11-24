@@ -1,6 +1,6 @@
 # Auditoria de conformidade — EcoWatt
 
-Data: 24/11/2026. Responsável acadêmico: Eduardo Caversan. Projeto individual. Esta auditoria distingue execução técnica comprovada de responsabilidades pessoais ainda não confirmadas. Não atribui nota.
+Data: 24/11/2026. Responsável acadêmico: Eduardo Caversan da Silva Rocha. R.A.: 2475391. Turma: ES46B-ES61. Tema aprovado pela professora, conforme confirmação do acadêmico. Projeto individual. Esta auditoria distingue execução técnica comprovada de responsabilidades pessoais ainda não confirmadas. Não atribui nota.
 
 ## Planejamento
 
@@ -112,7 +112,7 @@ Ressalva histórica: o artefato inicial conservou logs unitários, mas seus arqu
 - [x] Todas as páginas do PDF renderizadas e revisadas visualmente.
 - [x] Revisão verificou margens, hierarquia, quebras, tabelas, figuras, ausência de sobreposições e correspondência com a fonte.
 
-O PDF possui 22 páginas, necessárias para manter o conteúdo e as figuras legíveis. A inspeção automática não encontrou blocos fora da página e contou 55 links. As folhas de contato serviram à revisão de todas as páginas e estão na pasta externa de entrega. Capturas ampliadas de regiões reais complementam os originais integrais.
+O PDF possui 23 páginas, necessárias para manter o conteúdo e as figuras legíveis. A inspeção automática não encontrou blocos fora da página e contou 55 links. As folhas de contato serviram à revisão de todas as páginas e estão na pasta externa de entrega. Capturas ampliadas de regiões reais complementam os originais integrais.
 
 Limitação visual explicitada: a tela autenticada de logs detalhados do GitHub não foi capturada. O resumo real do Actions, os logs exportados via CLI e a captura da visualização local do JUnit original estão disponíveis. Essa captura local não é apresentada como interface autenticada do GitHub.
 
@@ -130,14 +130,15 @@ Limitação visual explicitada: a tela autenticada de logs detalhados do GitHub 
 
 Os resultados de fechamento estão guardados em `entrega-operacao-deploy/evidencias/`. A instalação extraída aprovou 19/19 testes e gerou `dist/`; o build identifica `local-sem-git` porque o ZIP não contém `.git`. A atualização final da auditoria não altera arquivos funcionais, cuja igualdade é verificada entre a extração testada e o ZIP final. Nenhuma submissão no Moodle foi realizada.
 
-## Responsabilidades do acadêmico ainda não confirmadas
+## Dados confirmados e responsabilidades do acadêmico
 
-- [ ] Aprovação do tema próprio pela professora.
-- [ ] Conferência dos dados acadêmicos e preenchimento de RA, turma e campus.
+- [x] Aprovação do tema próprio pela professora, confirmada pelo acadêmico.
+- [x] Nome completo, R.A. 2475391 e turma ES46B-ES61 informados pelo acadêmico.
+- [ ] Informação do campus e conferência final dos dados.
 - [ ] Revisão pessoal do código e das configurações.
 - [ ] Compreensão do funcionamento e dos conceitos demonstrados.
 - [ ] Revisão pessoal do relatório e da declaração de ferramentas/modelo.
 - [ ] Ensaio e realização da apresentação oral.
 - [ ] Envio dos materiais ao Moodle.
 
-Esses itens dependem do acadêmico e não são presumidos como atendidos pela conclusão técnica.
+Os itens ainda desmarcados dependem do acadêmico e não são presumidos como atendidos pela conclusão técnica.
