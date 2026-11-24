@@ -4,12 +4,19 @@
   "private": true,
   "type": "module",
   "description": "Monitoramento de Consumo Energético Residencial",
-  "engines": { "node": ">=22.12.0" },
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "node scripts/generate-version.js && vite --host 127.0.0.1",
     "test": "vitest run",
     "build": "node scripts/generate-version.js && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test:ui": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "vite": "8.3.8",
+    "vitest": "5.1.1"
   }
 }
