@@ -1,0 +1,331 @@
+{
+  "config": {
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\playwright.config.js",
+    "rootDir": "C:/Users/educa/OneDrive/Área de Trabalho/Projetos/operacao-deploy/ecowatt/tests/ui",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/educa/OneDrive/Área de Trabalho/Projetos/operacao-deploy/ecowatt/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/educa/OneDrive/Área de Trabalho/Projetos/operacao-deploy/ecowatt/tests/ui",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\tests\\ui",
+        "snapshotDir": "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\tests\\ui",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173/ecowatt/",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/ui.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/ui.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173/ecowatt/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "app.spec.js",
+      "file": "app.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "UI01 fluxo completo desktop, persistência, validações e versão",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1748,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T02:40:10.798Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-871b7ea7dcf919452fd0",
+          "file": "app.spec.js",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "UI02 fluxo completo mobile sem transbordamento de página",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3158,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at exercise (C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\tests\\ui\\app.spec.js:57:96)\n    at C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\tests\\ui\\app.spec.js:72:3",
+                    "location": {
+                      "file": "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\tests\\ui\\app.spec.js",
+                      "column": 96,
+                      "line": 57
+                    },
+                    "snippet": " \u001b[90m 55 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#equipment-list tr'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m document\u001b[33m.\u001b[39mdocumentElement\u001b[33m.\u001b[39mscrollWidth \u001b[33m<=\u001b[39m window\u001b[33m.\u001b[39minnerWidth))\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 58 |\u001b[39m   \u001b[36mconst\u001b[39m versionResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mrequest\u001b[33m.\u001b[39mget(\u001b[32m`version.json?verify=${Date.now()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m   expect(versionResponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m   \u001b[36mconst\u001b[39m version \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m versionResponse\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\tests\\ui\\app.spec.js",
+                        "column": 96,
+                        "line": 57
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  55 |   await page.reload();\n  56 |   await expect(page.locator('#equipment-list tr')).toHaveCount(1);\n> 57 |   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);\n     |                                                                                                ^\n  58 |   const versionResponse = await page.request.get(`version.json?verify=${Date.now()}`);\n  59 |   expect(versionResponse.status()).toBe(200);\n  60 |   const version = await versionResponse.json();\n    at exercise (C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\tests\\ui\\app.spec.js:57:96)\n    at C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\tests\\ui\\app.spec.js:72:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T02:40:13.100Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\test-results\\app-UI02-fluxo-completo-mobile-sem-transbordamento-de-página\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\test-results\\app-UI02-fluxo-completo-mobile-sem-transbordamento-de-página\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\test-results\\app-UI02-fluxo-completo-mobile-sem-transbordamento-de-página\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\educa\\OneDrive\\Área de Trabalho\\Projetos\\operacao-deploy\\ecowatt\\tests\\ui\\app.spec.js",
+                    "column": 96,
+                    "line": 57
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-d495cb4f994adfc605be",
+          "file": "app.spec.js",
+          "line": 70,
+          "column": 1
+        },
+        {
+          "title": "UI03 protege dados corrompidos e renderiza texto sem executar HTML",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 777,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T02:40:23.919Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-f4b762cf95e653fbfe81",
+          "file": "app.spec.js",
+          "line": 74,
+          "column": 1
+        },
+        {
+          "title": "UI04 comunica acesso negado ao LocalStorage e permite sessão temporária",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 423,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T02:40:24.837Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-724f9e6606eb9a7fa876",
+          "file": "app.spec.js",
+          "line": 92,
+          "column": 1
+        },
+        {
+          "title": "UI05 comunica falha de escrita sem informar que salvou",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 416,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T02:40:25.275Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-fa7f4420679ca7c57842",
+          "file": "app.spec.js",
+          "line": 100,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-24T02:40:08.159Z",
+    "duration": 19448.63,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

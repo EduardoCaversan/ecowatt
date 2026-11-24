@@ -1,0 +1,151 @@
+{
+    "checkedAt":  "2026-11-23T23:56:59.9199645-03:00",
+    "pages":  {
+                  "url":  "https://api.github.com/repos/EduardoCaversan/ecowatt/pages",
+                  "status":  null,
+                  "cname":  null,
+                  "custom_404":  false,
+                  "html_url":  "https://eduardocaversan.github.io/ecowatt/",
+                  "build_type":  "workflow",
+                  "source":  {
+                                 "branch":  "main",
+                                 "path":  "/"
+                             },
+                  "public":  true,
+                  "protected_domain_state":  null,
+                  "pending_domain_unverified_at":  null,
+                  "https_enforced":  true
+              },
+    "workflows":  {
+                      "total_count":  1,
+                      "workflows":  [
+                                        {
+                                            "id":  428546073,
+                                            "node_id":  "W_kwDOV5e-g84ZixgZ",
+                                            "name":  "EcoWatt CI/CD",
+                                            "path":  ".github/workflows/ci-cd.yml",
+                                            "state":  "active",
+                                            "created_at":  "2026-11-23T23:48:04.000-03:00",
+                                            "updated_at":  "2026-11-23T23:51:32.000-03:00",
+                                            "url":  "https://api.github.com/repos/EduardoCaversan/ecowatt/actions/workflows/428546073",
+                                            "html_url":  "https://github.com/EduardoCaversan/ecowatt/blob/main/.github/workflows/ci-cd.yml",
+                                            "badge_url":  "https://github.com/EduardoCaversan/ecowatt/workflows/EcoWatt%20CI/CD/badge.svg"
+                                        }
+                                    ]
+                  },
+    "branch":  {
+                   "name":  "main",
+                   "commit":  {
+                                  "sha":  "0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+                                  "node_id":  "C_kwDOV5e-g9oAKDBhMjc1NjI3NThlNTBmNDIxZTk2NWY5MjJlNWNjN2ZiOWExYzViMmY",
+                                  "commit":  {
+                                                 "author":  {
+                                                                "name":  "Eduardo Caversan da Silva Rocha",
+                                                                "email":  "104170972+EduardoCaversan@users.noreply.github.com",
+                                                                "date":  "2026-11-24T02:51:30Z"
+                                                            },
+                                                 "committer":  {
+                                                                   "name":  "GitHub",
+                                                                   "email":  "noreply@github.com",
+                                                                   "date":  "2026-11-24T02:51:30Z"
+                                                               },
+                                                 "message":  "Merge pull request #3 from EduardoCaversan/feature/ci-cd\n\nci: automatizar build, testes, pacote e publicação no Pages",
+                                                 "tree":  {
+                                                              "sha":  "a54abd57b858cf50890499685c9630a72ef9a50a",
+                                                              "url":  "https://api.github.com/repos/EduardoCaversan/ecowatt/git/trees/a54abd57b858cf50890499685c9630a72ef9a50a"
+                                                          },
+                                                 "url":  "https://api.github.com/repos/EduardoCaversan/ecowatt/git/commits/0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+                                                 "comment_count":  0,
+                                                 "verification":  {
+                                                                      "verified":  true,
+                                                                      "reason":  "valid",
+                                                                      "signature":  "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJrBPuyCRC1aQ7uu5UhlAAAzsQQAIr26DDopUf6E69DWgByeHAz\n6hAteFGTC+R+Kui4WWCUvfPY5CEJ6PeKU+VMHinqVQXlYe8GFi8eABrJK4TpR4qs\n1U31L1bC+Oq6d0v4tbuypgEphwnQBTvUP75qsatkulItsrOH79yEN9Alr+bhjZ96\nKLhoFBrgnpETCPM+NzXkhUB4eBadC9pvnPglBQwrajwN8N8CsqqXHMmJvn4G+JqT\niGCE1QZGyVcSWFEb8TVqr6yCViEXBdaWJ3Q06GPbJL1qrjK6v8wEh0gWU/FvpC03\n/c/PYIJ6eLdViR+vjN0s2s2FWvnMnR4XIl1rXbCMYH963IDTfTVyTo1tE2C5eeRc\n7H7EkRNee2sNw2M92By06tzukCIeL3Z/tE1A94o3bO9vY9pFB68Zut3QX1T82a/i\n//eY18NnfJNGeRT+3PRW4l7sd516V8eMLX/zIDZ9NCxnULoBAinIMiiyuvLFRric\nAllaodwuOhmRI5g6t7zUmpFb59KOgVmSY/1o2qr0mf0O2udSST2Hcp9VIhxIj3L1\nlKvkjMgMlYb7fkTFfDpb/YSjYY0gYBSyThBwGQd1QchZ1UvicIXQR0p7+FgNq2GO\nmqeYhJEg9DY01JBr9w9HymIEQ5tirfDUU1XuDBwnlcYZ+JPHtdcbM5//iQyT4laA\nfA416kFzCOf+CGVri2qn\n=Bl5m\n-----END PGP SIGNATURE-----\n",
+                                                                      "payload":  "tree a54abd57b858cf50890499685c9630a72ef9a50a\nparent 3e7064b0d79a463e049a1b29073bd0ab44993fa9\nparent a0a9ba4ef3ab7806dee5253c39eb0d302e94ed73\nauthor Eduardo Caversan da Silva Rocha \u003c104170972+EduardoCaversan@users.noreply.github.com\u003e 1795488690 -0300\ncommitter GitHub \u003cnoreply@github.com\u003e 1795488690 -0300\n\nMerge pull request #3 from EduardoCaversan/feature/ci-cd\n\nci: automatizar build, testes, pacote e publicação no Pages",
+                                                                      "verified_at":  "2026-11-24T02:51:31Z"
+                                                                  }
+                                             },
+                                  "url":  "https://api.github.com/repos/EduardoCaversan/ecowatt/commits/0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+                                  "html_url":  "https://github.com/EduardoCaversan/ecowatt/commit/0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+                                  "comments_url":  "https://api.github.com/repos/EduardoCaversan/ecowatt/commits/0a27562758e50f421e965f922e5cc7fb9a1c5b2f/comments",
+                                  "author":  {
+                                                 "login":  "EduardoCaversan",
+                                                 "id":  104170972,
+                                                 "node_id":  "U_kgDOBjWF3A",
+                                                 "avatar_url":  "https://avatars.githubusercontent.com/u/104170972?v=4",
+                                                 "gravatar_id":  "",
+                                                 "url":  "https://api.github.com/users/EduardoCaversan",
+                                                 "html_url":  "https://github.com/EduardoCaversan",
+                                                 "followers_url":  "https://api.github.com/users/EduardoCaversan/followers",
+                                                 "following_url":  "https://api.github.com/users/EduardoCaversan/following{/other_user}",
+                                                 "gists_url":  "https://api.github.com/users/EduardoCaversan/gists{/gist_id}",
+                                                 "starred_url":  "https://api.github.com/users/EduardoCaversan/starred{/owner}{/repo}",
+                                                 "subscriptions_url":  "https://api.github.com/users/EduardoCaversan/subscriptions",
+                                                 "organizations_url":  "https://api.github.com/users/EduardoCaversan/orgs",
+                                                 "repos_url":  "https://api.github.com/users/EduardoCaversan/repos",
+                                                 "events_url":  "https://api.github.com/users/EduardoCaversan/events{/privacy}",
+                                                 "received_events_url":  "https://api.github.com/users/EduardoCaversan/received_events",
+                                                 "type":  "User",
+                                                 "user_view_type":  "public",
+                                                 "site_admin":  false
+                                             },
+                                  "committer":  {
+                                                    "login":  "web-flow",
+                                                    "id":  19864447,
+                                                    "node_id":  "MDQ6VXNlcjE5ODY0NDQ3",
+                                                    "avatar_url":  "https://avatars.githubusercontent.com/u/19864447?v=4",
+                                                    "gravatar_id":  "",
+                                                    "url":  "https://api.github.com/users/web-flow",
+                                                    "html_url":  "https://github.com/web-flow",
+                                                    "followers_url":  "https://api.github.com/users/web-flow/followers",
+                                                    "following_url":  "https://api.github.com/users/web-flow/following{/other_user}",
+                                                    "gists_url":  "https://api.github.com/users/web-flow/gists{/gist_id}",
+                                                    "starred_url":  "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                                                    "subscriptions_url":  "https://api.github.com/users/web-flow/subscriptions",
+                                                    "organizations_url":  "https://api.github.com/users/web-flow/orgs",
+                                                    "repos_url":  "https://api.github.com/users/web-flow/repos",
+                                                    "events_url":  "https://api.github.com/users/web-flow/events{/privacy}",
+                                                    "received_events_url":  "https://api.github.com/users/web-flow/received_events",
+                                                    "type":  "User",
+                                                    "user_view_type":  "public",
+                                                    "site_admin":  false
+                                                },
+                                  "parents":  [
+                                                  {
+                                                      "sha":  "3e7064b0d79a463e049a1b29073bd0ab44993fa9",
+                                                      "url":  "https://api.github.com/repos/EduardoCaversan/ecowatt/commits/3e7064b0d79a463e049a1b29073bd0ab44993fa9",
+                                                      "html_url":  "https://github.com/EduardoCaversan/ecowatt/commit/3e7064b0d79a463e049a1b29073bd0ab44993fa9"
+                                                  },
+                                                  {
+                                                      "sha":  "a0a9ba4ef3ab7806dee5253c39eb0d302e94ed73",
+                                                      "url":  "https://api.github.com/repos/EduardoCaversan/ecowatt/commits/a0a9ba4ef3ab7806dee5253c39eb0d302e94ed73",
+                                                      "html_url":  "https://github.com/EduardoCaversan/ecowatt/commit/a0a9ba4ef3ab7806dee5253c39eb0d302e94ed73"
+                                                  }
+                                              ]
+                              },
+                   "_links":  {
+                                  "self":  "https://api.github.com/repos/EduardoCaversan/ecowatt/branches/main",
+                                  "html":  "https://github.com/EduardoCaversan/ecowatt/tree/main"
+                              },
+                   "protected":  false,
+                   "protection":  {
+                                      "enabled":  false,
+                                      "required_status_checks":  {
+                                                                     "enforcement_level":  "off",
+                                                                     "contexts":  [
+
+                                                                                  ],
+                                                                     "checks":  [
+
+                                                                                ]
+                                                                 }
+                                  },
+                   "protection_url":  "https://api.github.com/repos/EduardoCaversan/ecowatt/branches/main/protection"
+               },
+    "rules":  {
+                  "value":  [
+
+                            ],
+                  "Count":  0
+              },
+    "context":  "Repositorio novo, academico, criado nesta execucao. Dados demonstrativos apenas em contextos isolados do navegador. Nenhuma protecao alterada."
+}

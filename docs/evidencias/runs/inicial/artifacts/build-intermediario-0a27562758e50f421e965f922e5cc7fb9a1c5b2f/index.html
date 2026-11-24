@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#14694e" />
+    <meta name="description" content="Estime o consumo e o custo mensal dos seus equipamentos elétricos com o EcoWatt." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>EcoWatt — Consumo energético residencial</title>
+    <script type="module" crossorigin src="/ecowatt/assets/index-BgWlF-To.js"></script>
+    <link rel="stylesheet" crossorigin href="/ecowatt/assets/index-CTJeuZg3.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./" aria-label="EcoWatt — início"><span class="brand-icon" aria-hidden="true">ϟ</span>Eco<span>Watt</span></a>
+        <span class="local-note">Dados salvos neste navegador</span>
+      </div>
+    </header>
+    <main id="main" class="container">
+      <div class="page-heading"><div><p class="eyebrow">MONITORAMENTO RESIDENCIAL</p><h1>Entenda o seu consumo.</h1><p>Cadastre seus equipamentos e veja onde sua energia é utilizada.</p></div><span class="period">Estimativa mensal · 30 dias</span></div>
+      <div id="storage-warning" class="notice warning" role="alert" hidden><p id="storage-message"></p><button id="reset-storage" type="button" class="secondary" hidden>Descartar dados inválidos</button></div>
+      <section class="metrics" aria-label="Resumo energético" aria-live="polite">
+        <article class="metric"><p>Equipamentos</p><strong id="total-quantity">0</strong><span>unidades cadastradas</span></article>
+        <article class="metric"><p>Consumo mensal</p><strong><span id="total-consumption">0</span> <small>kWh</small></strong><span>estimativa em 30 dias</span></article>
+        <article class="metric featured"><p>Custo mensal</p><strong id="total-cost">R$ 0,00</strong><span>com a tarifa informada</span></article>
+        <article class="metric"><p>Maior consumo</p><strong id="largest-name" class="equipment-name">—</strong><span id="largest-value">adicione um equipamento</span></article>
+      </section>
+      <div class="workspace">
+        <aside class="settings">
+          <section class="panel"><div class="section-heading"><h2>Novo equipamento</h2><p>Um grupo para cada tipo de aparelho.</p></div>
+            <form id="equipment-form" novalidate>
+              <fieldset id="equipment-fields">
+                <label for="name">Nome do equipamento</label><input id="name" name="name" type="text" placeholder="Ex.: Computador" maxlength="100" required autocomplete="off" />
+                <label for="power">Potência <span>(W)</span></label><input id="power" name="power" type="number" placeholder="Ex.: 500" min="0" step="any" required inputmode="decimal" />
+                <div class="field-row"><div><label for="hours">Horas por dia</label><input id="hours" name="hours" type="number" placeholder="Ex.: 4" min="0" max="24" step="any" required inputmode="decimal" /></div><div><label for="quantity">Quantidade</label><input id="quantity" name="quantity" type="number" min="1" step="1" value="1" required inputmode="numeric" /></div></div>
+                <p id="form-error" class="error" role="alert" tabindex="-1" hidden></p>
+                <button class="primary full-width" type="submit"><span aria-hidden="true">+</span> Adicionar equipamento</button>
+              </fieldset>
+            </form>
+          </section>
+          <section class="panel tariff-panel"><div class="section-heading"><h2>Tarifa de energia</h2><p>Valor cobrado por quilowatt-hora.</p></div><form id="tariff-form" novalidate><fieldset id="tariff-fields"><label for="tariff">Tarifa <span>(R$/kWh)</span></label><div class="tariff-control"><input id="tariff" name="tariff" type="number" min="0" step="any" value="0.90" required inputmode="decimal" aria-describedby="tariff-help" /><button class="secondary" type="submit">Atualizar</button></div><p id="tariff-error" class="error" role="alert" tabindex="-1" hidden></p></fieldset></form><p class="help" id="tariff-help">R$ 0,90/kWh é um exemplo ilustrativo. Consulte sua fatura e informe a tarifa aplicável.</p></section>
+        </aside>
+        <div class="results">
+          <section class="panel equipment-panel"><div class="section-heading heading-inline"><div><h2>Seus equipamentos</h2><p>Consumo e custo estimados por grupo.</p></div><span id="group-count" class="count">0 grupos</span></div>
+            <div id="empty-state" class="empty-state"><span class="empty-icon" aria-hidden="true">ϟ</span><h3>Seu consumo começa aqui</h3><p>Adicione o primeiro equipamento para acompanhar<br class="desktop-break" /> sua estimativa de energia e custo mensal.</p></div>
+            <div id="table-container" class="table-scroll" tabindex="0" role="region" aria-label="Tabela de equipamentos, role horizontalmente em telas pequenas" hidden><table><caption class="sr-only">Equipamentos cadastrados e estimativas mensais</caption><thead><tr><th scope="col">Equipamento</th><th scope="col">Potência</th><th scope="col">h/dia</th><th scope="col">Qtd.</th><th scope="col">kWh/mês</th><th scope="col">R$/mês</th><th scope="col"><span class="sr-only">Ações</span></th></tr></thead><tbody id="equipment-list"></tbody></table></div>
+          </section>
+          <section class="panel distribution-panel"><div class="section-heading"><h2>Distribuição do consumo</h2><p>A participação de cada grupo na sua estimativa mensal.</p></div><p id="distribution-empty" class="muted">As barras de consumo aparecerão após o primeiro cadastro.</p><ul id="distribution" class="distribution"></ul></section>
+          <div class="estimate-note"><span aria-hidden="true">ⓘ</span><p><strong>Uma estimativa para orientar suas escolhas.</strong> Os cálculos consideram 30 dias e potência constante. Não substituem medições reais ou a fatura da concessionária.</p></div>
+        </div>
+      </div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+    <footer class="site-footer"><span>EcoWatt · Monitoramento de Consumo Energético Residencial</span><span id="version">Versão indisponível</span></footer>
+  </body>
+</html>

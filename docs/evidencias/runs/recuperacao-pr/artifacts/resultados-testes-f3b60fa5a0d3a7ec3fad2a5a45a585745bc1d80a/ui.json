@@ -1,0 +1,369 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/22.23.5/x64/bin/node",
+      "/home/runner/work/ecowatt/ecowatt/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/runner/work/ecowatt/ecowatt/playwright.config.js",
+    "rootDir": "/home/runner/work/ecowatt/ecowatt/tests/ui",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/EduardoCaversan/ecowatt/commit/f3b60fa5a0d3a7ec3fad2a5a45a585745bc1d80a",
+        "commitHash": "f3b60fa5a0d3a7ec3fad2a5a45a585745bc1d80a",
+        "prHref": "https://github.com/EduardoCaversan/ecowatt/pull/5",
+        "prTitle": "fix: restaurar consumo correto e preservar todos os relatórios",
+        "prBaseHash": "e4e229bc9989aefc83fa4268c441075e5e2f53eb",
+        "buildHref": "https://github.com/EduardoCaversan/ecowatt/actions/runs/45317033609"
+      },
+      "gitCommit": {
+        "shortHash": "f3b60fa",
+        "hash": "f3b60fa5a0d3a7ec3fad2a5a45a585745bc1d80a",
+        "subject": "Merge d513874621d252d0c37d8257158780a38eb4cac8 into e4e229bc9989aefc83fa4268c441075e5e2f53eb",
+        "body": "Merge d513874621d252d0c37d8257158780a38eb4cac8 into e4e229bc9989aefc83fa4268c441075e5e2f53eb\n",
+        "author": {
+          "name": "Eduardo Caversan da Silva Rocha",
+          "email": "104170972+EduardoCaversan@users.noreply.github.com",
+          "time": 1795489526000
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "time": 1795489526000
+        },
+        "branch": "HEAD"
+      },
+      "gitDiff": "diff --git a/playwright.config.js b/playwright.config.js\nindex 3d7c4bd..b88852a 100644\n--- a/playwright.config.js\n+++ b/playwright.config.js\n@@ -2,6 +2,7 @@ import { defineConfig } from '@playwright/test';\n \n export default defineConfig({\n   testDir: './tests/ui',\n+  outputDir: 'test-results/browser',\n   fullyParallel: false,\n   workers: 1,\n   retries: 0,\ndiff --git a/src/energy.js b/src/energy.js\nindex 991584b..9f42228 100644\n--- a/src/energy.js\n+++ b/src/energy.js\n@@ -27,7 +27,7 @@ export function validateEquipment(equipment) {\n \n export function monthlyConsumption(equipment) {\n   const { powerWatts, dailyHours, quantity } = validateEquipment(equipment);\n-  const consumption = (powerWatts / 1000) * dailyHours * quantity * 31;\n+  const consumption = (powerWatts / 1000) * dailyHours * quantity * 30;\n   if (!Number.isFinite(consumption) || consumption <= 0) {\n     throw new Error('Os valores informados produzem um consumo fora do intervalo suportado.');\n   }",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/ecowatt/ecowatt/test-results/browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/EduardoCaversan/ecowatt/commit/f3b60fa5a0d3a7ec3fad2a5a45a585745bc1d80a",
+            "commitHash": "f3b60fa5a0d3a7ec3fad2a5a45a585745bc1d80a",
+            "prHref": "https://github.com/EduardoCaversan/ecowatt/pull/5",
+            "prTitle": "fix: restaurar consumo correto e preservar todos os relatórios",
+            "prBaseHash": "e4e229bc9989aefc83fa4268c441075e5e2f53eb",
+            "buildHref": "https://github.com/EduardoCaversan/ecowatt/actions/runs/45317033609"
+          },
+          "gitCommit": {
+            "shortHash": "f3b60fa",
+            "hash": "f3b60fa5a0d3a7ec3fad2a5a45a585745bc1d80a",
+            "subject": "Merge d513874621d252d0c37d8257158780a38eb4cac8 into e4e229bc9989aefc83fa4268c441075e5e2f53eb",
+            "body": "Merge d513874621d252d0c37d8257158780a38eb4cac8 into e4e229bc9989aefc83fa4268c441075e5e2f53eb\n",
+            "author": {
+              "name": "Eduardo Caversan da Silva Rocha",
+              "email": "104170972+EduardoCaversan@users.noreply.github.com",
+              "time": 1795489526000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1795489526000
+            },
+            "branch": "HEAD"
+          },
+          "gitDiff": "diff --git a/playwright.config.js b/playwright.config.js\nindex 3d7c4bd..b88852a 100644\n--- a/playwright.config.js\n+++ b/playwright.config.js\n@@ -2,6 +2,7 @@ import { defineConfig } from '@playwright/test';\n \n export default defineConfig({\n   testDir: './tests/ui',\n+  outputDir: 'test-results/browser',\n   fullyParallel: false,\n   workers: 1,\n   retries: 0,\ndiff --git a/src/energy.js b/src/energy.js\nindex 991584b..9f42228 100644\n--- a/src/energy.js\n+++ b/src/energy.js\n@@ -27,7 +27,7 @@ export function validateEquipment(equipment) {\n \n export function monthlyConsumption(equipment) {\n   const { powerWatts, dailyHours, quantity } = validateEquipment(equipment);\n-  const consumption = (powerWatts / 1000) * dailyHours * quantity * 31;\n+  const consumption = (powerWatts / 1000) * dailyHours * quantity * 30;\n   if (!Number.isFinite(consumption) || consumption <= 0) {\n     throw new Error('Os valores informados produzem um consumo fora do intervalo suportado.');\n   }",
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/runner/work/ecowatt/ecowatt/tests/ui",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/ecowatt/ecowatt/test-results/browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/EduardoCaversan/ecowatt/commit/f3b60fa5a0d3a7ec3fad2a5a45a585745bc1d80a",
+            "commitHash": "f3b60fa5a0d3a7ec3fad2a5a45a585745bc1d80a",
+            "prHref": "https://github.com/EduardoCaversan/ecowatt/pull/5",
+            "prTitle": "fix: restaurar consumo correto e preservar todos os relatórios",
+            "prBaseHash": "e4e229bc9989aefc83fa4268c441075e5e2f53eb",
+            "buildHref": "https://github.com/EduardoCaversan/ecowatt/actions/runs/45317033609"
+          },
+          "gitCommit": {
+            "shortHash": "f3b60fa",
+            "hash": "f3b60fa5a0d3a7ec3fad2a5a45a585745bc1d80a",
+            "subject": "Merge d513874621d252d0c37d8257158780a38eb4cac8 into e4e229bc9989aefc83fa4268c441075e5e2f53eb",
+            "body": "Merge d513874621d252d0c37d8257158780a38eb4cac8 into e4e229bc9989aefc83fa4268c441075e5e2f53eb\n",
+            "author": {
+              "name": "Eduardo Caversan da Silva Rocha",
+              "email": "104170972+EduardoCaversan@users.noreply.github.com",
+              "time": 1795489526000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1795489526000
+            },
+            "branch": "HEAD"
+          },
+          "gitDiff": "diff --git a/playwright.config.js b/playwright.config.js\nindex 3d7c4bd..b88852a 100644\n--- a/playwright.config.js\n+++ b/playwright.config.js\n@@ -2,6 +2,7 @@ import { defineConfig } from '@playwright/test';\n \n export default defineConfig({\n   testDir: './tests/ui',\n+  outputDir: 'test-results/browser',\n   fullyParallel: false,\n   workers: 1,\n   retries: 0,\ndiff --git a/src/energy.js b/src/energy.js\nindex 991584b..9f42228 100644\n--- a/src/energy.js\n+++ b/src/energy.js\n@@ -27,7 +27,7 @@ export function validateEquipment(equipment) {\n \n export function monthlyConsumption(equipment) {\n   const { powerWatts, dailyHours, quantity } = validateEquipment(equipment);\n-  const consumption = (powerWatts / 1000) * dailyHours * quantity * 31;\n+  const consumption = (powerWatts / 1000) * dailyHours * quantity * 30;\n   if (!Number.isFinite(consumption) || consumption <= 0) {\n     throw new Error('Os valores informados produzem um consumo fora do intervalo suportado.');\n   }",
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/home/runner/work/ecowatt/ecowatt/tests/ui",
+        "snapshotDir": "/home/runner/work/ecowatt/ecowatt/tests/ui",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173/ecowatt/",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/ui.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/ui.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173/ecowatt/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "app.spec.js",
+      "file": "app.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "UI01 fluxo completo desktop, persistência, validações e versão",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 769,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T03:11:31.849Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-871b7ea7dcf919452fd0",
+          "file": "app.spec.js",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "UI02 fluxo completo mobile sem transbordamento de página",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 603,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T03:11:35.856Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-d495cb4f994adfc605be",
+          "file": "app.spec.js",
+          "line": 70,
+          "column": 1
+        },
+        {
+          "title": "UI03 protege dados corrompidos e renderiza texto sem executar HTML",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 306,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T03:11:36.466Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-f4b762cf95e653fbfe81",
+          "file": "app.spec.js",
+          "line": 74,
+          "column": 1
+        },
+        {
+          "title": "UI04 comunica acesso negado ao LocalStorage e permite sessão temporária",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 225,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T03:11:36.779Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-724f9e6606eb9a7fa876",
+          "file": "app.spec.js",
+          "line": 92,
+          "column": 1
+        },
+        {
+          "title": "UI05 comunica falha de escrita sem informar que salvou",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 208,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T03:11:37.011Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-fa7f4420679ca7c57842",
+          "file": "app.spec.js",
+          "line": 100,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-24T03:11:30.805Z",
+    "duration": 6461.107,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="19" failures="0" errors="0" time="0.019740284">
+    <testsuite name="tests/energy.test.js" timestamp="2026-11-24T03:19:31.580Z" hostname="runnervm0hi8g" tests="14" failures="0" errors="0" skipped="0" time="0.010741828">
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T01 calcula 180 kWh mensais no cenário A" time="0.001678194">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T02 converte 1000 W em 1 kW e aceita horas fracionárias" time="0.000253396">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T03 calcula R$ 162,00 no cenário A" time="0.00031583">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T04 considera três equipamentos iguais no cenário B" time="0.000360006">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T05 soma consumo, custos e quantidades no cenário C" time="0.001204761">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T06 identifica o maior consumidor e trata lista vazia" time="0.000413495">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T07 rejeita nomes vazios ou longos" time="0.00108959">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T08 rejeita potência não positiva, ausente ou não finita" time="0.000605099">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T09 valida o intervalo de horas (0, 24]" time="0.0007333">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T10 rejeita quantidade fracionária, não positiva ou insegura" time="0.0004578">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T11 rejeita tarifa inválida" time="0.000429329">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T12 atualiza totais após excluir um grupo sem alterar a lista original" time="0.000631849">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T13 recalcula custos ao alterar tarifa sem modificar o consumo" time="0.000214629">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T14 rejeita overflow e underflow sem arredondar valores intermediários" time="0.000424662">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/storage.test.js" timestamp="2026-11-24T03:19:31.584Z" hostname="runnervm0hi8g" tests="5" failures="0" errors="0" skipped="0" time="0.008998456">
+        <testcase classname="tests/storage.test.js" name="T15 persiste e recupera equipamentos e tarifa" time="0.002141614">
+        </testcase>
+        <testcase classname="tests/storage.test.js" name="T16 inicializa armazenamento ausente com lista vazia e tarifa ilustrativa" time="0.000465692">
+        </testcase>
+        <testcase classname="tests/storage.test.js" name="T17 preserva JSON inválido, vazio e estruturas incompatíveis até descarte explícito" time="0.003788822">
+        </testcase>
+        <testcase classname="tests/storage.test.js" name="T18 comunica falhas de acesso e escrita sem fingir persistência" time="0.001001399">
+        </testcase>
+        <testcase classname="tests/storage.test.js" name="T19 impede gravação de equipamento inválido" time="0.000364081">
+        </testcase>
+    </testsuite>
+</testsuites>

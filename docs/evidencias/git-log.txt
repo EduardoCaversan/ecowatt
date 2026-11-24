@@ -1,0 +1,24 @@
+*   7b9b10a (HEAD -> main, origin/main, origin/HEAD) Merge pull request #5 from EduardoCaversan/fix/monthly-consumption
+|\  
+| * d513874 (origin/fix/monthly-consumption, fix/monthly-consumption) fix: preserve unit reports when browser tests clean their output
+| * cfe9f3d fix: restore correct monthly consumption calculation
+|/  
+*   e4e229b Merge pull request #4 from EduardoCaversan/demo/pipeline-failure
+|\  
+| * 677a1a3 (origin/demo/pipeline-failure, demo/pipeline-failure) demo: introduce controlled monthly consumption regression
+|/  
+*   0a27562 Merge pull request #3 from EduardoCaversan/feature/ci-cd
+|\  
+| * a0a9ba4 (origin/feature/ci-cd, feature/ci-cd) style: format responsive stylesheet for maintainability
+| * 96c5840 ci: gate GitHub Pages packaging and deployment on automated tests
+|/  
+*   3e7064b Merge pull request #2 from EduardoCaversan/feature/equipment-management
+|\  
+| * 7e82b5f (origin/feature/equipment-management, feature/equipment-management) feat: add responsive equipment dashboard and browser verification
+| * 54c6a68 feat: persist validated data and protect corrupted storage
+|/  
+*   6b3a9e0 Merge pull request #1 from EduardoCaversan/feature/energy-calculator
+|\  
+| * 1f46df1 (origin/feature/energy-calculator, feature/energy-calculator) feat: implement and test energy calculations and validations
+|/  
+* e31c495 chore: initialize ecowatt project and define scope

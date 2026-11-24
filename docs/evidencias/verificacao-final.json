@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-24T03:29:02.250157+00:00",
+  "publicVersionMatchesArtifact": true,
+  "publicHtmlMatchesBuild": true,
+  "packageMatchesBuild": true,
+  "sha256Files": [
+    "index.html",
+    "version.json",
+    "assets/index-BgWlF-To.js",
+    "assets/index-CTJeuZg3.css"
+  ],
+  "unitPassed": 19,
+  "uiPassed": 5,
+  "sections": 13,
+  "pdfPages": 22,
+  "internalLinks": 13,
+  "pdfSha256": "ba419919c680708fd51490024f3549637ed72cec79a15bc6cba504497b598d43",
+  "sourceSha256": "ed0a2bd43f642f215dc9863fee55a98c5a7421eb0a7d2303eddc2e30bc5cc9d4"
+}

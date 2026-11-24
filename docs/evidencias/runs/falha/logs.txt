@@ -1,0 +1,668 @@
+Build	Set up job	﻿2026-11-24T03:03:08.0147352Z Current runner version: '2.338.2'
+Build	Set up job	2026-11-24T03:03:08.0172163Z ##[group]Runner Image Provisioner
+Build	Set up job	2026-11-24T03:03:08.0173025Z Hosted Compute Agent
+Build	Set up job	2026-11-24T03:03:08.0173583Z Version: 20261111.635
+Build	Set up job	2026-11-24T03:03:08.0174164Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Build	Set up job	2026-11-24T03:03:08.0174851Z Build Date: 2026-11-11T01:49:01Z
+Build	Set up job	2026-11-24T03:03:08.0175483Z Worker ID: {4396259d-bf4d-4de1-8a19-79c8d98f2af8}
+Build	Set up job	2026-11-24T03:03:08.0176112Z Region: westcentralus
+Build	Set up job	2026-11-24T03:03:08.0176674Z Cloud: Azure
+Build	Set up job	2026-11-24T03:03:08.0177171Z ##[endgroup]
+Build	Set up job	2026-11-24T03:03:08.0179029Z ##[group]Operating System
+Build	Set up job	2026-11-24T03:03:08.0179650Z Ubuntu
+Build	Set up job	2026-11-24T03:03:08.0180110Z 26.04.1
+Build	Set up job	2026-11-24T03:03:08.0180613Z LTS
+Build	Set up job	2026-11-24T03:03:08.0181096Z ##[endgroup]
+Build	Set up job	2026-11-24T03:03:08.0181607Z ##[group]Runner Image
+Build	Set up job	2026-11-24T03:03:08.0182246Z Image: ubuntu-26.04
+Build	Set up job	2026-11-24T03:03:08.0182757Z Version: 20261116.202.1
+Build	Set up job	2026-11-24T03:03:08.0184066Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+Build	Set up job	2026-11-24T03:03:08.0185644Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+Build	Set up job	2026-11-24T03:03:08.0186540Z ##[endgroup]
+Build	Set up job	2026-11-24T03:03:08.0187582Z ##[group]GITHUB_TOKEN Permissions
+Build	Set up job	2026-11-24T03:03:08.0189862Z Contents: read
+Build	Set up job	2026-11-24T03:03:08.0190426Z Metadata: read
+Build	Set up job	2026-11-24T03:03:08.0191033Z ##[endgroup]
+Build	Set up job	2026-11-24T03:03:08.0193346Z Secret source: Actions
+Build	Set up job	2026-11-24T03:03:08.0194259Z Cache mode: write
+Build	Set up job	2026-11-24T03:03:08.0195075Z Prepare workflow directory
+Build	Set up job	2026-11-24T03:03:08.0561712Z Prepare all required actions
+Build	Set up job	2026-11-24T03:03:08.0610316Z Getting action download info
+Build	Set up job	2026-11-24T03:03:08.3397514Z Download action repository 'actions/checkout@v7.0.1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Build	Set up job	2026-11-24T03:03:08.4339661Z Download action repository 'actions/setup-node@v7.1.0' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+Build	Set up job	2026-11-24T03:03:08.4885249Z Download action repository 'actions/upload-artifact@v7.0.2' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+Build	Set up job	2026-11-24T03:03:08.6299963Z Complete job name: Build
+Build	Run actions/checkout@v7.0.1	﻿2026-11-24T03:03:08.7216897Z ##[group]Run actions/checkout@v7.0.1
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7217767Z with:
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7218193Z   repository: EduardoCaversan/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7222380Z   token: ***
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7222781Z   ssh-strict: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7223189Z   ssh-user: git
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7223599Z   persist-credentials: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7224050Z   clean: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7224457Z   sparse-checkout-cone-mode: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7224927Z   fetch-depth: 1
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7225316Z   fetch-tags: false
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7225709Z   show-progress: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7226103Z   lfs: false
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7226461Z   submodules: false
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7226856Z   set-safe-directory: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7227301Z   allow-unsafe-pr-checkout: false
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:08.7228048Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0350109Z Syncing repository: EduardoCaversan/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0352483Z ##[group]Getting Git version info
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0353161Z Working directory is '/home/runner/work/ecowatt/ecowatt'
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0354123Z [command]/usr/bin/git version
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0373174Z git version 2.56.1
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0396643Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0403368Z Temporarily overriding HOME='/home/runner/work/_temp/0085e7b2-6345-4f30-b8ff-ce1c84e37fe5' before making global git config changes
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0405795Z Adding repository directory to the temporary git global config as a safe directory
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0411043Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ecowatt/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0485220Z Deleting the contents of '/home/runner/work/ecowatt/ecowatt'
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0489358Z ##[group]Determining repository object format
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0491441Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0492997Z ##[group]Initializing the repository
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0496833Z [command]/usr/bin/git init /home/runner/work/ecowatt/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0625492Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0627244Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0628920Z hint: to use in all of your new repositories, which will suppress this warning,
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0629738Z hint: call:
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0630183Z hint:
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0630742Z hint: 	git config --global init.defaultBranch <name>
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0631551Z hint:
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0632258Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0633200Z hint: 'development'. The just-created branch can be renamed via this command:
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0633954Z hint:
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0634492Z hint: 	git branch -m <name>
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0635040Z hint:
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0635696Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0640785Z Initialized empty Git repository in /home/runner/work/ecowatt/ecowatt/.git/
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0653817Z [command]/usr/bin/git remote add origin https://github.com/EduardoCaversan/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0709117Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0710597Z ##[group]Disabling automatic garbage collection
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0713616Z [command]/usr/bin/git config --local gc.auto 0
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0743554Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0745136Z ##[group]Setting up auth
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0746219Z Removing SSH command configuration
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0750769Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.0784153Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1228732Z Removing HTTP extra header
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1235587Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1266248Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1528745Z Removing includeIf entries pointing to credentials config files
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1530424Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1561710Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1773545Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-2f586c79-b2f7-495d-9984-f2922c716a3f.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1805860Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path /home/runner/work/_temp/git-credentials-2f586c79-b2f7-495d-9984-f2922c716a3f.config
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1834104Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-2f586c79-b2f7-495d-9984-f2922c716a3f.config
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1863562Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-2f586c79-b2f7-495d-9984-f2922c716a3f.config
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1886570Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-2f586c79-b2f7-495d-9984-f2922c716a3f.config
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1908080Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1909062Z ##[group]Fetching the repository
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.1913880Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e4e229bc9989aefc83fa4268c441075e5e2f53eb:refs/remotes/origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5697029Z From https://github.com/EduardoCaversan/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5698967Z  * [new ref]         e4e229bc9989aefc83fa4268c441075e5e2f53eb -> origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5707336Z [command]/usr/bin/git branch --list --remote origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5730433Z   origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5738873Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5759271Z e4e229bc9989aefc83fa4268c441075e5e2f53eb
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5768191Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5769365Z ##[group]Determining the checkout info
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5770720Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5771683Z [command]/usr/bin/git sparse-checkout disable
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5847025Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5875699Z ##[group]Checking out the ref
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5880394Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5957115Z Switched to a new branch 'main'
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5962253Z branch 'main' set up to track 'origin/main'.
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.5969646Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.6013657Z [command]/usr/bin/git log -1 --format=%H
+Build	Run actions/checkout@v7.0.1	2026-11-24T03:03:09.6035370Z e4e229bc9989aefc83fa4268c441075e5e2f53eb
+Build	Run actions/setup-node@v7.1.0	﻿2026-11-24T03:03:09.6370833Z ##[group]Run actions/setup-node@v7.1.0
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:09.6371505Z with:
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:09.6371910Z   node-version: 22
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:09.6372328Z   cache: npm
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:09.6372761Z   check-latest: false
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:09.6377976Z   token: ***
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:09.6378431Z   package-manager-cache: true
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:09.6379450Z ##[endgroup]
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:09.7674969Z Found in cache @ /opt/hostedtoolcache/node/22.23.5/x64
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:09.8656298Z ##[group]Environment details
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:10.1899701Z node: v22.23.5
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:10.1901361Z npm: 10.9.9
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:10.1903191Z yarn: 1.22.22
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:10.1905586Z ##[endgroup]
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:10.1920680Z [command]/opt/hostedtoolcache/node/22.23.5/x64/bin/npm config get cache
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:10.2998443Z /home/runner/.npm
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:10.4840794Z Cache hit for: node-cache-Linux-x64-npm-f9514a87c62d77623d2af9f139504470d5e264d79c04aeca77d8a37639718f9f
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:11.6517999Z Received 32170837 of 32170837 (100.0%), 32.8 MBs/sec
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:11.6519234Z Cache Size: ~31 MB (32170837 B)
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:11.6547272Z [command]/usr/bin/tar -xf /home/runner/work/_temp/0de147a2-7cef-4a22-a6be-18d1f3cab682/cache.tzst -P -C /home/runner/work/ecowatt/ecowatt --use-compress-program unzstd
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:11.7002606Z Cache restored successfully
+Build	Run actions/setup-node@v7.1.0	2026-11-24T03:03:11.7027200Z Cache restored from key: node-cache-Linux-x64-npm-f9514a87c62d77623d2af9f139504470d5e264d79c04aeca77d8a37639718f9f
+Build	Run npm ci	﻿2026-11-24T03:03:11.7157538Z ##[group]Run npm ci
+Build	Run npm ci	2026-11-24T03:03:11.7157914Z ^[[36;1mnpm ci^[[0m
+Build	Run npm ci	2026-11-24T03:03:11.7194989Z shell: /usr/bin/bash -e {0}
+Build	Run npm ci	2026-11-24T03:03:11.7195355Z ##[endgroup]
+Build	Run npm ci	2026-11-24T03:03:13.0130214Z 
+Build	Run npm ci	2026-11-24T03:03:13.0137515Z added 40 packages, and audited 41 packages in 1s
+Build	Run npm ci	2026-11-24T03:03:13.0138001Z 
+Build	Run npm ci	2026-11-24T03:03:13.0138199Z 13 packages are looking for funding
+Build	Run npm ci	2026-11-24T03:03:13.0138960Z   run `npm fund` for details
+Build	Run npm ci	2026-11-24T03:03:13.0139648Z 
+Build	Run npm ci	2026-11-24T03:03:13.0139954Z found 0 vulnerabilities
+Build	Build com identificação do commit	﻿2026-11-24T03:03:13.0413851Z ##[group]Run npm run build
+Build	Build com identificação do commit	2026-11-24T03:03:13.0414179Z ^[[36;1mnpm run build^[[0m
+Build	Build com identificação do commit	2026-11-24T03:03:13.0435290Z shell: /usr/bin/bash -e {0}
+Build	Build com identificação do commit	2026-11-24T03:03:13.0435605Z ##[endgroup]
+Build	Build com identificação do commit	2026-11-24T03:03:13.1309035Z 
+Build	Build com identificação do commit	2026-11-24T03:03:13.1309790Z > ecowatt@1.0.0 build
+Build	Build com identificação do commit	2026-11-24T03:03:13.1310261Z > node scripts/generate-version.js && vite build
+Build	Build com identificação do commit	2026-11-24T03:03:13.1310500Z 
+Build	Build com identificação do commit	2026-11-24T03:03:13.1679429Z EcoWatt v1.0.0 · e4e229b
+Build	Build com identificação do commit	2026-11-24T03:03:13.3691308Z ^[[36mvite v8.3.8 ^[[32mbuilding client environment for production...^[[36m^[[39m
+Build	Build com identificação do commit	2026-11-24T03:03:13.3811295Z transforming...
+Build	Build com identificação do commit	2026-11-24T03:03:13.4150784Z ✓ 7 modules transformed.
+Build	Build com identificação do commit	2026-11-24T03:03:13.4252444Z rendering chunks...
+Build	Build com identificação do commit	2026-11-24T03:03:13.4307283Z computing gzip size...
+Build	Build com identificação do commit	2026-11-24T03:03:13.4321128Z dist/index.html                 6.34 kB │ gzip: 2.35 kB
+Build	Build com identificação do commit	2026-11-24T03:03:13.4322084Z dist/assets/index-CTJeuZg3.css  7.84 kB │ gzip: 2.36 kB
+Build	Build com identificação do commit	2026-11-24T03:03:13.4322604Z dist/assets/index-DRRaIrwV.js   7.37 kB │ gzip: 2.96 kB
+Build	Build com identificação do commit	2026-11-24T03:03:13.4322866Z 
+Build	Build com identificação do commit	2026-11-24T03:03:13.4323960Z ^[[32m✓ built in 63ms^[[39m
+Build	Verificar arquivos e origem	﻿2026-11-24T03:03:13.4487226Z ##[group]Run test -s dist/index.html
+Build	Verificar arquivos e origem	2026-11-24T03:03:13.4487579Z ^[[36;1mtest -s dist/index.html^[[0m
+Build	Verificar arquivos e origem	2026-11-24T03:03:13.4487862Z ^[[36;1mtest -s dist/version.json^[[0m
+Build	Verificar arquivos e origem	2026-11-24T03:03:13.4488899Z ^[[36;1mnode --input-type=module -e "import fs from 'node:fs'; import assert from 'node:assert/strict'; assert.equal(JSON.parse(fs.readFileSync('dist/version.json')).commit, process.env.GITHUB_SHA)"^[[0m
+Build	Verificar arquivos e origem	2026-11-24T03:03:13.4489765Z ^[[36;1mcd dist && sha256sum index.html version.json assets/* > SHA256SUMS.txt^[[0m
+Build	Verificar arquivos e origem	2026-11-24T03:03:13.4510363Z shell: /usr/bin/bash -e {0}
+Build	Verificar arquivos e origem	2026-11-24T03:03:13.4510655Z ##[endgroup]
+Build	Run actions/upload-artifact@v7.0.2	﻿2026-11-24T03:03:13.4925767Z ##[group]Run actions/upload-artifact@v7.0.2
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.4926140Z with:
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.4926461Z   name: build-intermediario-e4e229bc9989aefc83fa4268c441075e5e2f53eb
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.4926869Z   path: dist/
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.4927082Z   if-no-files-found: error
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.4927323Z   retention-days: 90
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.4927549Z   compression-level: 6
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.4927763Z   overwrite: false
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.4927976Z   include-hidden-files: false
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.4928215Z   archive: true
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.4928425Z ##[endgroup]
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.6306452Z With the provided path, there will be 6 files uploaded
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.6307435Z Artifact name is valid!
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.6307973Z Root directory input is valid!
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.9358824Z Uploading artifact: build-intermediario-e4e229bc9989aefc83fa4268c441075e5e2f53eb.zip
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:13.9395170Z Beginning upload of artifact content to blob storage
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:14.1910354Z Uploaded bytes 8870
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:14.2515277Z Finished uploading artifact content to blob storage!
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:14.2516875Z SHA256 digest of uploaded artifact is f09c578bf9a3f6371ca5b1e71907ae06e9852d7f5d0e486ccbf56871691654a4
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:14.2517981Z Finalizing artifact upload
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:14.6914217Z Artifact build-intermediario-e4e229bc9989aefc83fa4268c441075e5e2f53eb successfully finalized. Artifact ID 14884494735
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:14.6916989Z Artifact build-intermediario-e4e229bc9989aefc83fa4268c441075e5e2f53eb has been successfully uploaded! Final size is 8870 bytes. Artifact ID is 14884494735
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T03:03:14.6919498Z Artifact download URL: https://github.com/EduardoCaversan/ecowatt/actions/runs/45316735655/artifacts/14884494735
+Build	Post Run actions/setup-node@v7.1.0	﻿2026-11-24T03:03:14.7071637Z Post job cleanup.
+Build	Post Run actions/setup-node@v7.1.0	2026-11-24T03:03:14.8167509Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-f9514a87c62d77623d2af9f139504470d5e264d79c04aeca77d8a37639718f9f, not saving cache.
+Build	Post Run actions/checkout@v7.0.1	﻿2026-11-24T03:03:14.8357040Z Post job cleanup.
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9216345Z [command]/usr/bin/git version
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9254837Z git version 2.56.1
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9287582Z Temporarily overriding HOME='/home/runner/work/_temp/bff2a8c3-5b8c-4762-a06e-f0f7bce40660' before making global git config changes
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9290323Z Adding repository directory to the temporary git global config as a safe directory
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9295190Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ecowatt/ecowatt
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9335796Z Removing SSH command configuration
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9341041Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9374606Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9706705Z Removing HTTP extra header
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9713221Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:14.9749674Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0024798Z Removing includeIf entries pointing to credentials config files
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0030439Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0056650Z includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0057870Z includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0059019Z includeif.gitdir:/github/workspace/.git.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0059985Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0067492Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0088030Z /home/runner/work/_temp/git-credentials-2f586c79-b2f7-495d-9984-f2922c716a3f.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0100975Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-2f586c79\-b2f7\-495d\-9984\-f2922c716a3f\.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0134778Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0163735Z /home/runner/work/_temp/git-credentials-2f586c79-b2f7-495d-9984-f2922c716a3f.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0172178Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-2f586c79\-b2f7\-495d\-9984\-f2922c716a3f\.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0199129Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0216870Z /github/runner_temp/git-credentials-2f586c79-b2f7-495d-9984-f2922c716a3f.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0224133Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-2f586c79\-b2f7\-495d\-9984\-f2922c716a3f\.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0250311Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0267389Z /github/runner_temp/git-credentials-2f586c79-b2f7-495d-9984-f2922c716a3f.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0274730Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-2f586c79\-b2f7\-495d\-9984\-f2922c716a3f\.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0302502Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:15.0511014Z Removing credentials config '/home/runner/work/_temp/git-credentials-2f586c79-b2f7-495d-9984-f2922c716a3f.config'
+Build	Complete job	﻿2026-11-24T03:03:15.0638152Z Cleaning up orphan processes
+Test	Set up job	﻿2026-11-24T03:03:20.7304374Z Current runner version: '2.338.2'
+Test	Set up job	2026-11-24T03:03:20.7329386Z ##[group]Runner Image Provisioner
+Test	Set up job	2026-11-24T03:03:20.7330296Z Hosted Compute Agent
+Test	Set up job	2026-11-24T03:03:20.7330872Z Version: 20261111.635
+Test	Set up job	2026-11-24T03:03:20.7331580Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Test	Set up job	2026-11-24T03:03:20.7332345Z Build Date: 2026-11-11T01:49:01Z
+Test	Set up job	2026-11-24T03:03:20.7333060Z Worker ID: {bad7a28a-bc40-44ab-84ca-55ed4b3f8a4d}
+Test	Set up job	2026-11-24T03:03:20.7333752Z Region: centralus
+Test	Set up job	2026-11-24T03:03:20.7334293Z Cloud: Azure
+Test	Set up job	2026-11-24T03:03:20.7334842Z ##[endgroup]
+Test	Set up job	2026-11-24T03:03:20.7336133Z ##[group]Operating System
+Test	Set up job	2026-11-24T03:03:20.7337105Z Ubuntu
+Test	Set up job	2026-11-24T03:03:20.7337661Z 26.04.1
+Test	Set up job	2026-11-24T03:03:20.7338177Z LTS
+Test	Set up job	2026-11-24T03:03:20.7338690Z ##[endgroup]
+Test	Set up job	2026-11-24T03:03:20.7339532Z ##[group]Runner Image
+Test	Set up job	2026-11-24T03:03:20.7340166Z Image: ubuntu-26.04
+Test	Set up job	2026-11-24T03:03:20.7340713Z Version: 20261116.202.1
+Test	Set up job	2026-11-24T03:03:20.7341759Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+Test	Set up job	2026-11-24T03:03:20.7343417Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+Test	Set up job	2026-11-24T03:03:20.7344374Z ##[endgroup]
+Test	Set up job	2026-11-24T03:03:20.7345440Z ##[group]GITHUB_TOKEN Permissions
+Test	Set up job	2026-11-24T03:03:20.7347502Z Contents: read
+Test	Set up job	2026-11-24T03:03:20.7348058Z Metadata: read
+Test	Set up job	2026-11-24T03:03:20.7348594Z ##[endgroup]
+Test	Set up job	2026-11-24T03:03:20.7351249Z Secret source: Actions
+Test	Set up job	2026-11-24T03:03:20.7352203Z Cache mode: write
+Test	Set up job	2026-11-24T03:03:20.7353090Z Prepare workflow directory
+Test	Set up job	2026-11-24T03:03:20.7680300Z Prepare all required actions
+Test	Set up job	2026-11-24T03:03:20.7733901Z Getting action download info
+Test	Set up job	2026-11-24T03:03:21.0243168Z Download action repository 'actions/checkout@v7.0.1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Test	Set up job	2026-11-24T03:03:21.1097591Z Download action repository 'actions/setup-node@v7.1.0' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+Test	Set up job	2026-11-24T03:03:21.2154643Z Download action repository 'actions/download-artifact@v8.0.2' (SHA:9000827ccba6bdab643e8b6fd33ac0654aef8333)
+Test	Set up job	2026-11-24T03:03:21.6646933Z Download action repository 'actions/upload-artifact@v7.0.2' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+Test	Set up job	2026-11-24T03:03:21.8707432Z Complete job name: Test
+Test	Run actions/checkout@v7.0.1	﻿2026-11-24T03:03:21.9484973Z ##[group]Run actions/checkout@v7.0.1
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9485856Z with:
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9486351Z   repository: EduardoCaversan/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9490388Z   token: ***
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9490939Z   ssh-strict: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9491433Z   ssh-user: git
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9491959Z   persist-credentials: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9492499Z   clean: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9492988Z   sparse-checkout-cone-mode: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9493621Z   fetch-depth: 1
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9494102Z   fetch-tags: false
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9494610Z   show-progress: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9495160Z   lfs: false
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9495608Z   submodules: false
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9496175Z   set-safe-directory: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9496732Z   allow-unsafe-pr-checkout: false
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:21.9497520Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1749690Z Syncing repository: EduardoCaversan/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1753211Z ##[group]Getting Git version info
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1754573Z Working directory is '/home/runner/work/ecowatt/ecowatt'
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1756856Z [command]/usr/bin/git version
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1757860Z git version 2.56.1
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1775619Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1792858Z Temporarily overriding HOME='/home/runner/work/_temp/05043d67-cf6c-41fb-b490-110594874863' before making global git config changes
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1796052Z Adding repository directory to the temporary git global config as a safe directory
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1798683Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ecowatt/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1853131Z Deleting the contents of '/home/runner/work/ecowatt/ecowatt'
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1858038Z ##[group]Determining repository object format
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1859902Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1861630Z ##[group]Initializing the repository
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1864524Z [command]/usr/bin/git init /home/runner/work/ecowatt/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1945598Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1949946Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1952203Z hint: to use in all of your new repositories, which will suppress this warning,
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1954616Z hint: call:
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1955613Z hint:
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1956535Z hint: 	git config --global init.defaultBranch <name>
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1957660Z hint:
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1958771Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1960737Z hint: 'development'. The just-created branch can be renamed via this command:
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1962132Z hint:
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1962901Z hint: 	git branch -m <name>
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1963803Z hint:
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1965051Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1966744Z Initialized empty Git repository in /home/runner/work/ecowatt/ecowatt/.git/
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.1969902Z [command]/usr/bin/git remote add origin https://github.com/EduardoCaversan/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2012538Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2014153Z ##[group]Disabling automatic garbage collection
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2015359Z [command]/usr/bin/git config --local gc.auto 0
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2046343Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2047965Z ##[group]Setting up auth
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2049322Z Removing SSH command configuration
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2055170Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2086918Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2424439Z Removing HTTP extra header
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2431892Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2462601Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2699564Z Removing includeIf entries pointing to credentials config files
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2703628Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2737619Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2952850Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-fbaae20e-5ea0-441c-9c8f-82f7b198074c.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.2985446Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path /home/runner/work/_temp/git-credentials-fbaae20e-5ea0-441c-9c8f-82f7b198074c.config
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.3012561Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-fbaae20e-5ea0-441c-9c8f-82f7b198074c.config
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.3042295Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-fbaae20e-5ea0-441c-9c8f-82f7b198074c.config
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.3068642Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-fbaae20e-5ea0-441c-9c8f-82f7b198074c.config
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.3094159Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.3095250Z ##[group]Fetching the repository
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.3099982Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e4e229bc9989aefc83fa4268c441075e5e2f53eb:refs/remotes/origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.5890284Z From https://github.com/EduardoCaversan/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.5892711Z  * [new ref]         e4e229bc9989aefc83fa4268c441075e5e2f53eb -> origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.5898701Z [command]/usr/bin/git branch --list --remote origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.5922547Z   origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.5929837Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.5950361Z e4e229bc9989aefc83fa4268c441075e5e2f53eb
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.5954668Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.5956710Z ##[group]Determining the checkout info
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.5959411Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.5961188Z [command]/usr/bin/git sparse-checkout disable
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.6018104Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.6047388Z ##[group]Checking out the ref
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.6050555Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.6106516Z Switched to a new branch 'main'
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.6112913Z branch 'main' set up to track 'origin/main'.
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.6117964Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.6151951Z [command]/usr/bin/git log -1 --format=%H
+Test	Run actions/checkout@v7.0.1	2026-11-24T03:03:22.6172385Z e4e229bc9989aefc83fa4268c441075e5e2f53eb
+Test	Run actions/setup-node@v7.1.0	﻿2026-11-24T03:03:22.6543570Z ##[group]Run actions/setup-node@v7.1.0
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:22.6544861Z with:
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:22.6545737Z   node-version: 22
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:22.6546671Z   cache: npm
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:22.6547651Z   check-latest: false
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:22.6557045Z   token: ***
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:22.6558035Z   package-manager-cache: true
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:22.6559208Z ##[endgroup]
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:22.8037846Z Found in cache @ /opt/hostedtoolcache/node/22.23.5/x64
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:22.8783374Z ##[group]Environment details
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:23.1806115Z node: v22.23.5
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:23.1807326Z npm: 10.9.9
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:23.1808189Z yarn: 1.22.22
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:23.1810591Z ##[endgroup]
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:23.1823186Z [command]/opt/hostedtoolcache/node/22.23.5/x64/bin/npm config get cache
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:23.2820377Z /home/runner/.npm
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:23.4494749Z Cache hit for: node-cache-Linux-x64-npm-f9514a87c62d77623d2af9f139504470d5e264d79c04aeca77d8a37639718f9f
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:24.2908395Z Received 32170837 of 32170837 (100.0%), 45.7 MBs/sec
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:24.2910538Z Cache Size: ~31 MB (32170837 B)
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:24.3029604Z [command]/usr/bin/tar -xf /home/runner/work/_temp/fd1fc631-e393-47f0-a63f-8c2aa3d5d1ce/cache.tzst -P -C /home/runner/work/ecowatt/ecowatt --use-compress-program unzstd
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:24.3472492Z Cache restored successfully
+Test	Run actions/setup-node@v7.1.0	2026-11-24T03:03:24.3493152Z Cache restored from key: node-cache-Linux-x64-npm-f9514a87c62d77623d2af9f139504470d5e264d79c04aeca77d8a37639718f9f
+Test	Run npm ci	﻿2026-11-24T03:03:24.3644852Z ##[group]Run npm ci
+Test	Run npm ci	2026-11-24T03:03:24.3645462Z ^[[36;1mnpm ci^[[0m
+Test	Run npm ci	2026-11-24T03:03:24.3778541Z shell: /usr/bin/bash -e {0}
+Test	Run npm ci	2026-11-24T03:03:24.3779135Z ##[endgroup]
+Test	Run npm ci	2026-11-24T03:03:25.5932435Z 
+Test	Run npm ci	2026-11-24T03:03:25.5941207Z added 40 packages, and audited 41 packages in 1s
+Test	Run npm ci	2026-11-24T03:03:25.5941947Z 
+Test	Run npm ci	2026-11-24T03:03:25.5942367Z 13 packages are looking for funding
+Test	Run npm ci	2026-11-24T03:03:25.5943028Z   run `npm fund` for details
+Test	Run npm ci	2026-11-24T03:03:25.5944938Z 
+Test	Run npm ci	2026-11-24T03:03:25.5945342Z found 0 vulnerabilities
+Test	Executar testes de regras e armazenamento	﻿2026-11-24T03:03:25.6232155Z ##[group]Run npm test
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:25.6232920Z ^[[36;1mnpm test^[[0m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:25.6256638Z shell: /usr/bin/bash -e {0}
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:25.6257072Z ##[endgroup]
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:25.7320489Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:25.7321427Z > ecowatt@1.0.0 test
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:25.7322059Z > vitest run
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:25.7322504Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.0607395Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.0610830Z ^[[1m^[[30m^[[46m RUN ^[[49m^[[39m^[[22m ^[[36mv5.1.1 ^[[39m^[[90m/home/runner/work/ecowatt/ecowatt^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.0611611Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.2412028Z  ^[[32m✓^[[39m tests/storage.test.js ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[32m 12^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3131995Z  ^[[31m❯^[[39m tests/energy.test.js ^[[2m(^[[22m^[[2m14 tests^[[22m^[[2m | ^[[22m^[[31m9 failed^[[39m^[[2m)^[[22m^[[32m 32^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3133367Z    ^[[31m❯^[[39m Regras energéticas ^[[2m(14)^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3134599Z ^[[31m     ^[[31m×^[[31m T01 calcula 180 kWh mensais no cenário A^[[39m^[[32m 12^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3135749Z ^[[31m     ^[[31m×^[[31m T02 converte 1000 W em 1 kW e aceita horas fracionárias^[[39m^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3136713Z ^[[31m     ^[[31m×^[[31m T03 calcula R$ 162,00 no cenário A^[[39m^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3137603Z ^[[31m     ^[[31m×^[[31m T04 considera três equipamentos iguais no cenário B^[[39m^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3138450Z ^[[31m     ^[[31m×^[[31m T05 soma consumo, custos e quantidades no cenário C^[[39m^[[32m 6^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3139401Z      ^[[32m✓^[[39m T06 identifica o maior consumidor e trata lista vazia^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3140149Z      ^[[32m✓^[[39m T07 rejeita nomes vazios ou longos^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3140914Z      ^[[32m✓^[[39m T08 rejeita potência não positiva, ausente ou não finita^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3141750Z ^[[31m     ^[[31m×^[[31m T09 valida o intervalo de horas (0, 24]^[[39m^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3142537Z      ^[[32m✓^[[39m T10 rejeita quantidade fracionária, não positiva ou insegura^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3143216Z      ^[[32m✓^[[39m T11 rejeita tarifa inválida^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3144057Z ^[[31m     ^[[31m×^[[31m T12 atualiza totais após excluir um grupo sem alterar a lista original^[[39m^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3144960Z ^[[31m     ^[[31m×^[[31m T13 recalcula custos ao alterar tarifa sem modificar o consumo^[[39m^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3145942Z ^[[31m     ^[[31m×^[[31m T14 rejeita overflow e underflow sem arredondar valores intermediários^[[39m^[[32m 1^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3184883Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3185852Z ^[[31m⎯⎯⎯⎯⎯⎯⎯^[[39m^[[1m^[[41m Failed Tests 9 ^[[49m^[[22m^[[31m⎯⎯⎯⎯⎯⎯⎯^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3186380Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3190009Z ^[[41m^[[1m FAIL ^[[22m^[[49m tests/energy.test.js^[[2m > ^[[22mRegras energéticas^[[2m > ^[[22mT01 calcula 180 kWh mensais no cenário A
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3194123Z ^[[31m^[[1mAssertionError^[[22m: expected 186 to be 180 // Object.is equality^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3194719Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3194995Z ^[[32m- Expected^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3195681Z ^[[31m+ Received^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3195847Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3196060Z ^[[32m- 180^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3196390Z ^[[31m+ 186^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3196620Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3196957Z ^[[36m ^[[2m❯^[[22m tests/energy.test.js:^[[2m8:86^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3224060Z     ^[[90m  6|^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3224907Z     ^[[90m  7|^[[39m ^[[34mdescribe^[[39m(^[[32m'Regras energéticas'^[[39m^[[33m,^[[39m () ^[[33m=>^[[39m {
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3225997Z     ^[[90m  8|^[[39m   it('T01 calcula 180 kWh mensais no cenário A', () => expect(monthlyC…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3227182Z     ^[[90m   |^[[39m                                                                                      ^[[31m^^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3228411Z     ^[[90m  9|^[[39m   ^[[34mit^[[39m(^[[32m'T02 converte 1000 W em 1 kW e aceita horas fracionárias'^[[39m^[[33m,^[[39m () ^[[33m=>^[[39m {
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3229744Z     ^[[90m 10|^[[39m     expect(monthlyConsumption({ ...a, powerWatts: 1000, dailyHours: 0.…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3230609Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3230968Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/9]⎯^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3231231Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3232006Z ^[[41m^[[1m FAIL ^[[22m^[[49m tests/energy.test.js^[[2m > ^[[22mRegras energéticas^[[2m > ^[[22mT02 converte 1000 W em 1 kW e aceita horas fracionárias
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3233385Z ^[[31m^[[1mAssertionError^[[22m: expected 15.5 to be 15 // Object.is equality^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3234000Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3234266Z ^[[32m- Expected^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3234658Z ^[[31m+ Received^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3234946Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3235601Z ^[[32m- 15^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3236185Z ^[[31m+ 15.5^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3236489Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3236824Z ^[[36m ^[[2m❯^[[22m tests/energy.test.js:^[[2m10:77^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3237902Z     ^[[90m  8|^[[39m   it('T01 calcula 180 kWh mensais no cenário A', () => expect(monthlyC…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3238896Z     ^[[90m  9|^[[39m   ^[[34mit^[[39m(^[[32m'T02 converte 1000 W em 1 kW e aceita horas fracionárias'^[[39m^[[33m,^[[39m () ^[[33m=>^[[39m {
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3240448Z     ^[[90m 10|^[[39m     expect(monthlyConsumption({ ...a, powerWatts: 1000, dailyHours: 0.…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3241586Z     ^[[90m   |^[[39m                                                                             ^[[31m^^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3242104Z     ^[[90m 11|^[[39m   })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3242891Z     ^[[90m 12|^[[39m   it('T03 calcula R$ 162,00 no cenário A', () => expect(monthlyCost(mo…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3243357Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3243783Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/9]⎯^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3244211Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3245033Z ^[[41m^[[1m FAIL ^[[22m^[[49m tests/energy.test.js^[[2m > ^[[22mRegras energéticas^[[2m > ^[[22mT03 calcula R$ 162,00 no cenário A
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3246250Z ^[[31m^[[1mAssertionError^[[22m: expected 167.4 to be 162 // Object.is equality^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3246825Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3247045Z ^[[32m- Expected^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3247610Z ^[[31m+ Received^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3247911Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3248213Z ^[[32m- 162^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3248756Z ^[[31m+ 167.4^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3249132Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3249593Z ^[[36m ^[[2m❯^[[22m tests/energy.test.js:^[[2m12:98^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3250745Z     ^[[90m 10|^[[39m     expect(monthlyConsumption({ ...a, powerWatts: 1000, dailyHours: 0.…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3251564Z     ^[[90m 11|^[[39m   })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3252291Z     ^[[90m 12|^[[39m   it('T03 calcula R$ 162,00 no cenário A', () => expect(monthlyCost(mo…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3253249Z     ^[[90m   |^[[39m                                                                                                  ^[[31m^^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3254371Z     ^[[90m 13|^[[39m   ^[[34mit^[[39m(^[[32m'T04 considera três equipamentos iguais no cenário B'^[[39m^[[33m,^[[39m () ^[[33m=>^[[39m {
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3255611Z     ^[[90m 14|^[[39m     ^[[34mexpect^[[39m(^[[34mmonthlyConsumption^[[39m(b))^[[33m.^[[39m^[[34mtoBe^[[39m(^[[34m45^[[39m)^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3256125Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3256525Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/9]⎯^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3256917Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3257544Z ^[[41m^[[1m FAIL ^[[22m^[[49m tests/energy.test.js^[[2m > ^[[22mRegras energéticas^[[2m > ^[[22mT04 considera três equipamentos iguais no cenário B
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3258391Z ^[[31m^[[1mAssertionError^[[22m: expected 46.5 to be 45 // Object.is equality^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3258744Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3258905Z ^[[32m- Expected^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3259684Z ^[[31m+ Received^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3259877Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3260095Z ^[[32m- 45^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3260431Z ^[[31m+ 46.5^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3260609Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3260956Z ^[[36m ^[[2m❯^[[22m tests/energy.test.js:^[[2m14:35^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3261562Z     ^[[90m 12|^[[39m   it('T03 calcula R$ 162,00 no cenário A', () => expect(monthlyCost(mo…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3262530Z     ^[[90m 13|^[[39m   ^[[34mit^[[39m(^[[32m'T04 considera três equipamentos iguais no cenário B'^[[39m^[[33m,^[[39m () ^[[33m=>^[[39m {
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3264115Z     ^[[90m 14|^[[39m     ^[[34mexpect^[[39m(^[[34mmonthlyConsumption^[[39m(b))^[[33m.^[[39m^[[34mtoBe^[[39m(^[[34m45^[[39m)^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3264785Z     ^[[90m   |^[[39m                                   ^[[31m^^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3265723Z     ^[[90m 15|^[[39m     ^[[34mexpect^[[39m(^[[34mmonthlyCost^[[39m(^[[34mmonthlyConsumption^[[39m(b)^[[33m,^[[39m ^[[34m0.9^[[39m))^[[33m.^[[39m^[[34mtoBe^[[39m(^[[34m40.5^[[39m)^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3266474Z     ^[[90m 16|^[[39m   })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3266927Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3267403Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/9]⎯^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3267720Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3268350Z ^[[41m^[[1m FAIL ^[[22m^[[49m tests/energy.test.js^[[2m > ^[[22mRegras energéticas^[[2m > ^[[22mT05 soma consumo, custos e quantidades no cenário C
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3269631Z ^[[31m^[[1mAssertionError^[[22m: expected { …(5) } to match object { consumption: 225, cost: 202.5, …(1) }
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3270332Z (9 matching properties omitted from actual)^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3270609Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3270802Z ^[[32m- Expected^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3271280Z ^[[31m+ Received^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3271446Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3271624Z ^[[2m  {^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3272008Z ^[[32m-   "consumption": 225,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3272457Z ^[[32m-   "cost": 202.5,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3272881Z ^[[31m+   "consumption": 232.5,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3273312Z ^[[31m+   "cost": 209.25,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3273689Z ^[[2m    "quantity": 4,^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3274093Z ^[[2m  }^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3274250Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3274556Z ^[[36m ^[[2m❯^[[22m tests/energy.test.js:^[[2m18:36^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3275019Z     ^[[90m 16|^[[39m   })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3275774Z     ^[[90m 17|^[[39m   ^[[34mit^[[39m(^[[32m'T05 soma consumo, custos e quantidades no cenário C'^[[39m^[[33m,^[[39m () ^[[33m=>^[[39m {
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3277018Z     ^[[90m 18|^[[39m     expect(summarize([a, b], 0.9)).toMatchObject({ consumption: 225, c…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3277684Z     ^[[90m   |^[[39m                                    ^[[31m^^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3278317Z     ^[[90m 19|^[[39m   })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3279220Z     ^[[90m 20|^[[39m   ^[[34mit^[[39m(^[[32m'T06 identifica o maior consumidor e trata lista vazia'^[[39m^[[33m,^[[39m () ^[[33m=>^[[39m {
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3279792Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3280106Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/9]⎯^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3280331Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3280898Z ^[[41m^[[1m FAIL ^[[22m^[[49m tests/energy.test.js^[[2m > ^[[22mRegras energéticas^[[2m > ^[[22mT09 valida o intervalo de horas (0, 24]
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3281805Z ^[[31m^[[1mAssertionError^[[22m: expected 1116 to be 1080 // Object.is equality^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3282149Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3282344Z ^[[32m- Expected^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3282760Z ^[[31m+ Received^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3282928Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3283110Z ^[[32m- 1080^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3283432Z ^[[31m+ 1116^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3283644Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3283972Z ^[[36m ^[[2m❯^[[22m tests/energy.test.js:^[[2m32:58^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3284640Z     ^[[90m 30|^[[39m   ^[[34mit^[[39m(^[[32m'T09 valida o intervalo de horas (0, 24]'^[[39m^[[33m,^[[39m () ^[[33m=>^[[39m {
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3285409Z     ^[[90m 31|^[[39m     for (const dailyHours of [0, -1, 24.1, Infinity, NaN]) expect(() =…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3286438Z     ^[[90m 32|^[[39m     ^[[34mexpect^[[39m(^[[34mmonthlyConsumption^[[39m({ ^[[33m...^[[39ma^[[33m,^[[39m dailyHours^[[33m:^[[39m ^[[34m24^[[39m }))^[[33m.^[[39m^[[34mtoBe^[[39m(^[[34m1080^[[39m)^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3287291Z     ^[[90m   |^[[39m                                                          ^[[31m^^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3287798Z     ^[[90m 33|^[[39m   })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3288402Z     ^[[90m 34|^[[39m   it('T10 rejeita quantidade fracionária, não positiva ou insegura', (…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3288765Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3289209Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/9]⎯^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3289663Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3290378Z ^[[41m^[[1m FAIL ^[[22m^[[49m tests/energy.test.js^[[2m > ^[[22mRegras energéticas^[[2m > ^[[22mT12 atualiza totais após excluir um grupo sem alterar a lista original
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3291533Z ^[[31m^[[1mAssertionError^[[22m: expected { items: [ { id: 'b', …(6) } ], …(4) } to match object { consumption: 45, cost: 40.5, …(1) }
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3292224Z (9 matching properties omitted from actual)^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3292483Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3292706Z ^[[32m- Expected^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3293057Z ^[[31m+ Received^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3293259Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3293384Z ^[[2m  {^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3293930Z ^[[32m-   "consumption": 45,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3294422Z ^[[32m-   "cost": 40.5,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3295409Z ^[[31m+   "consumption": 46.5,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3295861Z ^[[31m+   "cost": 41.85,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3296268Z ^[[2m    "quantity": 3,^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3296627Z ^[[2m  }^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3296815Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3297132Z ^[[36m ^[[2m❯^[[22m tests/energy.test.js:^[[2m42:61^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3297790Z     ^[[90m 40|^[[39m   it('T12 atualiza totais após excluir um grupo sem alterar a lista or…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3298459Z     ^[[90m 41|^[[39m     ^[[35mconst^[[39m equipment ^[[33m=^[[39m [a^[[33m,^[[39m b]^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3299398Z     ^[[90m 42|^[[39m     expect(summarize(removeEquipment(equipment, 'a'), 0.9)).toMatchObj…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3300072Z     ^[[90m   |^[[39m                                                             ^[[31m^^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3300803Z     ^[[90m 43|^[[39m     ^[[34mexpect^[[39m(equipment)^[[33m.^[[39m^[[34mtoHaveLength^[[39m(^[[34m2^[[39m)^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3301397Z     ^[[90m 44|^[[39m   })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3301628Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3301913Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/9]⎯^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3302172Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3302843Z ^[[41m^[[1m FAIL ^[[22m^[[49m tests/energy.test.js^[[2m > ^[[22mRegras energéticas^[[2m > ^[[22mT13 recalcula custos ao alterar tarifa sem modificar o consumo
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3303796Z ^[[31m^[[1mAssertionError^[[22m: expected { …(5) } to match object { consumption: 225, cost: 270 }
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3304436Z (10 matching properties omitted from actual)^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3304724Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3304920Z ^[[32m- Expected^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3305279Z ^[[31m+ Received^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3305505Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3305643Z ^[[2m  {^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3306051Z ^[[32m-   "consumption": 225,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3306449Z ^[[32m-   "cost": 270,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3306849Z ^[[31m+   "consumption": 232.5,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3307314Z ^[[31m+   "cost": 279,^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3307664Z ^[[2m  }^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3307842Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3308109Z ^[[36m ^[[2m❯^[[22m tests/energy.test.js:^[[2m46:36^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3308607Z     ^[[90m 44|^[[39m   })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3309264Z     ^[[90m 45|^[[39m   it('T13 recalcula custos ao alterar tarifa sem modificar o consumo',…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3310004Z     ^[[90m 46|^[[39m     expect(summarize([a, b], 1.2)).toMatchObject({ consumption: 225, c…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3310643Z     ^[[90m   |^[[39m                                    ^[[31m^^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3311071Z     ^[[90m 47|^[[39m   })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3311685Z     ^[[90m 48|^[[39m   it('T14 rejeita overflow e underflow sem arredondar valores intermed…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3312028Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3312318Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/9]⎯^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3312578Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3313251Z ^[[41m^[[1m FAIL ^[[22m^[[49m tests/energy.test.js^[[2m > ^[[22mRegras energéticas^[[2m > ^[[22mT14 rejeita overflow e underflow sem arredondar valores intermediários
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3314507Z ^[[31m^[[1mAssertionError^[[22m: expected 0.005580000000000001 to be close to 0.0054, received difference is 0.00018000000000000047, but expected 5e-13^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3315311Z ^[[36m ^[[2m❯^[[22m tests/energy.test.js:^[[2m54:49^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3316062Z     ^[[90m 52|^[[39m     expect(() => summarize([{ ...a, quantity: Number.MAX_SAFE_INTEGER …
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3317041Z     ^[[90m 53|^[[39m     ^[[35mconst^[[39m small ^[[33m=^[[39m { ^[[33m...^[[39ma^[[33m,^[[39m powerWatts^[[33m:^[[39m ^[[34m1^[[39m^[[33m,^[[39m dailyHours^[[33m:^[[39m ^[[34m0.1^[[39m }^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3317951Z     ^[[90m 54|^[[39m     expect(summarize([small, small], 0.9).cost).toBeCloseTo(0.0054, 12…
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3318604Z     ^[[90m   |^[[39m                                                 ^[[31m^^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3319364Z     ^[[90m 55|^[[39m   })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3319853Z     ^[[90m 56|^[[39m })^[[33m;^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3320170Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3320471Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/9]⎯^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3320709Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3320778Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3321226Z ^[[2m Test Files ^[[22m ^[[1m^[[31m1 failed^[[39m^[[22m^[[2m | ^[[22m^[[1m^[[32m1 passed^[[39m^[[22m^[[90m (2)^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3322040Z ^[[2m      Tests ^[[22m ^[[1m^[[31m9 failed^[[39m^[[22m^[[2m | ^[[22m^[[1m^[[32m10 passed^[[39m^[[22m^[[90m (19)^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3322698Z ^[[2m   Start at ^[[22m 03:03:26
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3323300Z ^[[2m   Duration ^[[22m 251ms^[[2m (transform 43%, tests 31%, import 20%, worker 5%)^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3323673Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3533297Z JSON report written to /home/runner/work/ecowatt/ecowatt/test-results/unit.json
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3604511Z JUNIT report written to /home/runner/work/ecowatt/ecowatt/test-results/unit.xml
+Test	Executar testes de regras e armazenamento	2026-11-24T03:03:26.3783460Z ##[error]Process completed with exit code 1.
+Test	Preservar resultados inclusive em caso de falha	﻿2026-11-24T03:03:26.3917828Z ##[group]Run actions/upload-artifact@v7.0.2
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.3918283Z with:
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.3918681Z   name: resultados-testes-e4e229bc9989aefc83fa4268c441075e5e2f53eb
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.3919374Z   path: test-results/
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.3919701Z   if-no-files-found: error
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.3920073Z   retention-days: 90
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.3920384Z   compression-level: 6
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.3921047Z   overwrite: false
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.3921433Z   include-hidden-files: false
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.3921788Z   archive: true
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.3922118Z ##[endgroup]
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.5289416Z With the provided path, there will be 2 files uploaded
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.5308772Z Artifact name is valid!
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.5309795Z Root directory input is valid!
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.8176751Z Uploading artifact: resultados-testes-e4e229bc9989aefc83fa4268c441075e5e2f53eb.zip
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:26.8226484Z Beginning upload of artifact content to blob storage
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:27.0230306Z Uploaded bytes 3718
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:27.0687857Z Finished uploading artifact content to blob storage!
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:27.0689751Z SHA256 digest of uploaded artifact is fd89b59ba272b2fbcf0b35296934faeb69935a7faeea3abb0046dfca7d1581cf
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:27.0690883Z Finalizing artifact upload
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:27.5103818Z Artifact resultados-testes-e4e229bc9989aefc83fa4268c441075e5e2f53eb successfully finalized. Artifact ID 14884619465
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:27.5105110Z Artifact resultados-testes-e4e229bc9989aefc83fa4268c441075e5e2f53eb has been successfully uploaded! Final size is 3718 bytes. Artifact ID is 14884619465
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T03:03:27.5107082Z Artifact download URL: https://github.com/EduardoCaversan/ecowatt/actions/runs/45316735655/artifacts/14884619465
+Test	Post Run actions/checkout@v7.0.1	﻿2026-11-24T03:03:27.5292920Z Post job cleanup.
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6127644Z [command]/usr/bin/git version
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6173267Z git version 2.56.1
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6213050Z Temporarily overriding HOME='/home/runner/work/_temp/faf27d4f-4380-4307-97d1-5d1ba4621fc0' before making global git config changes
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6214527Z Adding repository directory to the temporary git global config as a safe directory
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6218876Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ecowatt/ecowatt
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6251365Z Removing SSH command configuration
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6257913Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6298707Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6544041Z Removing HTTP extra header
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6548709Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6579999Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6804635Z Removing includeIf entries pointing to credentials config files
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6810556Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6830839Z includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6832394Z includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6833655Z includeif.gitdir:/github/workspace/.git.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6834908Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6837886Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6857272Z /home/runner/work/_temp/git-credentials-fbaae20e-5ea0-441c-9c8f-82f7b198074c.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6880886Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-fbaae20e\-5ea0\-441c\-9c8f\-82f7b198074c\.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6911228Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6942589Z /home/runner/work/_temp/git-credentials-fbaae20e-5ea0-441c-9c8f-82f7b198074c.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6953288Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-fbaae20e\-5ea0\-441c\-9c8f\-82f7b198074c\.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.6984737Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.7004203Z /github/runner_temp/git-credentials-fbaae20e-5ea0-441c-9c8f-82f7b198074c.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.7012310Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-fbaae20e\-5ea0\-441c\-9c8f\-82f7b198074c\.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.7042448Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.7061213Z /github/runner_temp/git-credentials-fbaae20e-5ea0-441c-9c8f-82f7b198074c.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.7068795Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-fbaae20e\-5ea0\-441c\-9c8f\-82f7b198074c\.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.7186922Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T03:03:27.7405597Z Removing credentials config '/home/runner/work/_temp/git-credentials-fbaae20e-5ea0-441c-9c8f-82f7b198074c.config'
+Test	Complete job	﻿2026-11-24T03:03:27.7543431Z Cleaning up orphan processes

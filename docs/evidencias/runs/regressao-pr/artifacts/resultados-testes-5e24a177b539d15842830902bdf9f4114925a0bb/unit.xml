@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="19" failures="9" errors="0" time="0.034470924">
+    <testsuite name="tests/energy.test.js" timestamp="2026-11-24T03:01:35.171Z" hostname="runnervm0hi8g" tests="14" failures="9" errors="0" skipped="0" time="0.025706505">
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T01 calcula 180 kWh mensais no cenário A" time="0.008863432">
+            <failure message="expected 186 to be 180 // Object.is equality" type="AssertionError">
+AssertionError: expected 186 to be 180 // Object.is equality
+
+- Expected
++ Received
+
+- 180
++ 186
+
+ ❯ tests/energy.test.js:8:86
+            </failure>
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T02 converte 1000 W em 1 kW e aceita horas fracionárias" time="0.000916075">
+            <failure message="expected 15.5 to be 15 // Object.is equality" type="AssertionError">
+AssertionError: expected 15.5 to be 15 // Object.is equality
+
+- Expected
++ Received
+
+- 15
++ 15.5
+
+ ❯ tests/energy.test.js:10:77
+            </failure>
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T03 calcula R$ 162,00 no cenário A" time="0.000773635">
+            <failure message="expected 167.4 to be 162 // Object.is equality" type="AssertionError">
+AssertionError: expected 167.4 to be 162 // Object.is equality
+
+- Expected
++ Received
+
+- 162
++ 167.4
+
+ ❯ tests/energy.test.js:12:98
+            </failure>
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T04 considera três equipamentos iguais no cenário B" time="0.000557999">
+            <failure message="expected 46.5 to be 45 // Object.is equality" type="AssertionError">
+AssertionError: expected 46.5 to be 45 // Object.is equality
+
+- Expected
++ Received
+
+- 45
++ 46.5
+
+ ❯ tests/energy.test.js:14:35
+            </failure>
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T05 soma consumo, custos e quantidades no cenário C" time="0.004585001">
+            <failure message="expected { …(5) } to match object { consumption: 225, cost: 202.5, …(1) }
+(9 matching properties omitted from actual)" type="AssertionError">
+AssertionError: expected { …(5) } to match object { consumption: 225, cost: 202.5, …(1) }
+(9 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+-   &quot;consumption&quot;: 225,
+-   &quot;cost&quot;: 202.5,
++   &quot;consumption&quot;: 232.5,
++   &quot;cost&quot;: 209.25,
+    &quot;quantity&quot;: 4,
+  }
+
+ ❯ tests/energy.test.js:18:36
+            </failure>
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T06 identifica o maior consumidor e trata lista vazia" time="0.000568266">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T07 rejeita nomes vazios ou longos" time="0.001482853">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T08 rejeita potência não positiva, ausente ou não finita" time="0.000763016">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T09 valida o intervalo de horas (0, 24]" time="0.001277455">
+            <failure message="expected 1116 to be 1080 // Object.is equality" type="AssertionError">
+AssertionError: expected 1116 to be 1080 // Object.is equality
+
+- Expected
++ Received
+
+- 1080
++ 1116
+
+ ❯ tests/energy.test.js:32:58
+            </failure>
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T10 rejeita quantidade fracionária, não positiva ou insegura" time="0.000556267">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T11 rejeita tarifa inválida" time="0.000518425">
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T12 atualiza totais após excluir um grupo sem alterar a lista original" time="0.000890774">
+            <failure message="expected { items: [ { id: &apos;b&apos;, …(6) } ], …(4) } to match object { consumption: 45, cost: 40.5, …(1) }
+(9 matching properties omitted from actual)" type="AssertionError">
+AssertionError: expected { items: [ { id: &apos;b&apos;, …(6) } ], …(4) } to match object { consumption: 45, cost: 40.5, …(1) }
+(9 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+-   &quot;consumption&quot;: 45,
+-   &quot;cost&quot;: 40.5,
++   &quot;consumption&quot;: 46.5,
++   &quot;cost&quot;: 41.85,
+    &quot;quantity&quot;: 3,
+  }
+
+ ❯ tests/energy.test.js:42:61
+            </failure>
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T13 recalcula custos ao alterar tarifa sem modificar o consumo" time="0.000849644">
+            <failure message="expected { …(5) } to match object { consumption: 225, cost: 270 }
+(10 matching properties omitted from actual)" type="AssertionError">
+AssertionError: expected { …(5) } to match object { consumption: 225, cost: 270 }
+(10 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+-   &quot;consumption&quot;: 225,
+-   &quot;cost&quot;: 270,
++   &quot;consumption&quot;: 232.5,
++   &quot;cost&quot;: 279,
+  }
+
+ ❯ tests/energy.test.js:46:36
+            </failure>
+        </testcase>
+        <testcase classname="tests/energy.test.js" name="Regras energéticas &gt; T14 rejeita overflow e underflow sem arredondar valores intermediários" time="0.000863518">
+            <failure message="expected 0.005580000000000001 to be close to 0.0054, received difference is 0.00018000000000000047, but expected 5e-13" type="AssertionError">
+AssertionError: expected 0.005580000000000001 to be close to 0.0054, received difference is 0.00018000000000000047, but expected 5e-13
+ ❯ tests/energy.test.js:54:49
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/storage.test.js" timestamp="2026-11-24T03:01:35.178Z" hostname="runnervm0hi8g" tests="5" failures="0" errors="0" skipped="0" time="0.008764419">
+        <testcase classname="tests/storage.test.js" name="T15 persiste e recupera equipamentos e tarifa" time="0.002747749">
+        </testcase>
+        <testcase classname="tests/storage.test.js" name="T16 inicializa armazenamento ausente com lista vazia e tarifa ilustrativa" time="0.000545318">
+        </testcase>
+        <testcase classname="tests/storage.test.js" name="T17 preserva JSON inválido, vazio e estruturas incompatíveis até descarte explícito" time="0.002869809">
+        </testcase>
+        <testcase classname="tests/storage.test.js" name="T18 comunica falhas de acesso e escrita sem fingir persistência" time="0.000866355">
+        </testcase>
+        <testcase classname="tests/storage.test.js" name="T19 impede gravação de equipamento inválido" time="0.000328022">
+        </testcase>
+    </testsuite>
+</testsuites>

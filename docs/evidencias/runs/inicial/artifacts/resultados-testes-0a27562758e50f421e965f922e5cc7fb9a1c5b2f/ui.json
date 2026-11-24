@@ -1,0 +1,357 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/22.23.5/x64/bin/node",
+      "/home/runner/work/ecowatt/ecowatt/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/runner/work/ecowatt/ecowatt/playwright.config.js",
+    "rootDir": "/home/runner/work/ecowatt/ecowatt/tests/ui",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/EduardoCaversan/ecowatt/commit/0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+        "commitHash": "0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+        "buildHref": "https://github.com/EduardoCaversan/ecowatt/actions/runs/45315409008"
+      },
+      "gitCommit": {
+        "shortHash": "0a27562",
+        "hash": "0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+        "subject": "Merge pull request #3 from EduardoCaversan/feature/ci-cd",
+        "body": "Merge pull request #3 from EduardoCaversan/feature/ci-cd\n\nci: automatizar build, testes, pacote e publicação no Pages",
+        "author": {
+          "name": "Eduardo Caversan da Silva Rocha",
+          "email": "104170972+EduardoCaversan@users.noreply.github.com",
+          "time": 1795488690000
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "time": 1795488690000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/ecowatt/ecowatt/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/EduardoCaversan/ecowatt/commit/0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+            "commitHash": "0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+            "buildHref": "https://github.com/EduardoCaversan/ecowatt/actions/runs/45315409008"
+          },
+          "gitCommit": {
+            "shortHash": "0a27562",
+            "hash": "0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+            "subject": "Merge pull request #3 from EduardoCaversan/feature/ci-cd",
+            "body": "Merge pull request #3 from EduardoCaversan/feature/ci-cd\n\nci: automatizar build, testes, pacote e publicação no Pages",
+            "author": {
+              "name": "Eduardo Caversan da Silva Rocha",
+              "email": "104170972+EduardoCaversan@users.noreply.github.com",
+              "time": 1795488690000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1795488690000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/runner/work/ecowatt/ecowatt/tests/ui",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/ecowatt/ecowatt/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/EduardoCaversan/ecowatt/commit/0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+            "commitHash": "0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+            "buildHref": "https://github.com/EduardoCaversan/ecowatt/actions/runs/45315409008"
+          },
+          "gitCommit": {
+            "shortHash": "0a27562",
+            "hash": "0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+            "subject": "Merge pull request #3 from EduardoCaversan/feature/ci-cd",
+            "body": "Merge pull request #3 from EduardoCaversan/feature/ci-cd\n\nci: automatizar build, testes, pacote e publicação no Pages",
+            "author": {
+              "name": "Eduardo Caversan da Silva Rocha",
+              "email": "104170972+EduardoCaversan@users.noreply.github.com",
+              "time": 1795488690000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1795488690000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/home/runner/work/ecowatt/ecowatt/tests/ui",
+        "snapshotDir": "/home/runner/work/ecowatt/ecowatt/tests/ui",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173/ecowatt/",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/ui.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/ui.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173/ecowatt/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "app.spec.js",
+      "file": "app.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "UI01 fluxo completo desktop, persistência, validações e versão",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 756,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T02:56:10.456Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-871b7ea7dcf919452fd0",
+          "file": "app.spec.js",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "UI02 fluxo completo mobile sem transbordamento de página",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 639,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T02:56:12.554Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-d495cb4f994adfc605be",
+          "file": "app.spec.js",
+          "line": 70,
+          "column": 1
+        },
+        {
+          "title": "UI03 protege dados corrompidos e renderiza texto sem executar HTML",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 321,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T02:56:13.199Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-f4b762cf95e653fbfe81",
+          "file": "app.spec.js",
+          "line": 74,
+          "column": 1
+        },
+        {
+          "title": "UI04 comunica acesso negado ao LocalStorage e permite sessão temporária",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 226,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T02:56:13.527Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-724f9e6606eb9a7fa876",
+          "file": "app.spec.js",
+          "line": 92,
+          "column": 1
+        },
+        {
+          "title": "UI05 comunica falha de escrita sem informar que salvou",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T02:56:13.760Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a510cc93a867214a2ea0-fa7f4420679ca7c57842",
+          "file": "app.spec.js",
+          "line": 100,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-24T02:56:09.738Z",
+    "duration": 4295.474,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

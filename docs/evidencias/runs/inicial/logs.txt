@@ -1,0 +1,919 @@
+Build	Set up job	﻿2026-11-24T02:51:37.6050716Z Current runner version: '2.338.2'
+Build	Set up job	2026-11-24T02:51:37.6073649Z ##[group]Runner Image Provisioner
+Build	Set up job	2026-11-24T02:51:37.6074380Z Hosted Compute Agent
+Build	Set up job	2026-11-24T02:51:37.6074893Z Version: 20261111.635
+Build	Set up job	2026-11-24T02:51:37.6075725Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Build	Set up job	2026-11-24T02:51:37.6076361Z Build Date: 2026-11-11T01:49:01Z
+Build	Set up job	2026-11-24T02:51:37.6077007Z Worker ID: {5ac29e3b-4d41-4afa-9ac0-b81bd69e7e6d}
+Build	Set up job	2026-11-24T02:51:37.6077637Z Region: westus3
+Build	Set up job	2026-11-24T02:51:37.6078080Z Cloud: Azure
+Build	Set up job	2026-11-24T02:51:37.6078600Z ##[endgroup]
+Build	Set up job	2026-11-24T02:51:37.6080155Z ##[group]Operating System
+Build	Set up job	2026-11-24T02:51:37.6080755Z Ubuntu
+Build	Set up job	2026-11-24T02:51:37.6081245Z 26.04.1
+Build	Set up job	2026-11-24T02:51:37.6081670Z LTS
+Build	Set up job	2026-11-24T02:51:37.6082489Z ##[endgroup]
+Build	Set up job	2026-11-24T02:51:37.6082962Z ##[group]Runner Image
+Build	Set up job	2026-11-24T02:51:37.6083511Z Image: ubuntu-26.04
+Build	Set up job	2026-11-24T02:51:37.6084041Z Version: 20261116.202.1
+Build	Set up job	2026-11-24T02:51:37.6084940Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+Build	Set up job	2026-11-24T02:51:37.6086765Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+Build	Set up job	2026-11-24T02:51:37.6087669Z ##[endgroup]
+Build	Set up job	2026-11-24T02:51:37.6088625Z ##[group]GITHUB_TOKEN Permissions
+Build	Set up job	2026-11-24T02:51:37.6090641Z Contents: read
+Build	Set up job	2026-11-24T02:51:37.6091163Z Metadata: read
+Build	Set up job	2026-11-24T02:51:37.6091626Z ##[endgroup]
+Build	Set up job	2026-11-24T02:51:37.6093562Z Secret source: Actions
+Build	Set up job	2026-11-24T02:51:37.6094364Z Cache mode: write
+Build	Set up job	2026-11-24T02:51:37.6095284Z Prepare workflow directory
+Build	Set up job	2026-11-24T02:51:37.6380610Z Prepare all required actions
+Build	Set up job	2026-11-24T02:51:37.6423190Z Getting action download info
+Build	Set up job	2026-11-24T02:51:37.9728037Z Download action repository 'actions/checkout@v7.0.1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Build	Set up job	2026-11-24T02:51:38.0449659Z Download action repository 'actions/setup-node@v7.1.0' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+Build	Set up job	2026-11-24T02:51:38.1138924Z Download action repository 'actions/upload-artifact@v7.0.2' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+Build	Set up job	2026-11-24T02:51:38.2524000Z Complete job name: Build
+Build	Run actions/checkout@v7.0.1	﻿2026-11-24T02:51:38.3000255Z ##[group]Run actions/checkout@v7.0.1
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3000675Z with:
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3000926Z   repository: EduardoCaversan/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3002811Z   token: ***
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3003039Z   ssh-strict: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3003272Z   ssh-user: git
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3003545Z   persist-credentials: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3003804Z   clean: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3004038Z   sparse-checkout-cone-mode: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3004310Z   fetch-depth: 1
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3004544Z   fetch-tags: false
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3004774Z   show-progress: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3005009Z   lfs: false
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3005232Z   submodules: false
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3005593Z   set-safe-directory: true
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3005860Z   allow-unsafe-pr-checkout: false
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.3006206Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5218813Z Syncing repository: EduardoCaversan/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5220063Z ##[group]Getting Git version info
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5220466Z Working directory is '/home/runner/work/ecowatt/ecowatt'
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5221060Z [command]/usr/bin/git version
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5238089Z git version 2.56.1
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5249394Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5256366Z Temporarily overriding HOME='/home/runner/work/_temp/728617a5-aa1c-4568-bc42-2561a3dc47e8' before making global git config changes
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5257740Z Adding repository directory to the temporary git global config as a safe directory
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5259837Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ecowatt/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5318441Z Deleting the contents of '/home/runner/work/ecowatt/ecowatt'
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5320337Z ##[group]Determining repository object format
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5321345Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5321774Z ##[group]Initializing the repository
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5324086Z [command]/usr/bin/git init /home/runner/work/ecowatt/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5415769Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5416553Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5417352Z hint: to use in all of your new repositories, which will suppress this warning,
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5417779Z hint: call:
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5418017Z hint:
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5418337Z hint: 	git config --global init.defaultBranch <name>
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5418690Z hint:
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5419023Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5419712Z hint: 'development'. The just-created branch can be renamed via this command:
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5420130Z hint:
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5420382Z hint: 	git branch -m <name>
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5420659Z hint:
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5421119Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5424072Z Initialized empty Git repository in /home/runner/work/ecowatt/ecowatt/.git/
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5432861Z [command]/usr/bin/git remote add origin https://github.com/EduardoCaversan/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5475847Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5476371Z ##[group]Disabling automatic garbage collection
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5477940Z [command]/usr/bin/git config --local gc.auto 0
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5506573Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5507617Z ##[group]Setting up auth
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5510419Z Removing SSH command configuration
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5511190Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5536738Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5900757Z Removing HTTP extra header
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5905340Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.5931419Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6129997Z Removing includeIf entries pointing to credentials config files
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6133486Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6163185Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6362687Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-79ca1c17-d2e9-4ce6-8302-22fecb68e6c7.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6391221Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path /home/runner/work/_temp/git-credentials-79ca1c17-d2e9-4ce6-8302-22fecb68e6c7.config
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6416255Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-79ca1c17-d2e9-4ce6-8302-22fecb68e6c7.config
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6444757Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-79ca1c17-d2e9-4ce6-8302-22fecb68e6c7.config
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6469049Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-79ca1c17-d2e9-4ce6-8302-22fecb68e6c7.config
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6496983Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6497680Z ##[group]Fetching the repository
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:38.6498467Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0a27562758e50f421e965f922e5cc7fb9a1c5b2f:refs/remotes/origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0336241Z From https://github.com/EduardoCaversan/ecowatt
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0337326Z  * [new ref]         0a27562758e50f421e965f922e5cc7fb9a1c5b2f -> origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0344983Z [command]/usr/bin/git branch --list --remote origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0366250Z   origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0371772Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0390525Z 0a27562758e50f421e965f922e5cc7fb9a1c5b2f
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0393372Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0394033Z ##[group]Determining the checkout info
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0394628Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0396402Z [command]/usr/bin/git sparse-checkout disable
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0471121Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0494717Z ##[group]Checking out the ref
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0497009Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0554058Z Switched to a new branch 'main'
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0558873Z branch 'main' set up to track 'origin/main'.
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0562763Z ##[endgroup]
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0597493Z [command]/usr/bin/git log -1 --format=%H
+Build	Run actions/checkout@v7.0.1	2026-11-24T02:51:39.0618346Z 0a27562758e50f421e965f922e5cc7fb9a1c5b2f
+Build	Run actions/setup-node@v7.1.0	﻿2026-11-24T02:51:39.0846294Z ##[group]Run actions/setup-node@v7.1.0
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.0846637Z with:
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.0846882Z   node-version: 22
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.0902767Z   cache: npm
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.0903183Z   check-latest: false
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.0906951Z   token: ***
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.0907439Z   package-manager-cache: true
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.0907942Z ##[endgroup]
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.1716867Z Found in cache @ /opt/hostedtoolcache/node/22.23.5/x64
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.2451715Z ##[group]Environment details
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.4704484Z node: v22.23.5
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.4705292Z npm: 10.9.9
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.4706022Z yarn: 1.22.22
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.4707555Z ##[endgroup]
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.4717505Z [command]/opt/hostedtoolcache/node/22.23.5/x64/bin/npm config get cache
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.5435823Z /home/runner/.npm
+Build	Run actions/setup-node@v7.1.0	2026-11-24T02:51:39.7650176Z npm cache is not found
+Build	Run npm ci	﻿2026-11-24T02:51:39.7790881Z ##[group]Run npm ci
+Build	Run npm ci	2026-11-24T02:51:39.7791574Z ^[[36;1mnpm ci^[[0m
+Build	Run npm ci	2026-11-24T02:51:39.7826514Z shell: /usr/bin/bash -e {0}
+Build	Run npm ci	2026-11-24T02:51:39.7827213Z ##[endgroup]
+Build	Run npm ci	2026-11-24T02:51:40.9296439Z 
+Build	Run npm ci	2026-11-24T02:51:40.9301517Z added 40 packages, and audited 41 packages in 1s
+Build	Run npm ci	2026-11-24T02:51:40.9301944Z 
+Build	Run npm ci	2026-11-24T02:51:40.9302132Z 13 packages are looking for funding
+Build	Run npm ci	2026-11-24T02:51:40.9302430Z   run `npm fund` for details
+Build	Run npm ci	2026-11-24T02:51:40.9302585Z 
+Build	Run npm ci	2026-11-24T02:51:40.9302694Z found 0 vulnerabilities
+Build	Build com identificação do commit	﻿2026-11-24T02:51:40.9680589Z ##[group]Run npm run build
+Build	Build com identificação do commit	2026-11-24T02:51:40.9680785Z ^[[36;1mnpm run build^[[0m
+Build	Build com identificação do commit	2026-11-24T02:51:40.9708224Z shell: /usr/bin/bash -e {0}
+Build	Build com identificação do commit	2026-11-24T02:51:40.9708392Z ##[endgroup]
+Build	Build com identificação do commit	2026-11-24T02:51:41.0316820Z 
+Build	Build com identificação do commit	2026-11-24T02:51:41.0317288Z > ecowatt@1.0.0 build
+Build	Build com identificação do commit	2026-11-24T02:51:41.0317664Z > node scripts/generate-version.js && vite build
+Build	Build com identificação do commit	2026-11-24T02:51:41.0317876Z 
+Build	Build com identificação do commit	2026-11-24T02:51:41.0540284Z EcoWatt v1.0.0 · 0a27562
+Build	Build com identificação do commit	2026-11-24T02:51:41.1822150Z ^[[36mvite v8.3.8 ^[[32mbuilding client environment for production...^[[36m^[[39m
+Build	Build com identificação do commit	2026-11-24T02:51:41.1900331Z transforming...
+Build	Build com identificação do commit	2026-11-24T02:51:41.2137602Z ✓ 7 modules transformed.
+Build	Build com identificação do commit	2026-11-24T02:51:41.2211118Z rendering chunks...
+Build	Build com identificação do commit	2026-11-24T02:51:41.2247273Z computing gzip size...
+Build	Build com identificação do commit	2026-11-24T02:51:41.2252397Z dist/index.html                 6.34 kB │ gzip: 2.35 kB
+Build	Build com identificação do commit	2026-11-24T02:51:41.2252911Z dist/assets/index-CTJeuZg3.css  7.84 kB │ gzip: 2.36 kB
+Build	Build com identificação do commit	2026-11-24T02:51:41.2253356Z dist/assets/index-BgWlF-To.js   7.37 kB │ gzip: 2.96 kB
+Build	Build com identificação do commit	2026-11-24T02:51:41.2253582Z 
+Build	Build com identificação do commit	2026-11-24T02:51:41.2255080Z ^[[32m✓ built in 43ms^[[39m
+Build	Verificar arquivos e origem	﻿2026-11-24T02:51:41.2439494Z ##[group]Run test -s dist/index.html
+Build	Verificar arquivos e origem	2026-11-24T02:51:41.2439701Z ^[[36;1mtest -s dist/index.html^[[0m
+Build	Verificar arquivos e origem	2026-11-24T02:51:41.2439855Z ^[[36;1mtest -s dist/version.json^[[0m
+Build	Verificar arquivos e origem	2026-11-24T02:51:41.2440302Z ^[[36;1mnode --input-type=module -e "import fs from 'node:fs'; import assert from 'node:assert/strict'; assert.equal(JSON.parse(fs.readFileSync('dist/version.json')).commit, process.env.GITHUB_SHA)"^[[0m
+Build	Verificar arquivos e origem	2026-11-24T02:51:41.2440967Z ^[[36;1mcd dist && sha256sum index.html version.json assets/* > SHA256SUMS.txt^[[0m
+Build	Verificar arquivos e origem	2026-11-24T02:51:41.2468258Z shell: /usr/bin/bash -e {0}
+Build	Verificar arquivos e origem	2026-11-24T02:51:41.2468413Z ##[endgroup]
+Build	Run actions/upload-artifact@v7.0.2	﻿2026-11-24T02:51:41.2783345Z ##[group]Run actions/upload-artifact@v7.0.2
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.2783528Z with:
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.2783707Z   name: build-intermediario-0a27562758e50f421e965f922e5cc7fb9a1c5b2f
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.2783943Z   path: dist/
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.2784062Z   if-no-files-found: error
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.2784193Z   retention-days: 90
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.2784317Z   compression-level: 6
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.2784442Z   overwrite: false
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.2784565Z   include-hidden-files: false
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.2784697Z   archive: true
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.2784811Z ##[endgroup]
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.3692418Z With the provided path, there will be 6 files uploaded
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.3693156Z Artifact name is valid!
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.3693491Z Root directory input is valid!
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.7238971Z Uploading artifact: build-intermediario-0a27562758e50f421e965f922e5cc7fb9a1c5b2f.zip
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.7263389Z Beginning upload of artifact content to blob storage
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:41.9754450Z Uploaded bytes 8870
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:42.0360645Z Finished uploading artifact content to blob storage!
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:42.0361593Z SHA256 digest of uploaded artifact is 9280c1d3e0c75cc6e73ea3e2832c1db3278a38034c85b237442ea357e1563303
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:42.0362229Z Finalizing artifact upload
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:42.4957514Z Artifact build-intermediario-0a27562758e50f421e965f922e5cc7fb9a1c5b2f successfully finalized. Artifact ID 14885455499
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:42.4958612Z Artifact build-intermediario-0a27562758e50f421e965f922e5cc7fb9a1c5b2f has been successfully uploaded! Final size is 8870 bytes. Artifact ID is 14885455499
+Build	Run actions/upload-artifact@v7.0.2	2026-11-24T02:51:42.4960808Z Artifact download URL: https://github.com/EduardoCaversan/ecowatt/actions/runs/45315409008/artifacts/14885455499
+Build	Post Run actions/setup-node@v7.1.0	﻿2026-11-24T02:51:42.5094049Z Post job cleanup.
+Build	Post Run actions/setup-node@v7.1.0	2026-11-24T02:51:42.5898608Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ecowatt/ecowatt --files-from manifest.txt --use-compress-program zstdmt
+Build	Post Run actions/setup-node@v7.1.0	2026-11-24T02:51:43.8420813Z Sent 32170837 of 32170837 (100.0%), 30.7 MBs/sec
+Build	Post Run actions/setup-node@v7.1.0	2026-11-24T02:51:44.1570116Z Cache saved with the key: node-cache-Linux-x64-npm-f9514a87c62d77623d2af9f139504470d5e264d79c04aeca77d8a37639718f9f
+Build	Post Run actions/checkout@v7.0.1	﻿2026-11-24T02:51:44.1703466Z Post job cleanup.
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2268134Z [command]/usr/bin/git version
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2301262Z git version 2.56.1
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2323692Z Temporarily overriding HOME='/home/runner/work/_temp/4b3e814f-ccae-4edb-93db-031c488c6c71' before making global git config changes
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2324390Z Adding repository directory to the temporary git global config as a safe directory
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2327034Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ecowatt/ecowatt
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2356663Z Removing SSH command configuration
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2360628Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2388368Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2621682Z Removing HTTP extra header
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2626766Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2667905Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2889384Z Removing includeIf entries pointing to credentials config files
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2894269Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2914760Z includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2915264Z includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2915995Z includeif.gitdir:/github/workspace/.git.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2916232Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2920771Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2939022Z /home/runner/work/_temp/git-credentials-79ca1c17-d2e9-4ce6-8302-22fecb68e6c7.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2945890Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-79ca1c17\-d2e9\-4ce6\-8302\-22fecb68e6c7\.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2972765Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.2996600Z /home/runner/work/_temp/git-credentials-79ca1c17-d2e9-4ce6-8302-22fecb68e6c7.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.3002173Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-79ca1c17\-d2e9\-4ce6\-8302\-22fecb68e6c7\.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.3027555Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.3044843Z /github/runner_temp/git-credentials-79ca1c17-d2e9-4ce6-8302-22fecb68e6c7.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.3049707Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-79ca1c17\-d2e9\-4ce6\-8302\-22fecb68e6c7\.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.3074411Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.3091980Z /github/runner_temp/git-credentials-79ca1c17-d2e9-4ce6-8302-22fecb68e6c7.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.3096853Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-79ca1c17\-d2e9\-4ce6\-8302\-22fecb68e6c7\.config
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.3122329Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build	Post Run actions/checkout@v7.0.1	2026-11-24T02:51:44.3318828Z Removing credentials config '/home/runner/work/_temp/git-credentials-79ca1c17-d2e9-4ce6-8302-22fecb68e6c7.config'
+Build	Complete job	﻿2026-11-24T02:51:44.3433424Z Cleaning up orphan processes
+Test	Set up job	﻿2026-11-24T02:51:49.2653377Z Current runner version: '2.338.2'
+Test	Set up job	2026-11-24T02:51:49.2673244Z ##[group]Runner Image Provisioner
+Test	Set up job	2026-11-24T02:51:49.2673995Z Hosted Compute Agent
+Test	Set up job	2026-11-24T02:51:49.2674473Z Version: 20261111.635
+Test	Set up job	2026-11-24T02:51:49.2674957Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Test	Set up job	2026-11-24T02:51:49.2675732Z Build Date: 2026-11-11T01:49:01Z
+Test	Set up job	2026-11-24T02:51:49.2676263Z Worker ID: {d649dac6-4fd4-4872-a91c-1fea069905fa}
+Test	Set up job	2026-11-24T02:51:49.2676790Z Region: us-east-1
+Test	Set up job	2026-11-24T02:51:49.2677203Z Cloud: AWS
+Test	Set up job	2026-11-24T02:51:49.2677647Z ##[endgroup]
+Test	Set up job	2026-11-24T02:51:49.2678661Z ##[group]Operating System
+Test	Set up job	2026-11-24T02:51:49.2679133Z Ubuntu
+Test	Set up job	2026-11-24T02:51:49.2679559Z 26.04.1
+Test	Set up job	2026-11-24T02:51:49.2679935Z LTS
+Test	Set up job	2026-11-24T02:51:49.2680338Z ##[endgroup]
+Test	Set up job	2026-11-24T02:51:49.2680755Z ##[group]Runner Image
+Test	Set up job	2026-11-24T02:51:49.2681220Z Image: ubuntu-26.04
+Test	Set up job	2026-11-24T02:51:49.2681633Z Version: 20261116.88.1
+Test	Set up job	2026-11-24T02:51:49.2682441Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.88/images/ubuntu/Ubuntu2604-Readme.md
+Test	Set up job	2026-11-24T02:51:49.2683884Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.88
+Test	Set up job	2026-11-24T02:51:49.2684619Z ##[endgroup]
+Test	Set up job	2026-11-24T02:51:49.2685434Z ##[group]GITHUB_TOKEN Permissions
+Test	Set up job	2026-11-24T02:51:49.2687240Z Contents: read
+Test	Set up job	2026-11-24T02:51:49.2687706Z Metadata: read
+Test	Set up job	2026-11-24T02:51:49.2688126Z ##[endgroup]
+Test	Set up job	2026-11-24T02:51:49.2689730Z Secret source: Actions
+Test	Set up job	2026-11-24T02:51:49.2690456Z Cache mode: write
+Test	Set up job	2026-11-24T02:51:49.2691091Z Prepare workflow directory
+Test	Set up job	2026-11-24T02:51:49.3004259Z Prepare all required actions
+Test	Set up job	2026-11-24T02:51:49.3057808Z Getting action download info
+Test	Set up job	2026-11-24T02:51:49.4807224Z Download action repository 'actions/checkout@v7.0.1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Test	Set up job	2026-11-24T02:51:51.0191913Z Download action repository 'actions/setup-node@v7.1.0' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+Test	Set up job	2026-11-24T02:51:51.1641418Z Download action repository 'actions/download-artifact@v8.0.2' (SHA:9000827ccba6bdab643e8b6fd33ac0654aef8333)
+Test	Set up job	2026-11-24T02:51:51.2854636Z Download action repository 'actions/upload-artifact@v7.0.2' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+Test	Set up job	2026-11-24T02:51:51.5433771Z Complete job name: Test
+Test	Run actions/checkout@v7.0.1	﻿2026-11-24T02:51:51.6197724Z ##[group]Run actions/checkout@v7.0.1
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6198925Z with:
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6199620Z   repository: EduardoCaversan/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6206507Z   token: ***
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6207192Z   ssh-strict: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6207886Z   ssh-user: git
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6208618Z   persist-credentials: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6209376Z   clean: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6210074Z   sparse-checkout-cone-mode: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6210886Z   fetch-depth: 1
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6211567Z   fetch-tags: false
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6212492Z   show-progress: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6213412Z   lfs: false
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6214059Z   submodules: false
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6214783Z   set-safe-directory: true
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6215599Z   allow-unsafe-pr-checkout: false
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:51.6216688Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6166320Z Syncing repository: EduardoCaversan/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6168238Z ##[group]Getting Git version info
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6168913Z Working directory is '/home/runner/work/ecowatt/ecowatt'
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6170016Z [command]/usr/bin/git version
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6178597Z git version 2.56.1
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6192977Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6201421Z Temporarily overriding HOME='/home/runner/work/_temp/7834ffb6-3a3a-4e34-b4a3-dad79a474a85' before making global git config changes
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6202473Z Adding repository directory to the temporary git global config as a safe directory
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6206428Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ecowatt/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6577011Z Deleting the contents of '/home/runner/work/ecowatt/ecowatt'
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6578463Z ##[group]Determining repository object format
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6579208Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6580111Z ##[group]Initializing the repository
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.6580549Z [command]/usr/bin/git init /home/runner/work/ecowatt/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7070487Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7071519Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7072003Z hint: to use in all of your new repositories, which will suppress this warning,
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7072578Z hint: call:
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7073349Z hint:
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7073737Z hint: 	git config --global init.defaultBranch <name>
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7074091Z hint:
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7074433Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7074895Z hint: 'development'. The just-created branch can be renamed via this command:
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7075338Z hint:
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7075600Z hint: 	git branch -m <name>
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7076017Z hint:
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7076528Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7092261Z Initialized empty Git repository in /home/runner/work/ecowatt/ecowatt/.git/
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7100736Z [command]/usr/bin/git remote add origin https://github.com/EduardoCaversan/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7159167Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7159910Z ##[group]Disabling automatic garbage collection
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7161937Z [command]/usr/bin/git config --local gc.auto 0
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7183433Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7184149Z ##[group]Setting up auth
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7184562Z Removing SSH command configuration
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7188031Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:54.7210094Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0210958Z Removing HTTP extra header
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0215769Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0238498Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0417833Z Removing includeIf entries pointing to credentials config files
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0421278Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0448516Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0628603Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-6974e726-2e2d-4970-96cb-aeb27d3c2ca4.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0656653Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path /home/runner/work/_temp/git-credentials-6974e726-2e2d-4970-96cb-aeb27d3c2ca4.config
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0677735Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-6974e726-2e2d-4970-96cb-aeb27d3c2ca4.config
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0701822Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-6974e726-2e2d-4970-96cb-aeb27d3c2ca4.config
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0721102Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-6974e726-2e2d-4970-96cb-aeb27d3c2ca4.config
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0738933Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0739429Z ##[group]Fetching the repository
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.0744342Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0a27562758e50f421e965f922e5cc7fb9a1c5b2f:refs/remotes/origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3544817Z From https://github.com/EduardoCaversan/ecowatt
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3545367Z  * [new ref]         0a27562758e50f421e965f922e5cc7fb9a1c5b2f -> origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3551953Z [command]/usr/bin/git branch --list --remote origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3571937Z   origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3579205Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3592090Z 0a27562758e50f421e965f922e5cc7fb9a1c5b2f
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3594420Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3594838Z ##[group]Determining the checkout info
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3595274Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3598647Z [command]/usr/bin/git sparse-checkout disable
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3647739Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3667881Z ##[group]Checking out the ref
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3670791Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3742455Z Switched to a new branch 'main'
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3749945Z branch 'main' set up to track 'origin/main'.
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3753761Z ##[endgroup]
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3793909Z [command]/usr/bin/git log -1 --format=%H
+Test	Run actions/checkout@v7.0.1	2026-11-24T02:51:55.3811627Z 0a27562758e50f421e965f922e5cc7fb9a1c5b2f
+Test	Run actions/setup-node@v7.1.0	﻿2026-11-24T02:51:55.4020909Z ##[group]Run actions/setup-node@v7.1.0
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:55.4021212Z with:
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:55.4021428Z   node-version: 22
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:55.4021707Z   cache: npm
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:55.4021916Z   check-latest: false
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:55.4024075Z   token: ***
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:55.4024320Z   package-manager-cache: true
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:55.4024567Z ##[endgroup]
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:55.5637068Z Found in cache @ /opt/hostedtoolcache/node/22.23.5/x64
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:57.1838206Z ##[group]Environment details
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:59.2621629Z node: v22.23.5
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:59.2622582Z npm: 10.9.9
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:59.2623658Z yarn: 1.22.22
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:59.2624362Z ##[endgroup]
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:59.2634485Z [command]/opt/hostedtoolcache/node/22.23.5/x64/bin/npm config get cache
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:59.6460083Z /home/runner/.npm
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:51:59.7604076Z Cache hit for: node-cache-Linux-x64-npm-f9514a87c62d77623d2af9f139504470d5e264d79c04aeca77d8a37639718f9f
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:52:00.2442570Z Received 32170837 of 32170837 (100.0%), 72.2 MBs/sec
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:52:00.2443859Z Cache Size: ~31 MB (32170837 B)
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:52:00.2460459Z [command]/usr/bin/tar -xf /home/runner/work/_temp/5504a689-f24e-45c8-a73d-56f65771e44d/cache.tzst -P -C /home/runner/work/ecowatt/ecowatt --use-compress-program unzstd
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:52:00.2732048Z Cache restored successfully
+Test	Run actions/setup-node@v7.1.0	2026-11-24T02:52:00.2745067Z Cache restored from key: node-cache-Linux-x64-npm-f9514a87c62d77623d2af9f139504470d5e264d79c04aeca77d8a37639718f9f
+Test	Run npm ci	﻿2026-11-24T02:52:00.3545358Z ##[group]Run npm ci
+Test	Run npm ci	2026-11-24T02:52:00.3545699Z ^[[36;1mnpm ci^[[0m
+Test	Run npm ci	2026-11-24T02:52:00.3576596Z shell: /usr/bin/bash -e {0}
+Test	Run npm ci	2026-11-24T02:52:00.3576988Z ##[endgroup]
+Test	Run npm ci	2026-11-24T02:52:02.0545492Z 
+Test	Run npm ci	2026-11-24T02:52:02.0554145Z added 40 packages, and audited 41 packages in 2s
+Test	Run npm ci	2026-11-24T02:52:02.0554638Z 
+Test	Run npm ci	2026-11-24T02:52:02.0554945Z 13 packages are looking for funding
+Test	Run npm ci	2026-11-24T02:52:02.0555598Z   run `npm fund` for details
+Test	Run npm ci	2026-11-24T02:52:02.0555822Z 
+Test	Run npm ci	2026-11-24T02:52:02.0555998Z found 0 vulnerabilities
+Test	Executar testes de regras e armazenamento	﻿2026-11-24T02:52:02.0777603Z ##[group]Run npm test
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.0777894Z ^[[36;1mnpm test^[[0m
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.0796091Z shell: /usr/bin/bash -e {0}
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.0796434Z ##[endgroup]
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.1525057Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.1525695Z > ecowatt@1.0.0 test
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.1526079Z > vitest run
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.1526416Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.4329624Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.4332314Z ^[[1m^[[30m^[[46m RUN ^[[49m^[[39m^[[22m ^[[36mv5.1.1 ^[[39m^[[90m/home/runner/work/ecowatt/ecowatt^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.4333130Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.5757280Z  ^[[32m✓^[[39m tests/energy.test.js ^[[2m(^[[22m^[[2m14 tests^[[22m^[[2m)^[[22m^[[32m 11^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.5762336Z  ^[[32m✓^[[39m tests/storage.test.js ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[32m 9^[[2mms^[[22m^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.5814813Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.5818020Z ^[[2m Test Files ^[[22m ^[[1m^[[32m2 passed^[[39m^[[22m^[[90m (2)^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.5818903Z ^[[2m      Tests ^[[22m ^[[1m^[[32m19 passed^[[39m^[[22m^[[90m (19)^[[39m
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.5819567Z ^[[2m   Start at ^[[22m 02:52:02
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.5823133Z ^[[2m   Duration ^[[22m 144ms^[[2m (transform 54%, tests 21%, import 20%, worker 6%)^[[22m
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.5830144Z 
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.9566930Z JSON report written to /home/runner/work/ecowatt/ecowatt/test-results/unit.json
+Test	Executar testes de regras e armazenamento	2026-11-24T02:52:02.9589523Z JUNIT report written to /home/runner/work/ecowatt/ecowatt/test-results/unit.xml
+Test	Run actions/download-artifact@v8.0.2	﻿2026-11-24T02:52:02.9820796Z ##[group]Run actions/download-artifact@v8.0.2
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:02.9821113Z with:
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:02.9821424Z   name: build-intermediario-0a27562758e50f421e965f922e5cc7fb9a1c5b2f
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:02.9821785Z   path: dist/
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:02.9822022Z   merge-multiple: false
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:02.9822280Z   repository: EduardoCaversan/ecowatt
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:02.9822560Z   run-id: 45315409008
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:02.9823106Z   skip-decompress: false
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:02.9823356Z   digest-mismatch: error
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:02.9823832Z ##[endgroup]
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.0905585Z Downloading single artifact
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.1656080Z Preparing to download the following artifacts:
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.1657665Z - build-intermediario-0a27562758e50f421e965f922e5cc7fb9a1c5b2f (ID: 14885455499, Size: 8870, Expected Digest: sha256:9280c1d3e0c75cc6e73ea3e2832c1db3278a38034c85b237442ea357e1563303)
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.3049336Z Redirecting to blob download url: https://productionresultssa2.blob.core.windows.net/actions-results/a8622684-766c-8e74-b395-72571f7d7d57/workflow-job-run-16c1f702-e81b-5c08-b6ac-022176909e23/artifacts/759fdaaf7ffca9128bce01360cbe229badad5d656eb61655794e302b66ec48ba.zip
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.3050869Z Starting download of artifact to: /home/runner/work/ecowatt/ecowatt/dist
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.3356005Z (node:2472) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.3357589Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.3414376Z SHA256 digest of downloaded artifact is 9280c1d3e0c75cc6e73ea3e2832c1db3278a38034c85b237442ea357e1563303
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.3415167Z Artifact download completed successfully.
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.3415695Z Total of 1 artifact(s) downloaded
+Test	Run actions/download-artifact@v8.0.2	2026-11-24T02:52:03.3417960Z Download artifact has finished successfully
+Test	Conferir integridade do build	﻿2026-11-24T02:52:03.3494598Z ##[group]Run cd dist && sha256sum --check SHA256SUMS.txt
+Test	Conferir integridade do build	2026-11-24T02:52:03.3495016Z ^[[36;1mcd dist && sha256sum --check SHA256SUMS.txt^[[0m
+Test	Conferir integridade do build	2026-11-24T02:52:03.3512500Z shell: /usr/bin/bash -e {0}
+Test	Conferir integridade do build	2026-11-24T02:52:03.3513179Z ##[endgroup]
+Test	Conferir integridade do build	2026-11-24T02:52:03.3583807Z index.html: OK
+Test	Conferir integridade do build	2026-11-24T02:52:03.3584335Z version.json: OK
+Test	Conferir integridade do build	2026-11-24T02:52:03.3584807Z assets/index-BgWlF-To.js: OK
+Test	Conferir integridade do build	2026-11-24T02:52:03.3585228Z assets/index-CTJeuZg3.css: OK
+Test	Run npx playwright install --with-deps chromium	﻿2026-11-24T02:52:03.3612539Z ##[group]Run npx playwright install --with-deps chromium
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:03.3613387Z ^[[36;1mnpx playwright install --with-deps chromium^[[0m
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:03.3628764Z shell: /usr/bin/bash -e {0}
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:03.3629050Z ##[endgroup]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:03.8691379Z Installing dependencies...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:03.8789820Z Switching to root user to install dependencies...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:03.9804601Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [152 B]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:04.0188617Z Get:6 https://packages.microsoft.com/ubuntu/26.04/prod resolute InRelease [3964 B]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:04.0750052Z Get:7 https://packages.microsoft.com/ubuntu/26.04/prod resolute/main arm64 Packages [173 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:04.0914277Z Get:8 https://packages.microsoft.com/ubuntu/26.04/prod resolute/main amd64 Packages [186 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:12.5401632Z Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute InRelease
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:18.1939052Z Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:18.3942112Z Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:18.6131120Z Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:18.7353418Z Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/main amd64v3 Packages [914 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:18.8317109Z Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [201 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:18.8949184Z Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/universe amd64v3 Packages [394 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:21.0048684Z Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [124 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:36.1605989Z Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/restricted amd64v3 Packages [640 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:36.7098731Z Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [132 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:37.2650690Z Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/main amd64v3 Packages [753 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:38.1010819Z Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/main Translation-en [162 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:45.2766468Z Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/universe amd64v3 Packages [224 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:46.0127366Z Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/universe Translation-en [73.2 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:52:48.6130552Z Get:19 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/restricted amd64v3 Packages [618 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:03.7902611Z Get:20 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute-security/restricted Translation-en [128 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:06.9000503Z Fetched 5139 kB in 60s (85.8 kB/s)
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.4756872Z Reading package lists...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.4977048Z Reading package lists...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6193641Z Building dependency tree...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6198988Z Reading state information...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6482296Z libasound2t64 is already the newest version (1.2.15.3-1ubuntu1.1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6483361Z libasound2t64 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6483960Z libatk-bridge2.0-0t64 is already the newest version (2.60.4-0ubuntu0.1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6484607Z libatk-bridge2.0-0t64 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6485103Z libatk1.0-0t64 is already the newest version (2.60.4-0ubuntu0.1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6485648Z libatk1.0-0t64 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6486127Z libatspi2.0-0t64 is already the newest version (2.60.4-0ubuntu0.1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6486590Z libatspi2.0-0t64 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6487113Z libcairo2 is already the newest version (1.18.4-3).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6487539Z libcairo2 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6488003Z libcups2t64 is already the newest version (2.4.16-1ubuntu1.3).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6488991Z libcups2t64 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6489523Z libdbus-1-3 is already the newest version (1.16.2-2ubuntu4).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6489995Z libdbus-1-3 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6490455Z libdrm2 is already the newest version (2.4.131-1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6490905Z libdrm2 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6491437Z libgbm1 is already the newest version (26.0.8-1ubuntu0.3).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6491934Z libgbm1 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6492521Z libglib2.0-0t64 is already the newest version (2.88.0-1ubuntu0.1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6493308Z libglib2.0-0t64 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6493901Z libnspr4 is already the newest version (2:4.38.2-1ubuntu1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6494435Z libnspr4 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6495136Z libnss3 is already the newest version (2:3.120-1ubuntu2.2).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6496210Z libnss3 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6496699Z libpango-1.0-0 is already the newest version (1.57.0-1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6497264Z libpango-1.0-0 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6497817Z libx11-6 is already the newest version (2:1.8.13-1ubuntu0.1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6498319Z libx11-6 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6498866Z libxcb1 is already the newest version (1.17.0-2ubuntu1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6499358Z libxcb1 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6499902Z libxcomposite1 is already the newest version (1:0.4.6-1build1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6500469Z libxcomposite1 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6500937Z libxdamage1 is already the newest version (1:1.1.7-1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6501464Z libxdamage1 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6501919Z libxext6 is already the newest version (2:1.3.4-1build3).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6502423Z libxext6 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6503099Z libxfixes3 is already the newest version (1:6.0.0-2build2).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6503599Z libxfixes3 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6504148Z libxkbcommon0 is already the newest version (1.13.1-1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6504714Z libxkbcommon0 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6505208Z libxrandr2 is already the newest version (2:1.5.4-1build1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6505589Z libxrandr2 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6506020Z xvfb is already the newest version (2:21.1.22-1ubuntu1.3).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6506442Z fonts-noto-color-emoji is already the newest version (2.051-1build1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6506915Z libfontconfig1 is already the newest version (2.17.1-3ubuntu1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6507274Z libfontconfig1 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6507717Z libfreetype6 is already the newest version (2.14.2+dfsg-1ubuntu0.2).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6508087Z libfreetype6 set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6508494Z fonts-liberation is already the newest version (1:2.1.5-3build1).
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6508873Z fonts-liberation set to manually installed.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.6909813Z Solving dependencies...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.7748482Z The following additional packages will be installed:
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.7749038Z   xfonts-encodings xfonts-utils
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.7756064Z Recommended packages:
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.7756491Z   fonts-ipafont-mincho fonts-tlwg-loma
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.8656036Z The following NEW packages will be installed:
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.8656768Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.8663959Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.8665195Z   xfonts-utils
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.8841067Z 0 upgraded, 9 newly installed, 0 to remove and 54 not upgraded.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.8841684Z Need to get 21.9 MB of archives.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.8842364Z After this operation, 80.2 MB of additional disk space will be used.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:07.8843218Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [152 B]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:23.2700434Z Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute/universe amd64v3 fonts-ipafont-gothic all 00303-23ubuntu1 [3703 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:53:52.4037599Z Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute/main amd64v3 fonts-freefont-ttf all 20211204+svn4273-4build1 [5656 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:54:31.7380063Z Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute/universe amd64v3 fonts-tlwg-loma-otf all 1:0.7.3-1build1 [106 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:54:32.6908145Z Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute/universe amd64v3 fonts-unifont all 1:16.0.04-1build1 [3169 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:02.9002129Z Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute/universe amd64v3 fonts-wqy-zenhei all 0.9.45-8build1 [7863 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:45.7077843Z Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute/main amd64v3 xfonts-encodings all 1:1.0.5-0ubuntu3 [576 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:50.6499822Z Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute/main amd64v3 xfonts-utils amd64 1:7.7+7build1 [97.3 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:51.7003841Z Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute/universe amd64v3 xfonts-cyrillic all 1:1.0.5+nmu1build1 [384 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:56.1797468Z Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu resolute/universe amd64v3 xfonts-scalable all 1:1.0.3-1.3build1 [304 kB]
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.3523321Z Fetched 21.9 MB in 2min 50s (129 kB/s)
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.3727960Z Selecting previously unselected package fonts-ipafont-gothic.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4061507Z (Reading database ... 
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4061871Z (Reading database ... 5%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4062158Z (Reading database ... 10%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4062481Z (Reading database ... 15%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4062730Z (Reading database ... 20%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4063249Z (Reading database ... 25%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4063532Z (Reading database ... 30%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4063899Z (Reading database ... 35%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4064178Z (Reading database ... 40%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4064444Z (Reading database ... 45%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4064741Z (Reading database ... 50%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.4547015Z (Reading database ... 55%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.5204754Z (Reading database ... 60%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.5861784Z (Reading database ... 65%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.6488188Z (Reading database ... 70%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.7129885Z (Reading database ... 75%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:58.9403444Z (Reading database ... 80%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:55:59.7752230Z (Reading database ... 85%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:00.3319717Z (Reading database ... 90%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.2277589Z (Reading database ... 95%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.2278273Z (Reading database ... 100%
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.2278761Z (Reading database ... 213995 files and directories currently installed.)
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.2317062Z Preparing to unpack .../0-fonts-ipafont-gothic_00303-23ubuntu1_all.deb ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.2391684Z Unpacking fonts-ipafont-gothic (00303-23ubuntu1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.2968045Z Selecting previously unselected package fonts-freefont-ttf.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.3066791Z Preparing to unpack .../1-fonts-freefont-ttf_20211204+svn4273-4build1_all.deb ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.3070695Z Unpacking fonts-freefont-ttf (20211204+svn4273-4build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.3770953Z Selecting previously unselected package fonts-tlwg-loma-otf.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.3869702Z Preparing to unpack .../2-fonts-tlwg-loma-otf_1%3a0.7.3-1build1_all.deb ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.3873083Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.4005601Z Selecting previously unselected package fonts-unifont.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.4103818Z Preparing to unpack .../3-fonts-unifont_1%3a16.0.04-1build1_all.deb ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.4107481Z Unpacking fonts-unifont (1:16.0.04-1build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.5028921Z Selecting previously unselected package fonts-wqy-zenhei.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.5128644Z Preparing to unpack .../4-fonts-wqy-zenhei_0.9.45-8build1_all.deb ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.5233068Z Unpacking fonts-wqy-zenhei (0.9.45-8build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.5957784Z Selecting previously unselected package xfonts-encodings.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6057749Z Preparing to unpack .../5-xfonts-encodings_1%3a1.0.5-0ubuntu3_all.deb ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6061057Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu3) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6219926Z Selecting previously unselected package xfonts-utils.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6318706Z Preparing to unpack .../6-xfonts-utils_1%3a7.7+7build1_amd64v3.deb ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6321668Z Unpacking xfonts-utils (1:7.7+7build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6614803Z Selecting previously unselected package xfonts-cyrillic.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6714257Z Preparing to unpack .../7-xfonts-cyrillic_1%3a1.0.5+nmu1build1_all.deb ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6718374Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6894838Z Selecting previously unselected package xfonts-scalable.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6992981Z Preparing to unpack .../8-xfonts-scalable_1%3a1.0.3-1.3build1_all.deb ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.6997909Z Unpacking xfonts-scalable (1:1.0.3-1.3build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.7255061Z Setting up fonts-wqy-zenhei (0.9.45-8build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.7357343Z Setting up fonts-freefont-ttf (20211204+svn4273-4build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.7370160Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.7380136Z Setting up xfonts-encodings (1:1.0.5-0ubuntu3) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.7390264Z Setting up fonts-ipafont-gothic (00303-23ubuntu1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.7432332Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.7441760Z Setting up fonts-unifont (1:16.0.04-1build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.7452109Z Setting up xfonts-utils (1:7.7+7build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.7487715Z Setting up xfonts-cyrillic (1:1.0.5+nmu1build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.8610448Z Setting up xfonts-scalable (1:1.0.3-1.3build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.8890687Z Processing triggers for man-db (2.13.1-1build1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.8912905Z Not building database; man-db/auto-update is not 'true'.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:01.8922710Z Processing triggers for fontconfig (2.17.1-3ubuntu1) ...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5199809Z 
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5200815Z Running kernel seems to be up-to-date.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5201149Z 
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5201355Z Restarting services...
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5277542Z 
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5278089Z Service restarts being deferred:
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5283143Z  systemctl restart hosted-compute-agent.service
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5283455Z 
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5283881Z No containers need to be restarted.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5284150Z 
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5284490Z No user sessions are running outdated binaries.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5284846Z 
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:02.5285279Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:03.2444438Z Downloading Chrome for Testing 159.0.8154.6 (playwright chromium v1255) from https://cdn.playwright.dev/builds/cft/159.0.8154.6/linux64/chrome-linux64.zip
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:03.5284604Z |                                                                                |   0% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:03.6469050Z |■■■■■■■■                                                                        |  10% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:03.7115770Z |■■■■■■■■■■■■■■■■                                                                |  20% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:03.7569248Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:03.8033412Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:03.8480468Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:03.8975462Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:03.9451952Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:03.9967621Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:04.0415698Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:04.0898947Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 199.3 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.3370650Z Chrome for Testing 159.0.8154.6 (playwright chromium v1255) downloaded to /home/runner/.cache/ms-playwright/chromium-1255
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.3372065Z Downloading FFmpeg (playwright ffmpeg v1013) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1013/ffmpeg-linux.zip
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.6614697Z |                                                                                |   0% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.7080137Z |■■■■■■■■                                                                        |  10% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.7367181Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.7471287Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.7682979Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.7759142Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.7849884Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.7897579Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.7942542Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.7990827Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.8030372Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.2 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.8451053Z FFmpeg (playwright ffmpeg v1013) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1013
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:06.8453361Z Downloading Chrome Headless Shell 159.0.8154.6 (playwright chromium-headless-shell v1255) from https://cdn.playwright.dev/builds/cft/159.0.8154.6/linux64/chrome-headless-shell-linux64.zip
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.1148683Z |                                                                                |   0% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.2071358Z |■■■■■■■■                                                                        |  10% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.2560415Z |■■■■■■■■■■■■■■■■                                                                |  20% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.3067803Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.3565699Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.4045504Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.4465929Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.5104028Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.5750949Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.6278739Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:07.6655321Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 125.7 MiB
+Test	Run npx playwright install --with-deps chromium	2026-11-24T02:56:09.2682661Z Chrome Headless Shell 159.0.8154.6 (playwright chromium-headless-shell v1255) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1255
+Test	Testar interface no build produzido	﻿2026-11-24T02:56:09.2864589Z ##[group]Run npm run test:ui
+Test	Testar interface no build produzido	2026-11-24T02:56:09.2864945Z ^[[36;1mnpm run test:ui^[[0m
+Test	Testar interface no build produzido	2026-11-24T02:56:09.2882302Z shell: /usr/bin/bash -e {0}
+Test	Testar interface no build produzido	2026-11-24T02:56:09.2882605Z env:
+Test	Testar interface no build produzido	2026-11-24T02:56:09.2883786Z   EXPECTED_SHA: 0a27562758e50f421e965f922e5cc7fb9a1c5b2f
+Test	Testar interface no build produzido	2026-11-24T02:56:09.2884179Z ##[endgroup]
+Test	Testar interface no build produzido	2026-11-24T02:56:09.3565943Z 
+Test	Testar interface no build produzido	2026-11-24T02:56:09.3566717Z > ecowatt@1.0.0 test:ui
+Test	Testar interface no build produzido	2026-11-24T02:56:09.3567170Z > playwright test
+Test	Testar interface no build produzido	2026-11-24T02:56:09.3567385Z 
+Test	Testar interface no build produzido	2026-11-24T02:56:10.1756172Z 
+Test	Testar interface no build produzido	2026-11-24T02:56:10.1756870Z Running 5 tests using 1 worker
+Test	Testar interface no build produzido	2026-11-24T02:56:10.1757266Z 
+Test	Testar interface no build produzido	2026-11-24T02:56:12.5554606Z   ✓  1 tests/ui/app.spec.js:66:1 › UI01 fluxo completo desktop, persistência, validações e versão (756ms)
+Test	Testar interface no build produzido	2026-11-24T02:56:13.2005402Z   ✓  2 tests/ui/app.spec.js:70:1 › UI02 fluxo completo mobile sem transbordamento de página (639ms)
+Test	Testar interface no build produzido	2026-11-24T02:56:13.5279589Z   ✓  3 tests/ui/app.spec.js:74:1 › UI03 protege dados corrompidos e renderiza texto sem executar HTML (321ms)
+Test	Testar interface no build produzido	2026-11-24T02:56:13.7613808Z   ✓  4 tests/ui/app.spec.js:92:1 › UI04 comunica acesso negado ao LocalStorage e permite sessão temporária (226ms)
+Test	Testar interface no build produzido	2026-11-24T02:56:13.9921775Z   ✓  5 tests/ui/app.spec.js:100:1 › UI05 comunica falha de escrita sem informar que salvou (224ms)
+Test	Testar interface no build produzido	2026-11-24T02:56:14.0343528Z 
+Test	Testar interface no build produzido	2026-11-24T02:56:14.0346232Z   5 passed (4.3s)
+Test	Preservar resultados inclusive em caso de falha	﻿2026-11-24T02:56:14.0533758Z ##[group]Run actions/upload-artifact@v7.0.2
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.0534084Z with:
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.0534415Z   name: resultados-testes-0a27562758e50f421e965f922e5cc7fb9a1c5b2f
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.0534759Z   path: test-results/
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.0535049Z   if-no-files-found: error
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.0535288Z   retention-days: 90
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.0535525Z   compression-level: 6
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.0535783Z   overwrite: false
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.0536031Z   include-hidden-files: false
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.0536343Z   archive: true
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.0536545Z ##[endgroup]
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.1614690Z With the provided path, there will be 2 files uploaded
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.1615468Z Artifact name is valid!
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.1615829Z Root directory input is valid!
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.5323498Z Uploading artifact: resultados-testes-0a27562758e50f421e965f922e5cc7fb9a1c5b2f.zip
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.5350113Z Beginning upload of artifact content to blob storage
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.5875970Z Uploaded bytes 2572
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.6024669Z Finished uploading artifact content to blob storage!
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.6025647Z SHA256 digest of uploaded artifact is facb06288784b61142850f4404cd346a7b19d3df274b1d35315deb4824d06d6c
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.6026318Z Finalizing artifact upload
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.9503746Z Artifact resultados-testes-0a27562758e50f421e965f922e5cc7fb9a1c5b2f successfully finalized. Artifact ID 14884428827
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.9504812Z Artifact resultados-testes-0a27562758e50f421e965f922e5cc7fb9a1c5b2f has been successfully uploaded! Final size is 2572 bytes. Artifact ID is 14884428827
+Test	Preservar resultados inclusive em caso de falha	2026-11-24T02:56:14.9506356Z Artifact download URL: https://github.com/EduardoCaversan/ecowatt/actions/runs/45315409008/artifacts/14884428827
+Test	Post Run actions/setup-node@v7.1.0	﻿2026-11-24T02:56:14.9639536Z Post job cleanup.
+Test	Post Run actions/setup-node@v7.1.0	2026-11-24T02:56:15.0478787Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-f9514a87c62d77623d2af9f139504470d5e264d79c04aeca77d8a37639718f9f, not saving cache.
+Test	Post Run actions/checkout@v7.0.1	﻿2026-11-24T02:56:15.0571232Z Post job cleanup.
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1214898Z [command]/usr/bin/git version
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1245239Z git version 2.56.1
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1270163Z Temporarily overriding HOME='/home/runner/work/_temp/6a711bb2-5677-473c-8924-9b0b0dfdd23f' before making global git config changes
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1271515Z Adding repository directory to the temporary git global config as a safe directory
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1272683Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ecowatt/ecowatt
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1297294Z Removing SSH command configuration
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1300786Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1326269Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1520188Z Removing HTTP extra header
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1524643Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1551978Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1734301Z Removing includeIf entries pointing to credentials config files
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1738381Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1762638Z includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1763758Z includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1765657Z includeif.gitdir:/github/workspace/.git.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1766260Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1767716Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1792493Z /home/runner/work/_temp/git-credentials-6974e726-2e2d-4970-96cb-aeb27d3c2ca4.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1802549Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-6974e726\-2e2d\-4970\-96cb\-aeb27d3c2ca4\.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1834968Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1858358Z /home/runner/work/_temp/git-credentials-6974e726-2e2d-4970-96cb-aeb27d3c2ca4.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1867251Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/ecowatt/ecowatt/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-6974e726\-2e2d\-4970\-96cb\-aeb27d3c2ca4\.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1908266Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1927351Z /github/runner_temp/git-credentials-6974e726-2e2d-4970-96cb-aeb27d3c2ca4.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1935599Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-6974e726\-2e2d\-4970\-96cb\-aeb27d3c2ca4\.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1961676Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1978588Z /github/runner_temp/git-credentials-6974e726-2e2d-4970-96cb-aeb27d3c2ca4.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.1984279Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-6974e726\-2e2d\-4970\-96cb\-aeb27d3c2ca4\.config
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.2014254Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test	Post Run actions/checkout@v7.0.1	2026-11-24T02:56:15.2173470Z Removing credentials config '/home/runner/work/_temp/git-credentials-6974e726-2e2d-4970-96cb-aeb27d3c2ca4.config'
+Test	Complete job	﻿2026-11-24T02:56:15.2283562Z Cleaning up orphan processes
+Package	Set up job	﻿2026-11-24T02:56:19.4627503Z Current runner version: '2.338.2'
+Package	Set up job	2026-11-24T02:56:19.4645666Z ##[group]Runner Image Provisioner
+Package	Set up job	2026-11-24T02:56:19.4646233Z Hosted Compute Agent
+Package	Set up job	2026-11-24T02:56:19.4646651Z Version: 20261111.635
+Package	Set up job	2026-11-24T02:56:19.4647033Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Package	Set up job	2026-11-24T02:56:19.4647457Z Build Date: 2026-11-11T01:49:01Z
+Package	Set up job	2026-11-24T02:56:19.4647940Z Worker ID: {66b22261-322c-4086-89c3-aea05ae57898}
+Package	Set up job	2026-11-24T02:56:19.4648377Z Region: centralus
+Package	Set up job	2026-11-24T02:56:19.4648831Z Cloud: Azure
+Package	Set up job	2026-11-24T02:56:19.4649176Z ##[endgroup]
+Package	Set up job	2026-11-24T02:56:19.4650163Z ##[group]Operating System
+Package	Set up job	2026-11-24T02:56:19.4650632Z Ubuntu
+Package	Set up job	2026-11-24T02:56:19.4650950Z 26.04.1
+Package	Set up job	2026-11-24T02:56:19.4651287Z LTS
+Package	Set up job	2026-11-24T02:56:19.4651610Z ##[endgroup]
+Package	Set up job	2026-11-24T02:56:19.4651918Z ##[group]Runner Image
+Package	Set up job	2026-11-24T02:56:19.4652603Z Image: ubuntu-26.04
+Package	Set up job	2026-11-24T02:56:19.4652949Z Version: 20261116.202.1
+Package	Set up job	2026-11-24T02:56:19.4653588Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+Package	Set up job	2026-11-24T02:56:19.4654621Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+Package	Set up job	2026-11-24T02:56:19.4655402Z ##[endgroup]
+Package	Set up job	2026-11-24T02:56:19.4656064Z ##[group]GITHUB_TOKEN Permissions
+Package	Set up job	2026-11-24T02:56:19.4657495Z Contents: read
+Package	Set up job	2026-11-24T02:56:19.4657851Z Metadata: read
+Package	Set up job	2026-11-24T02:56:19.4658258Z ##[endgroup]
+Package	Set up job	2026-11-24T02:56:19.4659631Z Secret source: Actions
+Package	Set up job	2026-11-24T02:56:19.4660210Z Cache mode: write
+Package	Set up job	2026-11-24T02:56:19.4660771Z Prepare workflow directory
+Package	Set up job	2026-11-24T02:56:19.4895268Z Prepare all required actions
+Package	Set up job	2026-11-24T02:56:19.4939111Z Getting action download info
+Package	Set up job	2026-11-24T02:56:19.7319775Z Download action repository 'actions/download-artifact@v8.0.2' (SHA:9000827ccba6bdab643e8b6fd33ac0654aef8333)
+Package	Set up job	2026-11-24T02:56:20.2163854Z Download action repository 'actions/upload-pages-artifact@v5.0.0' (SHA:fc324d3547104276b827a68afc52ff2a11cc49c9)
+Package	Set up job	2026-11-24T02:56:20.4630663Z Getting action download info
+Package	Set up job	2026-11-24T02:56:20.5544662Z Download action repository 'actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f' (SHA:bbbca2ddaa5d8feaa63e36b76fdaad77386f024f)
+Package	Set up job	2026-11-24T02:56:20.9943354Z Complete job name: Package
+Package	Run actions/download-artifact@v8.0.2	﻿2026-11-24T02:56:21.0551433Z ##[group]Run actions/download-artifact@v8.0.2
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.0552396Z with:
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.0553184Z   name: build-intermediario-0a27562758e50f421e965f922e5cc7fb9a1c5b2f
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.0554152Z   path: dist/
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.0554726Z   merge-multiple: false
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.0555511Z   repository: EduardoCaversan/ecowatt
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.0556230Z   run-id: 45315409008
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.0556850Z   skip-decompress: false
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.0557492Z   digest-mismatch: error
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.0558201Z ##[endgroup]
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.2756414Z Downloading single artifact
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.4554403Z Preparing to download the following artifacts:
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.4555544Z - build-intermediario-0a27562758e50f421e965f922e5cc7fb9a1c5b2f (ID: 14885455499, Size: 8870, Expected Digest: sha256:9280c1d3e0c75cc6e73ea3e2832c1db3278a38034c85b237442ea357e1563303)
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.7663121Z Redirecting to blob download url: https://productionresultssa2.blob.core.windows.net/actions-results/a8622684-766c-8e74-b395-72571f7d7d57/workflow-job-run-16c1f702-e81b-5c08-b6ac-022176909e23/artifacts/759fdaaf7ffca9128bce01360cbe229badad5d656eb61655794e302b66ec48ba.zip
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.7664456Z Starting download of artifact to: /home/runner/work/ecowatt/ecowatt/dist
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.9221428Z (node:2088) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.9222473Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.9279468Z SHA256 digest of downloaded artifact is 9280c1d3e0c75cc6e73ea3e2832c1db3278a38034c85b237442ea357e1563303
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.9280111Z Artifact download completed successfully.
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.9280757Z Total of 1 artifact(s) downloaded
+Package	Run actions/download-artifact@v8.0.2	2026-11-24T02:56:21.9283103Z Download artifact has finished successfully
+Package	Verificar o mesmo build validado	﻿2026-11-24T02:56:21.9443105Z ##[group]Run cd dist && sha256sum --check SHA256SUMS.txt
+Package	Verificar o mesmo build validado	2026-11-24T02:56:21.9443461Z ^[[36;1mcd dist && sha256sum --check SHA256SUMS.txt^[[0m
+Package	Verificar o mesmo build validado	2026-11-24T02:56:21.9476926Z shell: /usr/bin/bash -e {0}
+Package	Verificar o mesmo build validado	2026-11-24T02:56:21.9477138Z ##[endgroup]
+Package	Verificar o mesmo build validado	2026-11-24T02:56:21.9555872Z index.html: OK
+Package	Verificar o mesmo build validado	2026-11-24T02:56:21.9556115Z version.json: OK
+Package	Verificar o mesmo build validado	2026-11-24T02:56:21.9556364Z assets/index-BgWlF-To.js: OK
+Package	Verificar o mesmo build validado	2026-11-24T02:56:21.9556586Z assets/index-CTJeuZg3.css: OK
+Package	Run actions/upload-pages-artifact@v5.0.0	﻿2026-11-24T02:56:21.9628633Z ##[group]Run actions/upload-pages-artifact@v5.0.0
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9628883Z with:
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9629037Z   path: dist/
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9629201Z   retention-days: 90
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9629372Z   name: github-pages
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9629550Z   include-hidden-files: false
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9629733Z ##[endgroup]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9672210Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9707821Z ##[group]Run echo ::group::Archive artifact
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9708082Z ^[[36;1mecho ::group::Archive artifact^[[0m
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9708280Z ^[[36;1mtar \^[[0m
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9708469Z ^[[36;1m  --dereference --hard-dereference \^[[0m
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9708693Z ^[[36;1m  --directory "$INPUT_PATH" \^[[0m
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9708913Z ^[[36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \^[[0m
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9709125Z ^[[36;1m  --exclude=.git \^[[0m
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9709312Z ^[[36;1m  --exclude=.github \^[[0m
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9709500Z ^[[36;1m  --exclude=.[^/]* \^[[0m
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9709709Z ^[[36;1m  .^[[0m
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9709870Z ^[[36;1mecho ::endgroup::^[[0m
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9747443Z shell: /usr/bin/sh -e {0}
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9747637Z env:
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9747796Z   INPUT_PATH: dist/
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9747965Z ##[endgroup]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9794595Z ##[group]Archive artifact
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9806044Z ./
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9806390Z ./version.json
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9806660Z ./SHA256SUMS.txt
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9807071Z ./assets/
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9807329Z ./assets/index-BgWlF-To.js
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9807634Z ./assets/index-CTJeuZg3.css
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9807918Z ./index.html
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9808158Z ./favicon.svg
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9809479Z ##[endgroup]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9878683Z ##[end-action id=__actions_upload-pages-artifact.__run;outcome=success;conclusion=success;duration_ms=20]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9881420Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_2]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9885525Z ##[end-action id=__actions_upload-pages-artifact.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9887482Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_3]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9889910Z ##[end-action id=__actions_upload-pages-artifact.__run_3;outcome=skipped;conclusion=skipped;duration_ms=0]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9891156Z ##[start-action display=Upload artifact;id=__actions_upload-pages-artifact.upload-artifact]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9924051Z ##[group]Run actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9924342Z with:
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9924498Z   name: github-pages
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9924687Z   path: /home/runner/work/_temp/artifact.tar
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9925126Z   retention-days: 90
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9925303Z   if-no-files-found: error
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9925486Z   compression-level: 6
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9925656Z   overwrite: false
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9925830Z   include-hidden-files: false
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9926036Z   archive: true
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:21.9926193Z ##[endgroup]
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.0901213Z With the provided path, there will be 1 file uploaded
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.0902678Z Artifact name is valid!
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.0903139Z Root directory input is valid!
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.3448191Z Uploading artifact: github-pages.zip
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.3475718Z Beginning upload of artifact content to blob storage
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.4980986Z Uploaded bytes 8284
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.5362954Z Finished uploading artifact content to blob storage!
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.5363713Z SHA256 digest of uploaded artifact is 26fb8230331144deb714c281f973608e7141e60b1f268387c1b9607c7f60ab02
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.5364243Z Finalizing artifact upload
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.9455553Z Artifact github-pages successfully finalized. Artifact ID 14884289152
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.9456387Z Artifact github-pages has been successfully uploaded! Final size is 8284 bytes. Artifact ID is 14884289152
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.9457138Z Artifact download URL: https://github.com/EduardoCaversan/ecowatt/actions/runs/45315409008/artifacts/14884289152
+Package	Run actions/upload-pages-artifact@v5.0.0	2026-11-24T02:56:22.9559058Z ##[end-action id=__actions_upload-pages-artifact.upload-artifact;outcome=success;conclusion=success;duration_ms=966]
+Package	Complete job	﻿2026-11-24T02:56:22.9630068Z Cleaning up orphan processes
+Deploy	Set up job	﻿2026-11-24T02:56:30.4883506Z Current runner version: '2.338.2'
+Deploy	Set up job	2026-11-24T02:56:30.4911677Z ##[group]Runner Image Provisioner
+Deploy	Set up job	2026-11-24T02:56:30.4912679Z Hosted Compute Agent
+Deploy	Set up job	2026-11-24T02:56:30.4913351Z Version: 20261111.635
+Deploy	Set up job	2026-11-24T02:56:30.4914017Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Deploy	Set up job	2026-11-24T02:56:30.4914813Z Build Date: 2026-11-11T01:49:01Z
+Deploy	Set up job	2026-11-24T02:56:30.4915519Z Worker ID: {0226db5b-b822-4fe5-8113-d698d99cae4e}
+Deploy	Set up job	2026-11-24T02:56:30.4916234Z Region: westcentralus
+Deploy	Set up job	2026-11-24T02:56:30.4916929Z Cloud: Azure
+Deploy	Set up job	2026-11-24T02:56:30.4917480Z ##[endgroup]
+Deploy	Set up job	2026-11-24T02:56:30.4919679Z ##[group]Operating System
+Deploy	Set up job	2026-11-24T02:56:30.4920487Z Ubuntu
+Deploy	Set up job	2026-11-24T02:56:30.4921018Z 26.04.1
+Deploy	Set up job	2026-11-24T02:56:30.4921651Z LTS
+Deploy	Set up job	2026-11-24T02:56:30.4922179Z ##[endgroup]
+Deploy	Set up job	2026-11-24T02:56:30.4922777Z ##[group]Runner Image
+Deploy	Set up job	2026-11-24T02:56:30.4923407Z Image: ubuntu-26.04
+Deploy	Set up job	2026-11-24T02:56:30.4923988Z Version: 20261116.202.1
+Deploy	Set up job	2026-11-24T02:56:30.4925143Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+Deploy	Set up job	2026-11-24T02:56:30.4927018Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+Deploy	Set up job	2026-11-24T02:56:30.4928009Z ##[endgroup]
+Deploy	Set up job	2026-11-24T02:56:30.4929374Z ##[group]GITHUB_TOKEN Permissions
+Deploy	Set up job	2026-11-24T02:56:30.4931963Z Metadata: read
+Deploy	Set up job	2026-11-24T02:56:30.4932619Z Pages: write
+Deploy	Set up job	2026-11-24T02:56:30.4933636Z ##[endgroup]
+Deploy	Set up job	2026-11-24T02:56:30.4935713Z Secret source: Actions
+Deploy	Set up job	2026-11-24T02:56:30.4936785Z Cache mode: write
+Deploy	Set up job	2026-11-24T02:56:30.4937713Z Prepare workflow directory
+Deploy	Set up job	2026-11-24T02:56:30.5271064Z Prepare all required actions
+Deploy	Set up job	2026-11-24T02:56:30.5317837Z Getting action download info
+Deploy	Set up job	2026-11-24T02:56:30.8175373Z Download action repository 'actions/deploy-pages@v5.0.1' (SHA:368f82528645a54fb793d4d04e342629a3f51346)
+Deploy	Set up job	2026-11-24T02:56:31.5202347Z Complete job name: Deploy
+Deploy	Publicar artefato aprovado	﻿2026-11-24T02:56:31.6137157Z ##[group]Run actions/deploy-pages@v5.0.1
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:31.6138363Z with:
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:31.6142480Z   token: ***
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:31.6143007Z   timeout: 600000
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:31.6143501Z   error_count: 10
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:31.6144010Z   reporting_interval: 5000
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:31.6144565Z   artifact_name: github-pages
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:31.6145122Z   preview: false
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:31.6145871Z ##[endgroup]
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:31.9839386Z (node:2332) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:31.9842896Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:32.1672337Z Fetching artifact metadata for "github-pages" in this workflow run
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:32.3512607Z Found 3 artifact(s)
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:32.3576767Z Creating Pages deployment with payload:
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:32.3578440Z {
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:32.3579264Z 	"artifact_id": 14884289152,
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:32.3581008Z 	"pages_build_version": "0a27562758e50f421e965f922e5cc7fb9a1c5b2f",
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:32.3724877Z 	"oidc_token": "***"
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:32.3725845Z }
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:33.2546118Z Created deployment for 0a27562758e50f421e965f922e5cc7fb9a1c5b2f, ID: 0a27562758e50f421e965f922e5cc7fb9a1c5b2f
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:37.6270415Z Getting Pages deployment status...
+Deploy	Publicar artefato aprovado	2026-11-24T02:56:37.8492057Z Reported success!
+Deploy	Complete job	﻿2026-11-24T02:56:37.8808350Z Evaluate and set environment url
+Deploy	Complete job	2026-11-24T02:56:37.8813464Z Evaluated environment url: https://eduardocaversan.github.io/ecowatt/
+Deploy	Complete job	2026-11-24T02:56:37.8814510Z Cleaning up orphan processes

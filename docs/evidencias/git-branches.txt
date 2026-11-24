@@ -1,0 +1,13 @@
+  demo/pipeline-failure
+  feature/ci-cd
+  feature/energy-calculator
+  feature/equipment-management
+  fix/monthly-consumption
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/demo/pipeline-failure
+  remotes/origin/feature/ci-cd
+  remotes/origin/feature/energy-calculator
+  remotes/origin/feature/equipment-management
+  remotes/origin/fix/monthly-consumption
+  remotes/origin/main

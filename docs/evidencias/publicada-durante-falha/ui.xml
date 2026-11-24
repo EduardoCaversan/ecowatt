@@ -1,0 +1,14 @@
+<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="23.950564999999997">
+<testsuite name="app.spec.js" timestamp="2026-11-24T03:00:45.380Z" hostname="" tests="5" failures="0" skipped="0" time="19.82" errors="0">
+<testcase name="UI01 fluxo completo desktop, persistência, validações e versão" classname="app.spec.js" time="12.069">
+</testcase>
+<testcase name="UI02 fluxo completo mobile sem transbordamento de página" classname="app.spec.js" time="4.783">
+</testcase>
+<testcase name="UI03 protege dados corrompidos e renderiza texto sem executar HTML" classname="app.spec.js" time="1.638">
+</testcase>
+<testcase name="UI04 comunica acesso negado ao LocalStorage e permite sessão temporária" classname="app.spec.js" time="0.653">
+</testcase>
+<testcase name="UI05 comunica falha de escrita sem informar que salvou" classname="app.spec.js" time="0.677">
+</testcase>
+</testsuite>
+</testsuites>
