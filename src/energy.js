@@ -27,7 +27,7 @@ export function validateEquipment(equipment) {
 
 export function monthlyConsumption(equipment) {
   const { powerWatts, dailyHours, quantity } = validateEquipment(equipment);
-  const consumption = (powerWatts / 1000) * dailyHours * quantity * 31;
+  const consumption = (powerWatts / 1000) * dailyHours * quantity * 30;
   if (!Number.isFinite(consumption) || consumption <= 0) {
     throw new Error('Os valores informados produzem um consumo fora do intervalo suportado.');
   }
