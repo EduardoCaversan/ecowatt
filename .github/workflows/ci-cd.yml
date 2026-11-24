@@ -1,0 +1,111 @@
+name: EcoWatt CI/CD
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/**', 'README.md']
+  pull_request:
+    branches: [main]
+    paths-ignore: ['docs/**', 'README.md']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ecowatt-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Build com identificação do commit
+        run: npm run build
+      - name: Verificar arquivos e origem
+        run: |
+          test -s dist/index.html
+          test -s dist/version.json
+          node --input-type=module -e "import fs from 'node:fs'; import assert from 'node:assert/strict'; assert.equal(JSON.parse(fs.readFileSync('dist/version.json')).commit, process.env.GITHUB_SHA)"
+          cd dist && sha256sum index.html version.json assets/* > SHA256SUMS.txt
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: build-intermediario-${{ github.sha }}
+          path: dist/
+          if-no-files-found: error
+          retention-days: 90
+
+  test:
+    name: Test
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Executar testes de regras e armazenamento
+        run: npm test
+      - uses: actions/download-artifact@v8.0.2
+        with:
+          name: build-intermediario-${{ github.sha }}
+          path: dist/
+      - name: Conferir integridade do build
+        run: cd dist && sha256sum --check SHA256SUMS.txt
+      - run: npx playwright install --with-deps chromium
+      - name: Testar interface no build produzido
+        run: npm run test:ui
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+      - name: Preservar resultados inclusive em caso de falha
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: resultados-testes-${{ github.sha }}
+          path: test-results/
+          if-no-files-found: error
+          retention-days: 90
+
+  package:
+    name: Package
+    needs: [build, test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v8.0.2
+        with:
+          name: build-intermediario-${{ github.sha }}
+          path: dist/
+      - name: Verificar o mesmo build validado
+        run: cd dist && sha256sum --check SHA256SUMS.txt
+      - uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: dist/
+          retention-days: 90
+
+  deploy:
+    name: Deploy
+    needs: package
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar artefato aprovado
+        id: deployment
+        uses: actions/deploy-pages@v5.0.1

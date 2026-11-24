@@ -7,7 +7,7 @@ let dirty = false;
 if (!commit) {
   try {
     commit = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
-    dirty = Boolean(execFileSync('git', ['status', '--porcelain', '--untracked-files=no'], { encoding: 'utf8' }).trim());
+    dirty = Boolean(execFileSync('git', ['status', '--porcelain'], { encoding: 'utf8' }).trim());
   } catch { commit = 'local-sem-git'; }
 }
 const metadata = { version, commit, builtAt: new Date().toISOString(), runId: process.env.GITHUB_RUN_ID ?? null, dirty };
