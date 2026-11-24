@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-24T12:29:13.642905+00:00",
+  "checkedAt": "2026-11-24T12:43:48.208485+00:00",
   "publicVersionMatchesArtifact": true,
   "publicHtmlMatchesBuild": true,
   "packageMatchesBuild": true,
@@ -14,6 +14,6 @@
   "sections": 13,
   "pdfPages": 23,
   "internalLinks": 13,
-  "pdfSha256": "3947f23d2f4023215680c0389de3892be3cda917075423a21a0fd60112f4c226",
-  "sourceSha256": "8c8363d6ca6c1abc65c9fe4ce593e46d52e90641e369e9e366ac895645fb638a"
+  "pdfSha256": "0c7c8adf2ceaeab18914bfc7e8e640e2f76b5cd61c0b3fea17f2d296d47d92fb",
+  "sourceSha256": "73d5eb341e1284645141c80d9b127d0e79ac16a63525d9556805ef42297aaeed"
 }

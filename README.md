@@ -13,7 +13,7 @@
 
 Projeto individual de **Eduardo Caversan da Silva Rocha**, para a atividade **Operação Deploy — Do código à produção**, da disciplina **Gerência de Configuração e Manutenção de Software**, curso de Engenharia de Software da **UTFPR**, professora **Eduarda Maganha de Almeida**. Equipe: EcoWatt — Projeto Individual. Entrega prevista: 25/11/2026.
 
-Não existem outros integrantes. O desenvolvimento, a integração, os testes, o pipeline, a documentação e a preparação técnica tiveram apoio direto de inteligência artificial, declarado na seção 13 do relatório. **R.A.: 2475391. Turma: ES46B-ES61. Tema aprovado pela professora, conforme confirmação do acadêmico.** O campus ainda não foi informado. A revisão e compreensão final antes da entrega permanecem sob responsabilidade do acadêmico.
+Não existem outros integrantes. O desenvolvimento, a integração, os testes, o pipeline, a documentação e a preparação técnica tiveram apoio direto de inteligência artificial, declarado na seção 13 do relatório. **R.A.: 2475391. Turma: ES46B-ES61. Tema aprovado pela professora, conforme confirmação do acadêmico.** **Campus: Cornélio Procópio — Paraná.** A revisão e compreensão final antes da entrega permanecem sob responsabilidade do acadêmico.
 
 ## Problema e funcionalidades
 
@@ -147,4 +147,4 @@ O [relatório técnico](docs/relatorio-tecnico.pdf) contém as 13 seções acad�
 
 Os resultados são **estimativas para 30 dias e potência constante**, não substituem medições reais ou a fatura. Os dados ficam apenas no navegador, sem sincronização ou backup remoto. A tarifa é manual, e não são modelados impostos, bandeiras tarifárias, ciclos dos aparelhos ou variação de potência. Não há conexão com medidores ou concessionárias. Acessibilidade básica e cenários Chromium foram verificados; isso não equivale a uma auditoria completa de WCAG ou cobertura de todos os navegadores.
 
-Os detalhes dos logs na interface pública do GitHub exigem login; logs completos e JUnit reais foram coletados via CLI, e a captura do JUnit mostra sua visualização local, claramente identificada. A revisão pessoal, o domínio da apresentação, a informação do campus e o envio ao Moodle permanecem responsabilidades do acadêmico.
+Os detalhes dos logs na interface pública do GitHub exigem login; logs completos e JUnit reais foram coletados via CLI, e a captura do JUnit mostra sua visualização local, claramente identificada. A revisão pessoal, o domínio da apresentação e o envio ao Moodle permanecem responsabilidades do acadêmico.

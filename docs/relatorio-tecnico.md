@@ -1,5 +1,5 @@
 <div class="cover">
-<div class="institution">Universidade Tecnológica Federal do Paraná<br>Engenharia de Software</div>
+<div class="institution">Universidade Tecnológica Federal do Paraná<br>Campus Cornélio Procópio — Paraná<br>Engenharia de Software</div>
 <div class="author">Eduardo Caversan da Silva Rocha<br>R.A. 2475391 · Turma ES46B-ES61</div>
 <div class="title">EcoWatt</div>
 <div class="subtitle">Monitoramento de Consumo Energético Residencial</div>
@@ -25,7 +25,7 @@
 <li><a href="#13-referencias-e-declaracao-de-uso-de-ferramentas">Referências e declaração de uso de ferramentas</a></li>
 </ol>
 <p>O sumário contém links internos. A numeração das páginas aparece no rodapé. Capturas, logs e metadados completos acompanham este documento em <code>docs/evidencias/</code>.</p>
-<div class="note">Documento destinado à revisão acadêmica final. Nome completo, R.A. 2475391 e turma ES46B-ES61 foram informados pelo acadêmico, que também confirmou a aprovação do tema pela professora. O campus ainda não foi informado.</div>
+<div class="note">Documento destinado à revisão acadêmica final. Nome completo, R.A. 2475391 e turma ES46B-ES61 foram informados pelo acadêmico, que também confirmou a aprovação do tema pela professora. Campus informado: Cornélio Procópio — Paraná.</div>
 </div>
 
 # 1. Identificação do projeto e da equipe
@@ -39,7 +39,7 @@
 | Acadêmico | Eduardo Caversan da Silva Rocha |
 | R.A. | 2475391 |
 | Turma | ES46B-ES61 |
-| Campus | Não informado |
+| Campus | Cornélio Procópio — Paraná |
 | Aprovação do tema | Confirmada pelo acadêmico |
 | Projeto | EcoWatt — Monitoramento de Consumo Energético Residencial |
 | Identificação da equipe | EcoWatt — Projeto Individual |
@@ -399,7 +399,7 @@ As limitações de produto permanecem explícitas: os dados se restringem ao nav
 
 Como melhorias futuras, poderiam ser avaliados exportação/importação local dos dados, edição de equipamentos e perfis de utilização. Essas possibilidades não foram implementadas porque não eram necessárias para demonstrar a confiabilidade do ciclo de entrega. Qualquer ampliação deve manter a rastreabilidade e novos testes para as regras introduzidas.
 
-O documento e o pacote foram preparados para revisão e entrega, não para substituir as responsabilidades acadêmicas. Permanecem dependentes de Eduardo Caversan da Silva Rocha: informação do campus, conferência final dos dados, revisão pessoal do código e relatório, preparação da apresentação e envio ao Moodle. A apresentação ainda não foi realizada e não recebeu avaliação fictícia neste documento.
+O documento e o pacote foram preparados para revisão e entrega, não para substituir as responsabilidades acadêmicas. Permanecem dependentes de Eduardo Caversan da Silva Rocha: conferência final dos dados, revisão pessoal do código e relatório, preparação da apresentação e envio ao Moodle. A apresentação ainda não foi realizada e não recebeu avaliação fictícia neste documento.
 
 # 13. Referências e declaração de uso de ferramentas
 

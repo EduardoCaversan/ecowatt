@@ -4,25 +4,25 @@
   "details": [
     {
       "page": 1,
-      "characters": 518,
+      "characters": 552,
       "images": 0,
       "links": 0,
       "outsidePage": [],
-      "start": "UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ\nENGENHARIA DE SOFTWARE\nEduardo Caversan da Silva Rocha\nR.A. 2475391 · Turma ES46B-ES61\nEcoWatt\nMonitoramento de Consumo Energét",
+      "start": "UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ\nCAMPUS CORNÉLIO PROCÓPIO — PARANÁ\nENGENHARIA DE SOFTWARE\nEduardo Caversan da Silva Rocha\nR.A. 2475391 · Turma ES46B-ES61\nEcoWat",
       "end": "duarda Maganha de Almeida\nModalidade: trabalho individual\nEntrega prevista: 25 de novembro de 2026\nVersão técnica do documento: 24/11/2026\nEcoWatt · Operação Deploy · UTFPR\n1 / 23\n"
     },
     {
       "page": 2,
-      "characters": 964,
+      "characters": 976,
       "images": 0,
       "links": 13,
       "outsidePage": [],
       "start": "Sumário\n1. Identificação do projeto e da equipe\n2. Introdução e contextualização\n3. Escopo e funcionalidades da aplicação\n4. Tecnologias e ambiente de desenvolvimento\n5. ",
-      "end": "a ES46B-\nES61 foram informados pelo acadêmico, que também confirmou a aprovação do tema pela\nprofessora. O campus ainda não foi informado.\nEcoWatt · Operação Deploy · UTFPR\n2 / 23\n"
+      "end": "1 foram informados pelo acadêmico, que também confirmou a aprovação do tema pela\nprofessora. Campus informado: Cornélio Procópio — Paraná.\nEcoWatt · Operação Deploy · UTFPR\n2 / 23\n"
     },
     {
       "page": 3,
-      "characters": 1864,
+      "characters": 1877,
       "images": 0,
       "links": 0,
       "outsidePage": [],
@@ -193,7 +193,7 @@
     },
     {
       "page": 22,
-      "characters": 3015,
+      "characters": 2993,
       "images": 0,
       "links": 17,
       "outsidePage": [],
@@ -240,5 +240,5 @@
     "method": "Renderizacao de todas as paginas e inspecao visual das folhas de contato e paginas ampliadas",
     "observations": "Capa, sumario, 13 secoes, margens, tabelas, figuras, legendas, numeracao e referencias verificados. Sem sobreposicoes ou paginas vazias; recortes reais das interfaces complementam capturas integrais."
   },
-  "pdfSha256": "3947f23d2f4023215680c0389de3892be3cda917075423a21a0fd60112f4c226"
+  "pdfSha256": "0c7c8adf2ceaeab18914bfc7e8e640e2f76b5cd61c0b3fea17f2d296d47d92fb"
 }

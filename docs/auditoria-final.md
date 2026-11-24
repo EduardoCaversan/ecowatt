@@ -1,6 +1,6 @@
 # Auditoria de conformidade — EcoWatt
 
-Data: 24/11/2026. Responsável acadêmico: Eduardo Caversan da Silva Rocha. R.A.: 2475391. Turma: ES46B-ES61. Tema aprovado pela professora, conforme confirmação do acadêmico. Projeto individual. Esta auditoria distingue execução técnica comprovada de responsabilidades pessoais ainda não confirmadas. Não atribui nota.
+Data: 24/11/2026. Responsável acadêmico: Eduardo Caversan da Silva Rocha. R.A.: 2475391. Turma: ES46B-ES61. Campus: Cornélio Procópio — Paraná. Tema aprovado pela professora, conforme confirmação do acadêmico. Projeto individual. Esta auditoria distingue execução técnica comprovada de responsabilidades pessoais ainda não confirmadas. Não atribui nota.
 
 ## Planejamento
 
@@ -134,7 +134,8 @@ Os resultados de fechamento estão guardados em `entrega-operacao-deploy/evidenc
 
 - [x] Aprovação do tema próprio pela professora, confirmada pelo acadêmico.
 - [x] Nome completo, R.A. 2475391 e turma ES46B-ES61 informados pelo acadêmico.
-- [ ] Informação do campus e conferência final dos dados.
+- [x] Campus Cornélio Procópio — Paraná informado pelo acadêmico.
+- [ ] Conferência final dos dados.
 - [ ] Revisão pessoal do código e das configurações.
 - [ ] Compreensão do funcionamento e dos conceitos demonstrados.
 - [ ] Revisão pessoal do relatório e da declaração de ferramentas/modelo.
